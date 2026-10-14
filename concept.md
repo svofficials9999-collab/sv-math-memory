@@ -1,0 +1,41 @@
+# SV Math Memory concept and data pack
+14 October 2026. First playable beta, not a validated cognitive intervention.
+
+## Purpose and audit
+AksharaNova already covers arithmetic lesson practice, including addition/subtraction, tables, fractions and decimals. Pop Raja has tap/reflex gameplay. Keep them unchanged; this separate game focuses on look-hide-recall and matching. Reuse verified arithmetic rules and the shared principles of bilingual labels, one-screen Back and small-screen touch targets, not a duplicate complete maths curriculum.
+
+## Modes, level data and learning value
+| Mode | Mechanic | Level data | Practice target |
+| Number trail | Observe, hide, type numbers in order | 3-7 digits; 4.5-5.5 seconds viewing; five questions | Ordered recall and attention |
+| Math pairs | Eight face-down cards, four equation-answer pairs | Unique answers, shuffled positions; four matches | Equation-answer association and positional recall |
+| Think then recall | Show equation, hide, type answer | Addition/subtraction; multiplication in older levels; five questions | Arithmetic recall and mental calculation |
+| Pattern detective | Four values and a missing next value | Constant steps 2-6; five questions | Recognising a rule and explaining it |
+| Flash recall | Briefly show a number, hide, reproduce it | 2-5 digits; 2-3 seconds; five questions | Task-specific brief visual recall; optional |
+
+## Bands and difficulty
+Classes1-2, approximately6-8: addition/subtraction, startingoperandrange1-10; laterlevels1-15/20. Classes3-5, approximately8-11: ranges1-30/40/50, optional multiplication1-8 x1-9. Classes6-10, approximately11-16: ranges1-60/80/100, multiplication1-12 x1-9. These are adjustable suitability bands, not a claim of full curriculum coverage. Older bands remain a light memory warm-up. Level1-3 selectable; no locked progression or age collection.
+
+## Scoring, feedback and rewards
+100points per correctanswer/match. Maximum500 per questionround or400 per pairround. No speedbonus, punitive penalties, leaderboard or comparison with classmates. Four correctearns a practicestar. Bestscore per mode and totalstars storeddevice-local, not a certificate. Wronganswers show correctresult; pairmismatch flipsback after900ms. A child may choosean easierlevel. Takea breakafterashortround and returnanotherday; no promiseof cognitivebenefit from a prescribed dosage.
+
+## Safe design and first-playable scope
+Englishfirst, Telugu toggle, 48pxcontrols, mobilecards, guide, createdbyD.Srinivas, one-screenBack, suggestionbox. Languagechangeduringplay returnssetupclearly; no silently continuingtimer. Noaccounts, childnames, phone, analytics, ads, externalSDKs, payments, cloudbackend or scrapedcontent. Suggestions explicitlysavedonlyhere andnot sent. Localstorage failurecaught. Freshloadstartshome. No offline/PWA install claim in thisbeta.
+
+## Evidence boundaries
+Retrievalpractice and explanation can supportlearning whencontentmatcheswhatistaught. Maths gamesarepracticeopportunities,not replacementsforteaching. Working-memorytrainingresearchdoesnotjustifyguaranteeinggeneralIQ,schoolmarksorfartransfer. Thisgamehasnotbeen testedwithchildrenorteachers; Telugu/Englishteacherreviewpending.
+
+## Roadmap, not delivered
+More patternfamilies, spacedreview ofmissedquestions, accessibilitytestingwithscreenreaders, teacherreview, children’s usabilitytrials, optionalofflineinstallation and multi-profileprogress. Do notdescribe theseaslive.
+
+## Reference correction
+Voice transcript said nagable.com, which currently showsaJapanese defaulthostingpage. Maincorrectedtheintendedreference toLovable. Lovableisjust inspiration; no signup, spendor dependency. Officialfree-tiertermsreadseparately; weusefreeGitHubPages/staticJavaScript.
+
+## Verification
+Firstplayable authored. Liveverificationresultsreportedseparately,notinferredfromfileexistence. Noexistingappsmodified.
+
+## Sources
+https://link.springer.com/article/10.3758/s13423-019-01681-y
+https://educationendowmentfoundation.org.uk/news/retrieval-practice-a-game-of-hide-and-seek
+https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/early-maths
+https://educationendowmentfoundation.org.uk/news/eef-blog-gains-from-games
+https://eric.ed.gov/?id=ED612298
