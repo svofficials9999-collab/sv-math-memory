@@ -1,41 +1,44 @@
-# SV Math Memory concept and data pack
-14 October 2026. First playable beta, not a validated cognitive intervention.
+# SV Math Memory: concept and data pack
+14 October 2026. First playable beta. Created by D. Srinivas.
 
-## Purpose and audit
-AksharaNova already covers arithmetic lesson practice, including addition/subtraction, tables, fractions and decimals. Pop Raja has tap/reflex gameplay. Keep them unchanged; this separate game focuses on look-hide-recall and matching. Reuse verified arithmetic rules and the shared principles of bilingual labels, one-screen Back and small-screen touch targets, not a duplicate complete maths curriculum.
+## What is different
+AksharaNova already has maths lessons and arithmetic practice. Pop Raja is a tap/reflex game. This separate game focuses on looking, hiding, recalling and matching. No existing app was changed. Arithmetic rules and bilingual, mobile-first design principles are reused, not the existing apps' full curricula.
 
-## Modes, level data and learning value
-| Mode | Mechanic | Level data | Practice target |
-| Number trail | Observe, hide, type numbers in order | 3-7 digits; 4.5-5.5 seconds viewing; five questions | Ordered recall and attention |
-| Math pairs | Eight face-down cards, four equation-answer pairs | Unique answers, shuffled positions; four matches | Equation-answer association and positional recall |
-| Think then recall | Show equation, hide, type answer | Addition/subtraction; multiplication in older levels; five questions | Arithmetic recall and mental calculation |
-| Pattern detective | Four values and a missing next value | Constant steps 2-6; five questions | Recognising a rule and explaining it |
-| Flash recall | Briefly show a number, hide, reproduce it | 2-5 digits; 2-3 seconds; five questions | Task-specific brief visual recall; optional |
+## Five modes
+1. Number trail: remember 3-7 digits in order. They appear for 4.5-5.5 seconds, or until the child taps Ready. Type the sequence with spaces. Five questions.
+2. Math pairs: eight hidden cards make four equation-answer pairs. Answers are unique so there is no ambiguous match. A mismatch turns back after 900ms.
+3. Think, then recall: view an equation, hide it, then answer. Addition, subtraction and multiplication according to the chosen band and level. Five questions.
+4. Pattern detective: identify a constant step of 2-6 and supply the next number. Five questions. This practises pattern recognition, not memory alone.
+5. Flash recall: see a 2-5 digit number for 2-3 seconds, then reproduce it. Optional. No score bonus for speed.
 
-## Bands and difficulty
-Classes1-2, approximately6-8: addition/subtraction, startingoperandrange1-10; laterlevels1-15/20. Classes3-5, approximately8-11: ranges1-30/40/50, optional multiplication1-8 x1-9. Classes6-10, approximately11-16: ranges1-60/80/100, multiplication1-12 x1-9. These are adjustable suitability bands, not a claim of full curriculum coverage. Older bands remain a light memory warm-up. Level1-3 selectable; no locked progression or age collection.
+## Suggested bands, not a syllabus map
+- Classes 1-2, roughly ages 6-8: operands 1-10, 1-15 or 1-20. Addition and subtraction. No negative results.
+- Classes 3-5, roughly ages 8-11: operands 1-30, 1-40 or 1-50. At levels 2-3, multiplication up to 8 x 9 may appear.
+- Classes 6-10, roughly ages 11-16: operands 1-60, 1-80 or 1-100. At levels 2-3, multiplication up to 12 x 9 may appear.
+Choose levels 1, 2 or 3. Older children use this as a short warm-up; it is not a complete secondary maths course. An adult can help younger children. Start easy and stop when tired.
 
-## Scoring, feedback and rewards
-100points per correctanswer/match. Maximum500 per questionround or400 per pairround. No speedbonus, punitive penalties, leaderboard or comparison with classmates. Four correctearns a practicestar. Bestscore per mode and totalstars storeddevice-local, not a certificate. Wronganswers show correctresult; pairmismatch flipsback after900ms. A child may choosean easierlevel. Takea breakafterashortround and returnanotherday; no promiseof cognitivebenefit from a prescribed dosage.
+## Scoring and rewards
+100 points per correct answer or pair. Maximum 500 points per five-question round, or 400 points for four pairs. Four correct earns a practice star. No penalties, speed bonus, public leaderboard or purchases. Wrong answers reveal the right answer. Best score per mode and total stars remain on this browser. These are practice rewards, not grades or certificates.
 
-## Safe design and first-playable scope
-Englishfirst, Telugu toggle, 48pxcontrols, mobilecards, guide, createdbyD.Srinivas, one-screenBack, suggestionbox. Languagechangeduringplay returnssetupclearly; no silently continuingtimer. Noaccounts, childnames, phone, analytics, ads, externalSDKs, payments, cloudbackend or scrapedcontent. Suggestions explicitlysavedonlyhere andnot sent. Localstorage failurecaught. Freshloadstartshome. No offline/PWA install claim in thisbeta.
+## Memory mechanics and learning value
+Ordered recall, position recall, equation-answer association and brief visual recall are the main mechanics. Pattern mode practises recognising a rule. Arithmetic mode practises recall and calculation. Encourage the child to explain the answer on paper after the round and revisit practice another day. Games are practice opportunities, not replacements for teaching.
 
-## Evidence boundaries
-Retrievalpractice and explanation can supportlearning whencontentmatcheswhatistaught. Maths gamesarepracticeopportunities,not replacementsforteaching. Working-memorytrainingresearchdoesnotjustifyguaranteeinggeneralIQ,schoolmarksorfartransfer. Thisgamehasnotbeen testedwithchildrenorteachers; Telugu/Englishteacherreviewpending.
+Better game performance does not prove better general memory, IQ or school marks. Working-memory training evidence does not support a blanket promise of such transfer. This app has not undergone child-user trials or teacher language/curriculum review.
 
-## Roadmap, not delivered
-More patternfamilies, spacedreview ofmissedquestions, accessibilitytestingwithscreenreaders, teacherreview, children’s usabilitytrials, optionalofflineinstallation and multi-profileprogress. Do notdescribe theseaslive.
+## First playable safety and features
+English first with a Telugu toggle, guide, Back one screen, local progress, suggestion box and Created by D. Srinivas. No account, child names, mobile numbers, analytics, ads, payments or external services. Suggestions are saved only on the device and are explicitly not sent. Clearing browser data removes progress. Storage failures are caught. Changing language during a round returns to setup rather than letting a hidden timer run.
 
-## Reference correction
-Voice transcript said nagable.com, which currently showsaJapanese defaulthostingpage. Maincorrectedtheintendedreference toLovable. Lovableisjust inspiration; no signup, spendor dependency. Officialfree-tiertermsreadseparately; weusefreeGitHubPages/staticJavaScript.
+## Not delivered in this beta
+Offline installation, cloud sync, teacher dashboard, audio, adaptive mastery, spaced scheduling and advanced pattern families. No claims that these work yet. Real-device, screen-reader, teacher and child trials are still needed.
 
-## Verification
-Firstplayable authored. Liveverificationresultsreportedseparately,notinferredfromfileexistence. Noexistingappsmodified.
+## Reference and build route
+The voice transcript said nagable.com. That URL showed a Japanese server default page. Srinivas's intended reference was later corrected to Lovable, an app builder. It is inspiration only. No Lovable account, subscription or credits are used. The game is original static JavaScript on free GitHub Pages.
 
-## Sources
-https://link.springer.com/article/10.3758/s13423-019-01681-y
-https://educationendowmentfoundation.org.uk/news/retrieval-practice-a-game-of-hide-and-seek
-https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/early-maths
-https://educationendowmentfoundation.org.uk/news/eef-blog-gains-from-games
-https://eric.ed.gov/?id=ED612298
+## Sources read
+- Working-memory training meta-analysis: https://link.springer.com/article/10.3758/s13423-019-01681-y
+- Earlier meta-analysis, no convincing generalisation to arithmetic: https://www.apa.org/pubs/journals/releases/dev-49-2-270.pdf
+- Maths teaching guidance: https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/early-maths
+- Retrieval practice: https://educationendowmentfoundation.org.uk/news/retrieval-practice-a-game-of-hide-and-seek
+- Games and early maths: https://educationendowmentfoundation.org.uk/news/eef-blog-gains-from-games
+- Guidance report record: https://eric.ed.gov/?id=ED612298
+- Reference only: https://lovable.dev/pricing/ and https://docs.lovable.dev/introduction/subscription-plans
