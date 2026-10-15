@@ -113,3 +113,6 @@ Original diagrams,examples and controls,not copied textbook pages. Prime/composi
 
 ## Learning beta0.18: Finding Common Ground
 Read https://ncert.nic.in/textbook/pdf/gegp203.pdf ,Class7Ganita PrakashII Finding Common Ground:common repeat times,prime-factor minimum counts forHCF,maximum counts forLCM,and HCF×LCM=product for two positive numbers. Front matter https://ncert.nic.in/textbook/pdf/gegp2ps.pdf confirms chapter context. Original bell-timeline example,not copied textbook pages. New model beginsClass7;Class6oldLCMpractice remains. Intervals1–20,positive integers only,both bells start together at0. Different starts,arbitrary schedules and full contextual chapter remain incomplete.
+
+## Learning beta0.19: decimal hundredths
+Read https://ncert.nic.in/textbook/pdf/gegp103.pdf ,A Peek Beyond the Point,sections3.3/3.4 and summary:one unit=10tenths=100hundredths,decimal place-value,comparison and addition. Original equal-whole grids and carry example. Attached to existing Class5–10decimal lesson as foundational/revision representation,not proof of exact current Grade5board mapping. Uses nonnegative hundredths0–1per input;sum0–2. Full decimal operations/measurement contexts/current chapter coverage remain partial.
