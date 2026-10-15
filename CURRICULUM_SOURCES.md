@@ -116,3 +116,6 @@ Read https://ncert.nic.in/textbook/pdf/gegp203.pdf ,Class7Ganita PrakashII Findi
 
 ## Learning beta0.19: decimal hundredths
 Read https://ncert.nic.in/textbook/pdf/gegp103.pdf ,A Peek Beyond the Point,sections3.3/3.4/3.7 and summary:one unit=10tenths=100hundredths,decimal place-value,comparison and addition. Original equal-whole grids and carry example. Attached to existing Class5–10decimal lesson as foundational/revision representation,not proof of exact current Grade5board mapping. Uses nonnegative hundredths0–1per input;sum0–2. Full decimal operations/measurement contexts/current chapter coverage remain partial.
+
+## Learning beta 0.20: decimal subtraction
+Primary source: https://ncert.nic.in/textbook/pdf/gegp103.pdf , section 3.7, relevant addition/subtraction content read on 15 October 2026. It supports place-value subtraction, regrouping and checking with addition. The grids, crossed cells and column-exchange wording are original. The existing Class 5–10 decimal lesson uses this as foundation/revision; a Grade 7 source does not certify exact board placement for every class.
