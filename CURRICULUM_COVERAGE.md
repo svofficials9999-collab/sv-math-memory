@@ -1,0 +1,96 @@
+# Current curriculum coverage, 15 October 2026
+
+This is a gap map, NOT a claim of full curriculum implementation. A topic lesson and a numeric exercise do not cover an entire textbook chapter. All rows below remain PARTIAL or NOT STARTED. General lesson class ranges do not certify board-specific chapter placement.
+
+## NCERT Grade 6, Ganita Prakash, reprint2026-27
+Source: https://ncert.nic.in/textbook/pdf/fegp1ps.pdf
+
+| Current chapter | App coverage | Still needed |
+|---|---|---|
+| Patterns in Mathematics | PARTIAL: number sequences | Shape patterns, reasoning and exploratory activities |
+| Lines and Angles | PARTIAL: angle slider, linear pair | Lines/rays/segments, measuring and more reasoning |
+| Number Play | PARTIAL: number patterns and factors | Place-value games, estimates and textbook-specific explorations |
+| Data Handling and Presentation | PARTIAL: basic data/averages | Grade6 pictographs, bar graphs, collection and interpretation |
+| Prime Time | PARTIAL: HCF/factor practice | Primes/composites, divisibility, factorisation and applications |
+| Perimeter and Area | PARTIAL: rectangles | Irregular shapes, unit squares and contextual problems |
+| Fractions | PARTIAL: fractions of quantities | Representation, comparisons and all operations |
+| Playing with Constructions | PARTIAL: square step guide | Compass constructions, measured practice and additional shapes |
+| Symmetry | PARTIAL: square/rectangle reflection axes | Rotational symmetry and hands-on patterns |
+| The Other Side of Zero | PARTIAL: integer addition | Number-line representation, subtraction and contexts |
+
+## NCERT Grade7, Ganita Prakash PartsI andII
+Sources: https://ncert.nic.in/textbook/pdf/gegp1ps.pdf and https://ncert.nic.in/textbook/pdf/gegp2ps.pdf
+
+| Current chapter | App coverage | Still needed |
+|---|---|---|
+| Large Numbers Around Us | PARTIAL: place value revision | Large-number representation, estimates, applications |
+| Arithmetic Expressions | PARTIAL: arithmetic practice | Operation order and multiple-step reasoning |
+| A Peek Beyond the Point | PARTIAL: decimal revision | Representation, comparison, all operations |
+| Expressions using Letter-Numbers | PARTIAL: substitution | Forming, simplifying and explaining expressions |
+| Parallel and Intersecting Lines | PARTIAL: angle pairs | Parallel-line angle relationships and reasoning |
+| Number Play | PARTIAL: patterns | Grade-specific reasoning explorations |
+| A Tale of Three Intersecting Lines | PARTIAL: triangle angle arithmetic | Triangle properties, constructions and reasoning |
+| Working with Fractions | PARTIAL: fractional quantities | All operations and contexts |
+| Geometric Twins | NOT STARTED as a full chapter | Congruence, correspondence and demonstrations |
+| Operations with Integers | PARTIAL: addition | Multiplication/division, signs, properties and contexts |
+| Finding Common Ground | PARTIAL: HCF/LCM | General factorisation/divisibility and applications |
+| Another Peek Beyond the Point | PARTIAL: decimals | Multiplication/division and practical contexts |
+| Connecting the Dots... | PARTIAL: mean/median/mode ideas | Data interpretation and broader datasets |
+| Constructions and Tilings | PARTIAL: square guide | Tilings and construction activities |
+| Finding the Unknown | PARTIAL: simple equations | Modelling, balance and multi-step contextual equations |
+
+## NCERT Grade8, Ganita Prakash PartsI andII
+Sources: https://www.ncert.nic.in/textbook/pdf/hegp1ps.pdf and https://ncert.nic.in/textbook/pdf/hegp2ps.pdf
+
+| Current chapter | App coverage | Still needed |
+|---|---|---|
+| A Square and A Cube | PARTIAL: square roots | Cubes/cube roots and exploratory patterns |
+| Power Play | PARTIAL: powers | Exponent laws, standard form and reasoning |
+| A Story of Numbers | NOT STARTED as a chapter | Number representation and history-based activities |
+| Quadrilaterals | PARTIAL: angle sums | Properties, classifications, demonstrations |
+| Number Play | PARTIAL: factors/patterns | Grade-specific divisibility and explorations |
+| We Distribute, Yet Things Multiply | PARTIAL: identity revision | Distributivity, expressions and visual models |
+| Proportional Reasoning-1 | PARTIAL: ratios | Direct proportions, contexts and representations |
+| Fractions in Disguise | PARTIAL: percentages | Full percentage applications and comparisons |
+| The Baudhayana-Pythagoras Theorem | PARTIAL: scale diagram and numeric practice | Proof, converse and contextual applications |
+| Proportional Reasoning-2 | PARTIAL: ratios | Inverse proportions and pie charts |
+| Exploring Some Geometric Themes | PARTIAL: cuboid volume | 3D representation and further geometric themes |
+| Tales by Dots and Lines | PARTIAL: mean | Line graphs and interpreting data |
+| Algebra Play | PARTIAL: equations/substitution | Mathematical modelling and reasoning |
+| Area | PARTIAL: rectangle formula | Other figures, derivations and applications |
+
+## CBSE Grade9,2026-27
+Source: https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths_SecP1IX_2026-27.pdf
+
+Number System; Introduction to Polynomials; Sequences and Progressions; Exploring Algebraic Identities; Linear Equations in Two Variables; Coordinate Geometry; Introduction to Euclid's Geometry (Axioms and Postulates); Lines and Angles; Triangles (Congruence Theorems); 4-gons (Quadrilaterals); Circles; Area and Perimeter; Surface Area and Volume; Statistics; Introduction to Probability.
+
+App: basic numeric concepts for most categories, NOT full chapter coverage. Euclid/axioms and triangle congruence proof teaching are NOT STARTED. Graphing, reasoning, proofs, full identities, statistical interpretation and all applications remain incomplete. Current source includes sequences/progressions and probability in grade9; older syllabus lists are not a substitute.
+
+## CBSE Grade10,2026-27
+Source: https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths_SecP1X_2026-27.pdf
+
+| Chapter/content area | App coverage | Still needed |
+|---|---|---|
+| Real Numbers | PARTIAL: factor/number revision | Fundamental theorem, irrationality proofs |
+| Polynomials | PARTIAL: substitution | Zeros, graphs and coefficient relationships |
+| Pair of Linear Equations | PARTIAL: sum/difference example | General solving, consistency and graphing |
+| Quadratic Equations | PARTIAL: factored roots | Formula, discriminant and contexts |
+| Arithmetic Progressions | PARTIAL: nth term | Derivation, sums and applications |
+| Coordinate Geometry | PARTIAL: distance | Section formula, derivations and contexts |
+| Triangles | PARTIAL: similarity scale | Basic proportionality proof and criteria |
+| Circles | PARTIAL: circle formula revision | Tangent theorems and proofs |
+| Introduction to Trigonometry | PARTIAL:3-4-5 ratios | Standard angles, definitions and applications |
+| Trigonometric Identities | NOT STARTED as a full lesson | sin²+cos² identity proof and applications |
+| Heights and Distances | NOT STARTED | Angles of elevation/depression and contexts |
+| Areas Related to Circles | PARTIAL: full-circle formula | Sectors, segments and applications |
+| Surface Areas and Volumes | PARTIAL: cuboid | Other solids and combinations |
+| Statistics | PARTIAL: ungrouped ideas | Grouped mean/median/mode and methods |
+| Probability | PARTIAL: simple outcomes | More events and contextual reasoning |
+
+The official document gives3hours/80marks theory plus20internal assessment. The app's short ten-question practice is NOT that complete paper. No official exam question claim is made.
+
+## Telangana
+Newer official catalogue read: https://www.scert.telangana.gov.in/DisplayImage.aspx?encry=LAM99bLSUMS8OKP97qy2KA%3D%3D . It explicitly says2025-26 DRAFT. This alone does not verify a final2026-27 full syllabus or SSC pattern. A secondary site's2026-27 heading is not used as primary evidence. Current Telangana book-by-book mapping remains IN PROGRESS/UNVERIFIED.
+
+## Grades1-5
+General foundational practice is present. Current NCERT/Telangana book-by-book chapter coverage remains UNVERIFIED, rather than being declared complete using an older framework.
