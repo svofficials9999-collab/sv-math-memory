@@ -87,3 +87,6 @@ Beta0.28: browser-circle-chord.cjs adds 2,048 assertions. All 65 valid (r,d) pai
 
 
 Beta0.29: browser-equal-chords.cjs adds 2,639 assertions. All 85 radius/distance-pair cases at all five widths in English and Telugu; model squares and longer-chord ordering, diameter/point/chord diagram states for both chords, dual distance clamping, correct/wrong/equal comparison feedback, proof text, younger-class guard, labels, reflow, no earned-data changes. Total local 77,244 browser assertions including 48 offline; 25,117 numeric bank/lesson checks. Native teacher/physical Android not certified.
+
+
+Beta0.30: browser-subtended-angles.cjs adds 2,639 assertions. All 85 radius/distance-pair cases at all five widths in English and Telugu; model squares, central angles via 2·atan2(half, d) within rounding, diameter/point/chord diagram states, dual distance clamping, correct/wrong/equal angle-comparison feedback, SSS+SAS proof text, younger-class guard, labels, reflow, no earned-data changes. Total local 79,884 browser assertions including 49 offline; 25,117 numeric bank/lesson checks. Native teacher/physical Android not certified.
