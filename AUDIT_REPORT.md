@@ -52,6 +52,8 @@ No app file (learn.html, sw.js, index.html, manifest, game data, icons) was modi
 Status: IN PROGRESS. Learning beta, not production-ready or full board syllabus.
 
 Checkpoint before lesson expansion: e120ca330047cdc98f80a93efd5c022ebcdc1baf (main).
+
+Post-audit update, 16 October 2026: audit finding B1 (stale-tab progress overwrite) is RESOLVED in Learning beta 0.32; fix design and live evidence in BUG_REPORT.md B1 and RELEASE_LOG.md. All other audit findings and limits stand.
 Architecture: GitHub Pages static HTML and JavaScript, compressed inline question bank, scoped service worker. No backend, account, paid API or student tracking.
 
 | Finding | Status / evidence | Path | Severity | Action |
