@@ -42,3 +42,5 @@
 - Beta0.13:like-term distributive area model from Class7;coordinate distance/midpoint from Class9 and positive internal section from Class10.
 
 - Beta0.14:bilingual keyboard bypass link,44px documentation links/summary hit areas,current release footer. Bounded keyboard/name/solid-background contrast/reflow/reduced-motion tests,not full accessibility certification.
+
+- Beta0.15:33 visual activities. Number-recognition two ten-frames0–20;place-value ten-rods/unit exchange0–99.59 lessons/4140 bank items unchanged. These are exploration models,no extra score or save changes.
