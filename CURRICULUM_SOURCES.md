@@ -16,3 +16,16 @@ Additional sources read:
 - CBSE Class IX 2026-27: https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths_SecP1IX_2026-27.pdf
 
 Primary and middle NCERT framework PDFs are not claimed to be a complete current 2026 textbook edition. Class IX 2026-27 has revised topic placement; separate current board chapter mapping is still work in progress. Free practice is a learning supplement, not a replacement for a board textbook.
+
+## Learning beta0.4: geometry activities
+Four original bilingual visual lessons added: lines/angles, reflection symmetry, Pythagoras and square construction steps. The Pythagoras diagram illustrates a relationship, not a complete proof. Construction is a paper/ruler/compass step guide, not a virtual drawing tool or true-scale printable ruler. 252 new numeric items; all prior3042 IDs and answers retained (3294 total). These activities address some missing textbook skills but do not establish complete chapter coverage.
+
+Current primary textbook sources read on15October2026:
+- Grade6 Ganita Prakash,2026-27 reprint: https://ncert.nic.in/textbook/pdf/fegp1ps.pdf
+- Grade7 PartI: https://ncert.nic.in/textbook/pdf/gegp1ps.pdf
+- Grade7 PartII: https://ncert.nic.in/textbook/pdf/gegp2ps.pdf
+- Grade8 PartI: https://www.ncert.nic.in/textbook/pdf/hegp1ps.pdf
+- Grade8 PartII: https://ncert.nic.in/textbook/pdf/hegp2ps.pdf
+- Telangana newer catalogue is explicitly2025-26 DRAFT: https://www.scert.telangana.gov.in/DisplayImage.aspx?encry=LAM99bLSUMS8OKP97qy2KA%3D%3D . It is not verification of a final2026-27 syllabus/pattern.
+
+Current Ganita Prakash includes reasoning, constructions, symmetry, graphs and activities. General class ranges in the app are not certified board-by-board chapter placement. Full chapter coverage, all proofs and official exam patterns remain work in progress.
