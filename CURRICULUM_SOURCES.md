@@ -58,3 +58,10 @@ A re-read of the previously cited government-hosted2027–28 NVS prospectus foun
 
 ## Beta0.9 selected algebra representations
 Rechecked CBSE2026–27 Classes9 and10 curriculum PDFs already listed above. Class9 includes positive exponents,sequence/AP nth-term work and coordinate locations. Class10 explicitly includes AP nth terms and general finite sums. This release shows the sum formula and pairing derivation only in Class10;Class9 shows terms/nth term. The single-variable equation activity is foundational practice,not a complete two-variable chapter. Coordinate plotting covers ordered pairs/quadrants/axes only;distance,section and midpoint work remain incomplete. Positive-integer exponent products only;zero,negative and rational powers require separate definitions.
+
+## Primary source follow-up after beta0.9
+Class1 Joyful Mathematics official index and PDF prelims read from NCERT on15October2026:
+- https://ncert.nic.in/textbook.php?aejm1=0-13
+- https://ncert.nic.in/textbook/pdf/aejm1ps.pdf
+The PDF explicitly says Reprint2026–27 and March2026 reprint. Its13 chapter titles are now inventoried in CURRICULUM_COVERAGE.md. This resolves the earlier unknown Class1 contents edition,not complete app coverage.
+Class1 measurement chapter read in full: https://ncert.nic.in/textbook/pdf/aejm107.pdf . It covers tall/short,long/short,thick/thin,near/far,handspan/finger/footspan measurement,heavy/light and capacity in cups/jugs/bowls,not merely metre/centimetre arithmetic. These qualitative/nonstandard-unit skills remain missing or partial. Original activities should be authored;do not copy textbook pages/illustrations.
