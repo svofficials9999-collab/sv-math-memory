@@ -49,3 +49,10 @@ Rollback: prior version remains in Git history; restore learn.html and sw.js tog
 Known issues: full official syllabus/exam coverage,teacher review,native Telugu review,physical Android launch reliability remain incomplete/unverified.
 
 Live0.6:2323 browser assertions pass,zero JS exceptions.14 fresh-profile offline/compatibility checks pass. Actual live320px Telugu median/mode/tangent screenshots inspected. Topic selectors now use bilingual lesson titles.
+
+## Learning beta0.7,15October2026
+Changed:learn.html,sw.js,CURRICULUM_SOURCES.md,CURRICULUM_COVERAGE.md,tests/data-check.mjs,RELEASE_LOG.md.
+Five bilingual foundational lessons,six visual activities,414 new original questions.3978 numeric items,56 lessons. Previous3564 objects exact. Original index/manifest/IDs/start/scope/save keys exact. No dependency/network addition,no data migration. HTML312879 UTF-8 bytes.
+Predeploy:2340 general browser assertions +173 retained activity assertions +201 foundational assertions=2714 pass,zero JS exceptions. Widths320/375/390/430/1280,English/Telugu. Clock hand coordinates at3:30 independently checked;fraction limits/zero,unit extremes,pictograph keys/empty data,money shortfall,number-line endpoints checked. Actual320px Telugu screenshots for all six new activities inspected. Independent checker24129 assertions pass for all3978 numeric answers.
+Known gaps:complete syllabus/exam coverage,teacher/native Telugu review and physical phone launch verification remain incomplete. Primary source contents recovered,but full chapter semantics remain partial/unverified.
+Rollback:restore previous0.6 learn.html and sw.js from Git history with a new worker cache name;never clear localStorage.
