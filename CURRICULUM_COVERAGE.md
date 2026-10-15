@@ -103,3 +103,8 @@ General foundational practice is present. Current NCERT/Telangana book-by-book c
 - Heights/distances: one45° level-ground example with observer eye height. General30°/60°, multiple triangles and depression angles remain incomplete.
 
 These additions do not change any row to full curriculum completion.
+
+## Beta0.6 additional partial coverage
+- Grouped statistics: estimated median with cumulative frequency/interpolation; estimated mode with an equal-width interior modal class. Zero observations, invalid frequencies, tied modes and unsupported edge cases have explicit feedback. Full statistical applications remain incomplete.
+- Circles: equal tangents theorem derived from the known perpendicular-radius theorem using Pythagoras, plus numeric checks. The perpendicular theorem and broader circle chapters remain incomplete.
+No chapter is marked complete on the strength of these selected activities.
