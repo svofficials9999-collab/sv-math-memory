@@ -50,3 +50,8 @@ Current primary-book contents read on15October2026:
 - Class2 official book index: https://epathshala.nic.in/wp-content/doc/book/flipbook/bejm101.html . The visible chapter links identify Joyful Mathematics,including grouping/sharing,time,money and data handling. This index does not alone establish all current edition metadata.
 
 Only chapter contents/front matter were read for these three new primary sources,not all textbook chapter exercises. Activities/questions are original,not reproduced textbook content. These sources improve mapping; they do not establish complete board coverage or teacher approval.
+
+## Learning beta0.8: original-practice Test room
+The new Test room uses the unchanged3978-item original bank. It is a generic class-topic test with10/20/30 questions and matching10/20/30 minutes,one mark per correct answer,no negative marks. It is NOT an official board/entrance paper,full syllabus test or verified exam-pattern simulation. Question scope is limited to this bank. Existing guided Navodaya arithmetic practice remains a subsection supplement,not a full selection test.
+
+A re-read of the previously cited government-hosted2027–28 NVS prospectus found an internal topic-count mismatch:the heading says12 arithmetic topics but enumerates9. Its arithmetic timing/scoring table remains20 questions,25 marks,suggested30 minutes. This release does not resolve full current entrance syllabus from that mismatch and makes no new official exam claim.
