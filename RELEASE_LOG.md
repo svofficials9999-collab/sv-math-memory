@@ -38,3 +38,5 @@ Five bilingual teaching/activity modules added: graphs, estimated grouped mean, 
 Before deploy:2120 browser checks on320/375/390/430/1280 with EN/TE, all lesson/class practice availability,16 mode loops across three difficulties, active-round language preservation, save/reload, graph scale/controls, grouped validation/zero total, correspondence feedback and formulas. Zero JS exceptions.14006 data/option/compatibility/coverage assertions;216 new numeric answers independently recomputed. Actual320px Telugu pixels inspected, grouped table readability corrected and retested. Live/offline checks must follow publication.
 
 Still beta/incomplete: full official syllabus/papers, all proofs, native teacher review and physical Android launch verification remain.
+
+Live0.5 checks: HTML/worker/sources/coverage exact.2120 browser assertions pass with zero JS exceptions.11 fresh-profile offline/old-save/practice checks pass. Reusable tests/data-check.mjs independently recomputes all3510 keys and checks metadata/options/class practice:21,291 assertions pass. Actual live320px Telugu graph, grouped table and proof pixels inspected. No physical-phone or teacher-review claim.
