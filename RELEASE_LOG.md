@@ -27,3 +27,7 @@ Release file commits remain in repository history; documentation commits do not 
 Added four bilingual visual activity guides: angle slider/linear pair, rectangle/square reflection axes, proportional right-triangle/Pythagoras diagram and paper-based square construction steps. Added252 independently checked numeric questions. Now43 topic lessons and3294 numeric items; all prior3042 question IDs, answers, class assignments and question wording retained. No new storage schema, index or manifest changes. Worker cache v6-geometry-labs.
 
 Local pre-deploy:1937 browser checks,141 answer-path/difficulty checks,103 activity-control/layout checks; zero JS exceptions.25,442 data/metadata/class-sample checks plus2016 legacy keys independently recomputed. Actual Telugu activity pixels inspected at320px. Live/offline checks follow publication and are not assumed from these local results.
+
+Publication verification for0.4: live HTML, worker, sources, original index and chapter coverage file read back exact. Live1937+141+103 browser checks passed; fresh isolated-profile install and offline bank/lesson/practice/save/reload/legacy-save preservation9 checks passed. No JavaScript exceptions. Actual320px Telugu activity diagrams inspected after live loading.
+
+Known test-harness caveat fixed before offline verification: cache-name creation precedes completion of install. Tests now wait for the actual cached lesson response and an activated worker, not merely a cache key. This was a test readiness issue, not an app source patch.
