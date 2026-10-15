@@ -29,3 +29,8 @@ Current primary textbook sources read on15October2026:
 - Telangana newer catalogue is explicitly2025-26 DRAFT: https://www.scert.telangana.gov.in/DisplayImage.aspx?encry=LAM99bLSUMS8OKP97qy2KA%3D%3D . It is not verification of a final2026-27 syllabus/pattern.
 
 Current Ganita Prakash includes reasoning, constructions, symmetry, graphs and activities. General class ranges in the app are not certified board-by-board chapter placement. Full chapter coverage, all proofs and official exam patterns remain work in progress.
+
+## Learning beta0.5: data and reasoning
+Five original bilingual lessons and activities: bar/line graphs, grouped estimated mean, triangle correspondence/SSS reasoning, sin²θ+cos²θ proof for acute angles, and45° height/eye-height application.216 new numeric items,3510 total. All prior3294 IDs/answers/question content retained.48 topic lessons. These are selected introductory lessons, not complete chapter or official exam coverage. Grouped median/mode, general trigonometric applications, more proofs and full syllabus mapping remain incomplete.
+
+The official CBSE2026-27 IX/X documents already listed above support the content areas. Activities are original; no textbook pages or official questions are copied. The SSS drawing uses a congruence criterion, not a proof of that criterion. Graph scales start at zero and are uniform. Grouped mean uses class midpoints and is labelled an estimate.
