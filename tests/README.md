@@ -33,6 +33,6 @@ Current verified checks:
 
 The test scripts use the app's local public functions to inspect state, alongside button clicks and one emulated touch. They do not establish physical Android launcher behavior, audio quality on real speakers, full accessibility conformance, exam equivalence, native Telugu review or teacher approval. Inspect screenshots as well as the JSON result. A passing exit code is not a visual review.
 
-Beta0.8 adds207 Test room workflow checks and7 keyboard/automatic-timeout/storage/offline checks. The runner includes browser-mock.cjs and browser-mock-extra.cjs. The bank/lesson counts remain3978/56;worker cache is svmm-shell-v11-test-room-print.
+Beta0.8 adds207 Test room workflow checks and7 keyboard/automatic-timeout/storage/offline checks. The runner includes browser-mock.cjs and browser-mock-extra.cjs. The bank/lesson counts remain3978/56;worker cache is svmm-shell-v12-test-room-print-layout.
 
-Three PDF-print checks verify generation and folded-review restoration. A sample Telugu report was rendered and all four pages inspected;beforeprint opens explanations and afterprint restores the on-screen folds.
+Three PDF-print checks verify generation and folded-review restoration. A sample Telugu report was rendered and all three pages inspected;beforeprint opens explanations and afterprint restores the on-screen folds.
