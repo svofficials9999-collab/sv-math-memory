@@ -224,7 +224,7 @@ Beta0.23 LIVE verified15October2026,20:18IST:exact494161byteHTML,v27worker,4140p
 
 
 ## Learning beta 0.24 - integer products with zero pairs
-Status: implemented and locally tested October 15, 2026. Live verification follows publication. Full master IN PROGRESS.
+Status: implemented, locally tested and verified live October 15, 2026. Full master IN PROGRESS.
 
 The existing Class 7+ integer lesson now has a two-factor product model for factors from -6 to 6. A positive first factor places groups; a negative first factor removes groups after adding zero pairs. The model uses sign and shape labels, before/action views, crossed removed tokens, remaining counts, an answer check, Telugu digits and Unicode minus input, and a pattern through zero. Class 6 and its existing addition/subtraction model are unchanged. Exploring this activity does not grant rewards or change progress.
 
@@ -236,3 +236,7 @@ Still partial: integer division, zero-divisor rules, all properties, multi-facto
 
 Changed files: learn.html, sw.js, CURRICULUM_SOURCES.md, CURRICULUM_COVERAGE.md, AUDIT_REPORT.md, FEATURE_INVENTORY.md, KNOWN_ISSUES.md, MASTER_STATUS.md, RELEASE_LOG.md, tests/browser-integer-product.cjs, tests/browser-accessibility.cjs, tests/browser-mock-extra.cjs, tests/browser-offline.cjs, tests/run-browser-check.mjs, tests/README.md.
 Rollback checkpoint (0.23): https://github.com/svofficials9999-collab/sv-math-memory/commit/082009df138a701a41d19863469bedf2b9c3efe8 . Restore learn.html and sw.js together with a fresh cache version. Never clear user storage. No save-store migration is included. Final total only; no repeated phase messages or PDFs.
+
+Beta 0.24 LIVE verified October 15, 2026, 20:26 IST: exact 503606-byte HTML and v28-integer-products worker served by Pages. All 27,332 browser assertions passed, including 43 offline and 3,287 new integer-product assertions; zero exceptions. 25,117 numeric bank/lesson checks passed. Actual 320px Telugu zero-pair, removal and pattern screenshots inspected. All 4140 prior bank objects and original index/manifest identity/save format preserved. Verified checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/ccc4111e4caac18b1fb6a108fa70f61c431352ff . Full master remains IN PROGRESS; HIGH multi-tab lost-update bug remains OPEN; separate journal migration is not deployed.
+
+The first live attempt ran against the previous worker while Pages was publishing and failed the expected new-cache readiness check. An exact HTML/worker readback followed by a clean full rerun above supersedes it. No test failure was suppressed.
