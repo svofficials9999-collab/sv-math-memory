@@ -30,3 +30,7 @@
 - Beta 0.20: HTML is 463120 UTF-8 bytes; physical low-end-phone performance remains unknown. Subtraction uses A/B in 0–1 and supports A≥B only. A<B is explicitly guarded, never silently replaced by an absolute difference. Full signed decimal operations/contexts remain partial. No save, schema, index or identity change.
 
 - Beta 0.21: HTML 474563 bytes; low-end physical performance remains unknown. Expression lab covers three fixed families with whole inputs 0–10; it is not an arbitrary calculator or complete operations chapter. Context prices are invented, not live prices or payments. Class 6 remains unchanged.
+
+## HIGH: confirmed stale-tab progress overwrite, 15 October 2026
+Status: OPEN, reproduced in an isolated local browser profile using the current 0.21 source. Path: learn.html, save()/record(). Two tabs load zero progress; each answers one question correctly. Stored result is 1 attempt/1 correct, not 2/2. A stale state overwrites the other tab's newer state. No actual user data was read or changed.
+Recommended next fix: prevent stale writes without deleting data or changing the existing progress format; cover ordinary rounds, test-room scoring/drafts, preferences, backup restore and storage failure. No multi-tab reliability claim until those checks pass. The passing main suite did not previously cover this scenario.
