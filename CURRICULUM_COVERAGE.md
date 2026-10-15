@@ -174,3 +174,8 @@ Current31 visual activities,59 lessons,4140 original numeric items unchanged. No
 
 ## Beta0.14:no curriculum change
 Keyboard bypass,touch reading controls and release label improved.59 lessons,4140 questions and31 visual activities unchanged. Accessibility test evidence is not curriculum or WCAG certification.
+
+## Beta0.15: primary number representations,PARTIAL
+- Numbers/counting Class1–2:build0–20 using two ten-frames,add/remove one counter,compare with a chosen target.
+- Place-value Class2–6:foundational/revision0–99 model,ten-rods split into ten unit squares,trade one ten for ten ones and regroup without changing total. Standard form keeps ones digit0–9.
+- Larger place values,Indian/international notation,estimation,number lines and fuller primary contextual/physical learning remain incomplete.59 lessons/4140 bank items unchanged;33 visual activities. Sources are the2025–26 fetched primary editions,not proof of current full-board alignment.
