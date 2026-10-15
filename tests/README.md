@@ -62,3 +62,7 @@ Beta0.19:18289browser assertions,864decimal and38offline;25113numeric. All101sha
 Beta 0.20: browser-subtraction.cjs adds 918 assertions and checks arithmetic/regrouping invariants over all 10201 ordered pairs. Full suite: 19208 browser assertions, 25113 numeric assertions, 39 offline checks. Original 4140 bank objects unchanged, 38 visual activities. Fixed a missing local source-document fixture before the full successful rerun. Actual 320px Telugu take-away/borrowing pixels inspected.
 
 Beta 0.21: browser-expression.cjs adds 869 assertions and checks all 3993 model combinations with independent repeated-group/addition calculations. Full 20078 browser, 25113 numeric, 40 offline; zero exceptions. Previous 10201 subtraction-pair invariants still checked. Class 7+ gate, two languages/five widths, counts/scale, answer paths, labels/reflow and no store mutation. Actual 320px Telugu pixels inspected.
+
+
+### Beta0.22 large-number suite
+Run browser-large-numbers.cjs through run-browser-check.mjs.1,721 assertions acrossEnglish/Telugu and320/375/390/430/1280widths,10places,zero/max/leading/internalzero,presetcycle,invalid/wrong/Teluguanswers,classgates,labels,reflow,noearned-datachanges.11,030 deterministic integer cases verify reconstructed periods and place sums. Total21,840browser assertions including41offline;25,117numericbank/lessonchecks. These are automated browser tests,not physical Android or teacher approval.
