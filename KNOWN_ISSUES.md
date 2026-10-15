@@ -26,3 +26,5 @@
 - Beta0.18schedule model assumes common start0and exact positive integer periods1–20. Not arbitrary real scheduling. Timeline truncates60and warns about later crossings. HCF×LCMidentity is for two positive integers only.
 
 - Beta0.19decimal model covers only0–1hundredths per input and0–2sum. Full subtraction/multiplication/division/thousandths/rounding/context and precise board placement remain open.
+
+- Beta 0.20: HTML is 463120 UTF-8 bytes; physical low-end-phone performance remains unknown. Subtraction uses A/B in 0–1 and supports A≥B only. A<B is explicitly guarded, never silently replaced by an absolute difference. Full signed decimal operations/contexts remain partial. No save, schema, index or identity change.
