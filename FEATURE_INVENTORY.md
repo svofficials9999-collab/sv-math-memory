@@ -6,7 +6,7 @@
 - Class and difficulty choice, hints, explanatory answer review.
 - 4140 original numeric practice items, including all 2016 legacy IDs.
 - 59 bilingual topic lessons with principle, worked example, common error, sample explanation and topic practice.
-- 31 working visual activity guides/labs,including geometry,data,grouped statistics,tangents,clock,equal shares,units,pictographs,money and integer movement. These do not cover full chapters or provide a freehand drawing editor.
+- 34 working visual activity guides/labs,including geometry,data,grouped statistics,tangents,clock,equal shares,units,pictographs,money and integer movement. These do not cover full chapters or provide a freehand drawing editor.
 - Ten-class lesson trail; four earned-world badges remain.
 - XP, earned coins, three trophies, practice mission, streaks, personal bests.
 - Rules-based difficulty adjustment and weak-topic revision, not AI.
@@ -44,3 +44,5 @@
 - Beta0.14:bilingual keyboard bypass link,44px documentation links/summary hit areas,current release footer. Bounded keyboard/name/solid-background contrast/reflow/reduced-motion tests,not full accessibility certification.
 
 - Beta0.15:33 visual activities. Number-recognition two ten-frames0–20;place-value ten-rods/unit exchange0–99.59 lessons/4140 bank items unchanged. These are exploration models,no extra score or save changes.
+
+- Beta0.16:Class9+ linear-equation pair graph,8line choices/64ordered combinations,exact/fraction reasoning and substitution;34 activities total. Earlier equation model kept.
