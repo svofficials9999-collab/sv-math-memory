@@ -168,3 +168,14 @@ Predeploy:18289browser assertions pass,zero JavaScript exceptions,including864de
 Rollback0.18:https://github.com/svofficials9999-collab/sv-math-memory/commit/91d6d85e106874fb72404e2ff759d9f70213b7f3 . Restorelearn.html/sw.jstogetherfreshcache,neverclearstorage. Live follows publication. User requested total-only final handoff,no repeated per-release user reports,noPDF.
 
 Beta0.19 LIVE verified15October2026,18:59IST:exact HTML454700bytes,v23worker,index/manifestidentity/start/scope and4140bankobjects.18289livebrowser assertions,38offline,25113numeric,zero exceptions. Actual320px Telugu decimal grids/carry steps inspected. Verified app checkpoint:https://github.com/svofficials9999-collab/sv-math-memory/commit/ff0546b1b22b3dba4aa2d1e70de0b4cb58fffd79 ;successful Pages deployment:https://github.com/svofficials9999-collab/sv-math-memory/actions/runs/38742670934 . Master status remains IN PROGRESS,all prior scope gaps stay.
+
+## Learning beta 0.20, 15 October 2026
+Files: learn.html, sw.js, CURRICULUM_SOURCES.md, CURRICULUM_COVERAGE.md, AUDIT_REPORT.md, FEATURE_INVENTORY.md, KNOWN_ISSUES.md, RELEASE_LOG.md, MASTER_STATUS.md, tests/browser-subtraction.cjs, tests/browser-accessibility.cjs, tests/browser-mock-extra.cjs, tests/browser-offline.cjs, tests/run-browser-check.mjs, tests/README.md.
+
+Added an original decimal take-away/regrouping lab. A/B each range from 0 to 1. It shows crossed removals, equal-whole grids, column exchanges through zero and an addition check. A<B has a clear limit and explicit swap.
+
+Totals: 38 activities, 59 lessons, 4140 exact prior numeric objects. HTML 463120 bytes, footer 0.20, worker v24-decimal-subtraction. No change to old bank objects, index, manifest, save schema, dependencies or network behavior.
+
+Predeployment: 19208 local browser assertions, including 918 subtraction and 39 offline checks, zero exceptions; an additional 10201 arithmetic/regrouping input-pair checks; 25113 numeric assertions. Two languages, five widths, wrong/invalid/equivalent/Telugu forms, borrow/extreme/swap/negative cases, no store mutation, reflow and labels. Actual 320px Telugu grid/borrowing pixels inspected. The missing local source-document fixture was fixed before the full successful rerun. Live verification follows publication.
+
+Rollback 0.19: https://github.com/svofficials9999-collab/sv-math-memory/commit/ff0546b1b22b3dba4aa2d1e70de0b4cb58fffd79 . Restore learn.html and sw.js together with a fresh cache name; never clear storage. Full curriculum, exams, native/physical/accessibility/concurrency checks remain incomplete. No repeated per-release user messages or PDFs; total handoff only at the end.
