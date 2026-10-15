@@ -16,3 +16,5 @@
 
 - Accessibility review is bounded,not WCAG conformance certification. Full screen-reader flows,live-region verbosity,gradient contrast,all zoom/context combinations and physical Android assistive technology still need review.
 - HTML size404849 bytes;local gzip193670 bytes. No measured low-end-phone performance or guaranteed network-transfer claim.
+
+- Beta0.15 primary models cover0–20 ten-frames and0–99 tens/ones only. They do not establish larger-place-value,full primary syllabus or native Telugu/teacher certification. Source primary PDFs fetched are Reprint2025–26.
