@@ -179,3 +179,6 @@ Keyboard bypass,touch reading controls and release label improved.59 lessons,414
 - Numbers/counting Class1–2:build0–20 using two ten-frames,add/remove one counter,compare with a chosen target.
 - Place-value Class2–6:foundational/revision0–99 model,ten-rods split into ten unit squares,trade one ten for ten ones and regroup without changing total. Standard form keeps ones digit0–9.
 - Larger place values,Indian/international notation,estimation,number lines and fuller primary contextual/physical learning remain incomplete.59 lessons/4140 bank items unchanged;33 visual activities. Sources are the2025–26 fetched primary editions,not proof of current full-board alignment.
+
+## Beta0.16: linear-equation graph activity,PARTIAL
+Class9/10 equations lesson adds eight original selectable lines,64 ordered pair combinations,two sample points per line,graphical intersection/parallel/coincident relations,exact fraction solutions and same-pair substitution checks. Horizontal/vertical lines and intersections outside the −5..5 square are handled explicitly. Current CBSEIX2026–27 already includes pairs,so activity starts at Class9. Earlier one-variable equation model preserved for younger classes.34 visual activities;59 lessons/4140 bank items unchanged. Arbitrary coefficients,all substitution/elimination teaching,contextual modelling and full chapter remain incomplete.
