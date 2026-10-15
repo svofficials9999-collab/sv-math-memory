@@ -58,3 +58,5 @@ Beta0.17:16081browser assertions,including3552prime-model and36offline checks. E
 Beta0.18:17424browser assertions,1342common-ground and37offline;25113numeric. Independent400ordered1–20GCD/LCM/extreme timeline/feedback tests. Old4140bankexact. Not full board/phone certification.
 
 Beta0.19:18289browser assertions,864decimal and38offline;25113numeric. All101shadings,201sumstrings,selectedcarrycases/bothlanguages5widths. Old4140bankexact. Full certification incomplete.
+
+Beta 0.20: browser-subtraction.cjs adds 918 assertions and checks arithmetic/regrouping invariants over all 10201 ordered pairs. Full suite: 19208 browser assertions, 25113 numeric assertions, 39 offline checks. Original 4140 bank objects unchanged, 38 visual activities. Fixed a missing local source-document fixture before the full successful rerun. Actual 320px Telugu take-away/borrowing pixels inspected.
