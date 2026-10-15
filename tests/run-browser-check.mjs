@@ -15,11 +15,11 @@ await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const port=server.address().port;
 const probe=net.createServer();await new Promise(r=>probe.listen(0,'127.0.0.1',r));const cdp=probe.address().port;await new Promise(r=>probe.close(r));
 const binary=process.env.CHROME_BIN||['/usr/bin/google-chrome','/usr/bin/chromium','/usr/bin/chromium-browser'].find(p=>fs.existsSync(p));
-if(!binary){server.close();fs.rmSync(profile,{recursive:true,force:true});throw Error('Set CHROME_BIN to your Chrome or Chromium executable.')}
+if(!binary){server.close();fs.rmSync(profile,{recursive:true,force:true,maxRetries:10,retryDelay:200});throw Error('Set CHROME_BIN to your Chrome or Chromium executable.')}
 let log='',launchError;const chrome=spawn(binary,['--headless=new','--no-sandbox','--disable-dev-shm-usage',`--remote-debugging-port=${cdp}`,`--user-data-dir=${profile}`,'about:blank'],{stdio:['ignore','ignore','pipe']});chrome.stderr.on('data',b=>log=(log+b).slice(-5000));chrome.on('error',e=>launchError=e);
 try{
  let ready=false;for(let i=0;i<100;i++){if(launchError)throw launchError;try{let r=await fetch(`http://localhost:${cdp}/json`);if(r.ok){ready=true;break}}catch{}await new Promise(r=>setTimeout(r,100))}if(!ready)throw Error('Chrome debugger did not become ready. '+log);
  const env={...process.env,CDP_PORT:String(cdp),LIVE:process.env.LIVE||`http://127.0.0.1:${port}/learn.html`,RESULT_DIR:output};
  for(const file of ['browser-core.cjs','browser-activities.cjs','browser-foundations.cjs','browser-rounds.cjs','browser-mock.cjs','browser-mock-extra.cjs','browser-print.cjs','browser-algebra.cjs','browser-offline.cjs'])await new Promise((resolve,reject)=>{const child=spawn(process.execPath,[path.join(tests,file)],{env,stdio:'inherit'});child.on('error',reject);child.on('exit',code=>code===0?resolve():reject(Error(`${file} failed (${code})`)))});
  console.log('PASS: browser, activity, full-round and offline checks. Results and screenshots: '+output);
-}finally{chrome.kill('SIGTERM');await new Promise(r=>chrome.exitCode!==null?r():chrome.once('exit',r));await new Promise(r=>server.close(r));fs.rmSync(profile,{recursive:true,force:true})}
+}finally{chrome.kill('SIGTERM');await new Promise(r=>chrome.exitCode!==null?r():chrome.once('exit',r));await new Promise(r=>server.close(r));fs.rmSync(profile,{recursive:true,force:true,maxRetries:10,retryDelay:200})}
