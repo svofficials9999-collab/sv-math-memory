@@ -78,3 +78,6 @@ Beta 0.25: browser-integer-division.cjs adds 9,975 assertions. All 949 (n,d) pai
 
 
 Beta 0.26: browser-integer-laws.cjs adds 32,818 assertions. All 1331 triples at 320px in English/Telugu; representative triples at 375/390/430/1280. Both grouping paths, distributive paths, commutativity, zero/parity, signed unit counts, cancellation/reversal and remaining sum, correct/wrong/invalid/Telugu input, Class6 guard, labels, reflow, unchanged data. Total local 70,127 including45offline;25,117 numeric bank/lesson checks. Native teacher/physical Android not certified.
+
+
+Beta0.27:browser-geometry-foundations.cjs adds2,427assertions.78validlength/partpairs at all five widths and both languages; arithmetic/equal-segment SVG/max clamping, reasoning choice correct/wrong/empty paths, five postulates present, younger-class guard, labels, reflow, no earned-data changes.72,555localbrowserincluding46offline;25,117numericbank/lessonchecks. Native teacher/physical Android not certified.
