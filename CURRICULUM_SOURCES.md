@@ -80,3 +80,9 @@ Primary sources read on15October2026:
 - NCERT Grade7 Parallel and Intersecting Lines: https://ncert.nic.in/textbook/pdf/gegp105.pdf . Sections5.5–5.8 support opposite/corresponding/alternate/same-side interior angle relations. Parallel-pair activity is available from Class7;Class6 retains the earlier basic angle/linear-pair lab.
 - NCERT Grade6 Symmetry: https://ncert.nic.in/textbook/pdf/fegp109.pdf . Section9.2 supports rotational symmetry about a fixed centre,matching angles,order and the distinction from reflection.
 Original diagrams show the actual uniform rotation and actual transversal slope. Corresponding/alternate equality and same-side180° sum are explicitly conditional on parallel lines. The rotation model includes square,non-square rectangle,equilateral and scalene triangles;vertices are independently rotated to verify matches. No new questions or complete-chapter claim.
+
+## Learning beta0.13:algebra and coordinate representations
+Primary chapters read on15October2026:
+- NCERT Grade7 Expressions Using Letter-Numbers: https://ncert.nic.in/textbook/pdf/gegp104.pdf ,section4.4 rectangular-area/distributive reasoning and like terms. Original area activity available from Class7;earlier Class6 substitution lesson retained.
+- NCERT Coordinate Geometry: https://ncert.nic.in/textbook/pdf/jemh107.pdf ,distance and internal section/midpoint formulas. Current CBSE2026–27 IX/X documents already cited were checked for placement:Class9 distance/midpoint;Class10 internal section. The chapter supports formulas,not the entire current syllabus.
+Original uniform-grid model derives distance using Pythagoras,shows midpoint averages,and adds positive internal section ratios only in Class10. Coincident points have zero distance and an explicit undefined length-ratio warning. Exact expressions are separated from rounded decimal outputs. No new bank items or complete-chapter claim.
