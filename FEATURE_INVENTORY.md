@@ -54,3 +54,5 @@
 - Beta0.19:decimal equal-whole hundredths grids,shared number line,comparison/addition/carry;37activities59lessons4140items.
 
 - Beta 0.20: decimal take-away, explicit negative-result limit, swap, crossed removals, column regrouping through zero and addition check. 38 visual activities, 59 lessons, 4140 numeric items.
+
+- Beta 0.21: Class 7+ expression meaning with loose counters/equal groups, bracket grouping, first-step check and pretend two-cost change. 39 visual activities, 59 lessons, 4140 numeric items.
