@@ -56,3 +56,5 @@ Beta0.16:12528 browser assertions,including2571 linear-pair and35 offline assert
 Beta0.17:16081browser assertions,including3552prime-model and36offline checks. Every1–100classification/pairs/decomposition,intermediate sieve states and representative rectangle geometry independently tested in both languages/five widths.25113numeric checks;4140bankobjects exact. Not a full curriculum/device certification.
 
 Beta0.18:17424browser assertions,1342common-ground and37offline;25113numeric. Independent400ordered1–20GCD/LCM/extreme timeline/feedback tests. Old4140bankexact. Not full board/phone certification.
+
+Beta0.19:18289browser assertions,864decimal and38offline;25113numeric. All101shadings,201sumstrings,selectedcarrycases/bothlanguages5widths. Old4140bankexact. Full certification incomplete.
