@@ -309,7 +309,7 @@ Beta 0.28 LIVE verified October 15, 2026, 21:22 IST: exact 538130-byte HTML and 
 Pages initially served 0.27 while publication was running. Testing waited for exact new HTML and worker bytes before the full successful live suite.
 
 ## Learning beta 0.29 - equal chords and distance from centre
-Status: locally implemented and tested October 15, 2026; live verification follows publication. Full master IN PROGRESS.
+Status: implemented, locally tested and verified live October 15, 2026. Full master IN PROGRESS.
 
 Class 9+ circles teaching adds a two-chord comparison model on one circle: radius r from 1 to 10 with independent distances of chords AB and PQ from centre O. The diagram draws both chords with perpendicular feet M and N and right-angle markers, including boundary cases d = 0 (diameter, no right-angle claim about a zero-length segment) and d = r (a single point, not a chord). The exact relation (half chord)² = r² − d² drives every comparison: equal distances give equal chords, equal chords sit at equal distances, and the longer of two unequal chords is the one closer to the centre. The proof panel states both directions through the perpendicular-bisector theorem and Pythagoras. A three-choice strict self-check asks which chord is longer, including the equal case. Displayed decimals are rounded to 3 places; comparisons use exact integer squares. Original SVG and bilingual prose, not textbook art or official questions. Exploration gives no XP and changes no earned data.
 
@@ -319,3 +319,7 @@ Sources and limits: live current NCERT Class 9 chapter 5 Circles (iemh105.pdf, v
 
 Changed files: learn.html, sw.js, CURRICULUM_SOURCES.md, CURRICULUM_COVERAGE.md, AUDIT_REPORT.md, FEATURE_INVENTORY.md, KNOWN_ISSUES.md, MASTER_STATUS.md, RELEASE_LOG.md, tests/browser-equal-chords.cjs, tests/run-browser-check.mjs, tests/browser-offline.cjs, tests/browser-accessibility.cjs, tests/browser-mock-extra.cjs, tests/README.md.
 Rollback 0.28 checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/5531e40a91ece3eab7a5c3dc4412edd4dafe2412 . Restore learn.html/sw.js together with a fresh cache version. Never clear user storage. Journal migration is not included. Final total only; no intermediate PDF or phase message.
+
+Beta 0.29 LIVE verified October 15, 2026, 21:54 IST: exact 546720-byte HTML and v33-equal-chords worker served by Pages. All 77,244 browser assertions passed, including 48 offline and 2,639 new equal-chord assertions; zero exceptions. All 85 radius/distance-pair cases checked across 320/375/390/430/1280 widths in both languages. 25,117 numeric bank/lesson checks passed. Actual 320px Telugu two-chord diagram, proof and comparison feedback inspected live. All 4140 prior bank objects and original index/manifest/save format preserved. Verified checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/3f0ab969aa66fe2fe62058ccf457550179f39938 . Full master remains IN PROGRESS; HIGH multi-tab lost-update bug remains OPEN; journal migration not deployed.
+
+Pages initially served 0.28 while publication was running. Testing waited for exact new HTML and worker bytes before the full successful live suite.
