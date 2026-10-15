@@ -6,7 +6,7 @@
 - Class and difficulty choice, hints, explanatory answer review.
 - 4140 original numeric practice items, including all 2016 legacy IDs.
 - 59 bilingual topic lessons with principle, worked example, common error, sample explanation and topic practice.
-- 29 working visual activity guides/labs,including geometry,data,grouped statistics,tangents,clock,equal shares,units,pictographs,money and integer movement. These do not cover full chapters or provide a freehand drawing editor.
+- 31 working visual activity guides/labs,including geometry,data,grouped statistics,tangents,clock,equal shares,units,pictographs,money and integer movement. These do not cover full chapters or provide a freehand drawing editor.
 - Ten-class lesson trail; four earned-world badges remain.
 - XP, earned coins, three trophies, practice mission, streaks, personal bests.
 - Rules-based difficulty adjustment and weak-topic revision, not AI.
@@ -38,3 +38,5 @@
 - Beta0.11:fraction strips/number line/equivalent/common-unit operations,plus a two-arrangement geometric Pythagoras area proof.
 
 - Beta0.12:parallel-line angle-pair controls/reasoning from Class7 and rotational-symmetry matching/order overlays from Class6.
+
+- Beta0.13:like-term distributive area model from Class7;coordinate distance/midpoint from Class9 and positive internal section from Class10.
