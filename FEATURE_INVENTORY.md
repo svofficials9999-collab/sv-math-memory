@@ -1,5 +1,68 @@
 # Feature inventory
 
+## Master-plan mapping, verified 16 October 2026
+Status words: VERIFIED (proven by tests/live evidence), PARTIAL (exists with stated limits),
+NOT IMPLEMENTED, NOT TESTED (exists but unproven). Evidence: Phase 1 audit (AUDIT_REPORT.md top section).
+
+### Brand and design (plan s.3)
+- Brand "SV Math Memory"; SV MATHVERSE rebrand NOT IMPLEMENTED.
+- Light/dark palettes: VERIFIED. High-contrast mode: NOT IMPLEMENTED as a separate mode (bounded contrast checks pass on existing palettes). Reduced-motion option: VERIFIED. Telugu/English: VERIFIED.
+
+### Home screen (plan s.4)
+Profile, level, XP bar, continue learning, worlds/badges, game modes, exam entry, achievements, dashboard, settings: VERIFIED present (suite covers navigation and state). Daily challenge: PARTIAL (practice mission exists; a daily-seeded challenge identical for all students on a date is NOT IMPLEMENTED).
+
+### Mathematics worlds (plan s.5)
+- Class 1-10 lesson trail with four earned-world badges: VERIFIED. Rich themed worlds with separate visual environments: NOT IMPLEMENTED.
+
+### Curriculum (plan s.6)
+- Class/topic/lesson/practice structure: VERIFIED (59 lessons, 4,140 items). Full Telangana/CBSE chapter-by-chapter mapping: PARTIAL (broad topic coverage, not chapter-complete). Expandable architecture: VERIFIED (data-driven bank/lessons).
+
+### Game modes (plan s.7)
+- Existing: five original index.html games plus 15 learning loops and diagnostic in learn.html; mode instructions, validation, difficulty, score, results, replay, exit, feedback: VERIFIED by full-round suite.
+- Plan's 20 named modes as distinct rich experiences (Boss Battle, Number Hunt, Logic Puzzles, etc.): PARTIAL - modes share the numeric question loop; no fake/placeholder screens exist.
+
+### Difficulty (plan s.8)
+- Easy/Medium/Hard selection: VERIFIED. Untimed learning mode: VERIFIED. Proficiency-based adjustment: VERIFIED (rules-based). Separate EXPERT tier: NOT IMPLEMENTED.
+
+### XP, levels, upgrades (plan s.9)
+- XP, levels, coins, badges, topic mastery, streaks, personal bests, trophy room: VERIFIED. Daily missions: VERIFIED (practice mission). Weekly missions, collectible avatars (beyond presets), themes store, skill tree: NOT IMPLEMENTED. No gambling/loot-box mechanics: VERIFIED (none exist).
+
+### Power-ups (plan s.10)
+- Hints: VERIFIED. Time freeze, second chance, option eliminator, double XP, streak shield as named power-ups: NOT IMPLEMENTED. No real-money purchases exist.
+
+### Animations and effects (plan s.11)
+- Card flips, correct-answer feedback, XP/progress animation, transitions, reward panels: VERIFIED. Reduced-motion and pause-when-hidden: VERIFIED. Boss health bar, victory fireworks, unlock animations as distinct premium effects: PARTIAL/NOT IMPLEMENTED as named effects.
+
+### Sound (plan s.12)
+- Synthesized click/correct/incorrect/combo/coin/victory effects and background music: VERIFIED. Master mute, separate music and effects controls: VERIFIED. Volume slider: PARTIAL (NOT VERIFIED as a separate control). Vibration: VERIFIED where supported. No autoplay before interaction: VERIFIED by construction (AudioContext created on user action).
+
+### Question bank (plan s.13)
+- Unique ID, class, topic, difficulty, text, answer, options, explanation: VERIFIED (data-check recomputes all keys). Learning objective and verification-status fields: PARTIAL (lesson metadata carries objectives; per-question verification flag NOT IMPLEMENTED).
+
+### Explanations and adaptive learning (plan s.14)
+- Worked explanations on answers, wrong-answer method explanation, simpler practice, later revisit, per-topic proficiency, mistake-based revision: VERIFIED (rules-based, honestly labelled "not AI").
+
+### Real-world mathematics (plan s.15)
+- Money/shopping/change, clocks/calendars, measurement, fractions with portions, area, percentages, Indian rupees: VERIFIED as activities and practice topics. Full dedicated "mission" layer: NOT IMPLEMENTED.
+
+### Exam preparation (plan s.16)
+- Test room with timed tests, deferred feedback, question map, flags, score reports, review, weak-topic revision: VERIFIED. SSC/Navodaya/Olympiad/scholarship-specific verified modules: PARTIAL (original practice labelled as such; no official papers claimed).
+
+### Student dashboard (plan s.17)
+- Level, XP, attempted/correct, accuracy, average time, topic proficiency, strong/weak topics, achievements, history, test results: VERIFIED, device-local.
+
+### Teacher/parent features (plan s.18): NOT IMPLEMENTED (planned future phase, privacy-first).
+### Leaderboards/multiplayer (plan s.19): local personal bests only: VERIFIED. Online leaderboards: NOT IMPLEMENTED (correctly not faked).
+
+### PWA and offline (plan s.20)
+- Installable manifest, offline core gameplay, local persistence, versioned worker cache, storage-failure messaging: VERIFIED. No saved data deleted across upgrades to date: VERIFIED by old-save compatibility checks. Physical installed-app launch on Android: NOT TESTED (one unresolved device report, see BUG_REPORT.md).
+
+### Performance and quality (plan s.21)
+- Lightweight single file (568,746 bytes), no dependencies, fast CDN delivery measured 0.158 s: VERIFIED. Low-end physical Android performance: NOT TESTED.
+
+### Security and privacy (plan s.22)
+- No accounts, no tracking, no external requests, device-local data: VERIFIED by architecture (no network calls beyond same-origin shell in the worker).
+
 ## Implemented, with regression evidence
 - Original five memory games retained at index.html.
 - 15 learning game loops plus diagnostic at learn.html.
