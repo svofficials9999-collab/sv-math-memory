@@ -11,7 +11,7 @@
 
 - Test room tests are original class-topic samples,not curriculum-complete official papers. Fixed counts/times are app practice settings,not a board-pattern claim.
 - Test room retains one draft/latest result on the device. It has a wall-clock timer that continues hidden/closed. Storage failure is shown;lost browser storage cannot be recovered without a separate backup.
-- Scoring is tested for repeat submit and reload idempotence. Concurrent multi-tab edits/races are not certified.
+- Scoring is tested for repeat submit, reload idempotence and concurrent two-tab saves (10 checks in tests/browser-multitab.cjs, beta 0.32). Multi-device sync remains out of scope: progress is device-local.
 - The government-hosted2027–28 NVS prospectus's arithmetic heading says12 topics but lists9. Full current entrance scope needs a primary-source cross-check;only the arithmetic subsection timing is quoted.
 
 - Accessibility review is bounded,not WCAG conformance certification. Full screen-reader flows,live-region verbosity,gradient contrast,all zoom/context combinations and physical Android assistive technology still need review.
@@ -31,9 +31,10 @@
 
 - Beta 0.21: HTML 474563 bytes; low-end physical performance remains unknown. Expression lab covers three fixed families with whole inputs 0–10; it is not an arbitrary calculator or complete operations chapter. Context prices are invented, not live prices or payments. Class 6 remains unchanged.
 
-## HIGH: confirmed stale-tab progress overwrite, 15 October 2026
-Status: OPEN, reproduced in an isolated local browser profile using the current 0.21 source. Path: learn.html, save()/record(). Two tabs load zero progress; each answers one question correctly. Stored result is 1 attempt/1 correct, not 2/2. A stale state overwrites the other tab's newer state. No actual user data was read or changed.
-Recommended next fix: prevent stale writes without deleting data or changing the existing progress format; cover ordinary rounds, test-room scoring/drafts, preferences, backup restore and storage failure. No multi-tab reliability claim until those checks pass. The passing main suite did not previously cover this scenario.
+## HIGH: confirmed stale-tab progress overwrite, 15 October 2026 - RESOLVED 16 October 2026 (beta 0.32)
+Status: RESOLVED. Originally reproduced in an isolated local browser profile on the 0.21 source: two tabs each answered one question correctly; stored result was 1 attempt/1 correct instead of 2/2.
+Fix: the save engine now writes each change as a per-operation pending key synchronously at mutation time, drains operations from every tab through a Web Locks critical section (best-effort fallback where Web Locks is unavailable), live-syncs open tabs via storage events, deduplicates same-run test-room submits at apply time, and keeps the operation registry outside the student-visible snapshot. No save-format migration: old saves load unchanged by construction and backup-restore equality holds exactly.
+Evidence: new tests/browser-multitab.cjs (10 checks: the B1 two-tab reproduction now merges to 2/2, XP merge across tabs, reload persistence, preference change preserves earned counters, same test-room run scored once, a crashed tab's pending op applied exactly once and removed, zero page exceptions) passes locally and against the live deployment. Full 90,674-assertion suites green locally and live; Pages served byte-identical learn.html (575,869 bytes) and sw.js (svmm-shell-v36-multitab-save). Code checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/2bfde85871a4167be1a97d3a71fac4d0e909000a . Multi-device sync remains out of scope.
 
 
 ## Learning beta0.22 - selected large-number teaching,15October2026
