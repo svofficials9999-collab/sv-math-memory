@@ -1,5 +1,11 @@
 # Release log
 
+## Learning beta 0.33, 16 October 2026
+
+Changes: core-gameplay polish (Phase 2 item 3). Settings volume control (default 100, scales tone/music gain, bilingual, synced across open tabs through the save engine). Second chance power-up: once per round, reverts a wrong attempt; the retry is scored normally. Option eliminator for hunt mode: disables two wrong options, re-arms each question, same XP/coin cost as a hint. Test room draft durability: a synchronous per-tab pending key is folded exactly once under the commit lock and once at boot, so a crashed tab's draft is recovered without double-scoring. Mock merge now diffs started/ends against the per-tab base instead of max/min, so legitimate same-tab changes survive. Test harness pins Chrome anti-throttling flags and polls the wall-clock check instead of a fixed wait. No save-format migration: the canonical snapshot shape is unchanged, old saves load unchanged.
+
+Verification: full local suite 90,688 browser assertions (49 offline) plus 25,117 numeric bank/lesson checks, zero errors; live suite at the public URL green with the same counts after byte-exact Pages propagation; 390px mobile screenshots inspected (home en/te, settings volume slider, hunt round eliminator before/after). Cache svmm-shell-v37-powerups; footer beta 0.33. Rollback = restore the previous learn.html/sw.js commit.
+
 ## Learning beta 0.32, 16 October 2026
 
 Changes: multi-tab save repair (BUG_REPORT.md B1). The learning save engine now writes each change as a small pending operation (synchronous localStorage write at mutation time), merges operations from all open tabs through a Web Locks critical section with a best-effort fallback, live-syncs open tabs via storage events, and recovers exactly once after a crash mid-save. Same-run test-room double submits are deduplicated at apply time. No save-format migration: the canonical snapshot shape is unchanged, old saves load unchanged, and backup-restore equality holds exactly.
