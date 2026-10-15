@@ -4,15 +4,16 @@
 - Original five memory games retained at index.html.
 - 15 learning game loops plus diagnostic at learn.html.
 - Class and difficulty choice, hints, explanatory answer review.
-- 3294 original numeric practice items, including all 2016 legacy IDs.
-- 43 bilingual topic lessons with principle, worked example, common error, sample explanation and topic practice.
-- Four working visual activity guides: angle slider, symmetry axes, right-triangle scale and square construction steps. These do not represent full proofs or a drawing editor.
+- 3978 original numeric practice items, including all 2016 legacy IDs.
+- 56 bilingual topic lessons with principle, worked example, common error, sample explanation and topic practice.
+- 18 working visual activity guides/labs,including geometry,data,grouped statistics,tangents,clock,equal shares,units,pictographs,money and integer movement. These do not cover full chapters or provide a freehand drawing editor.
 - Ten-class lesson trail; four earned-world badges remain.
 - XP, earned coins, three trophies, practice mission, streaks, personal bests.
 - Rules-based difficulty adjustment and weak-topic revision, not AI.
 - Device-local student dashboard, average answer time, accuracy, history and mastery estimates.
 - Bright colour default, optional dark palette; English/Telugu toggle.
-- Export/restore learning backup; print round report.
+- Export/restore learning backup; printable round/test reports with answers and explanations.
+- Separate Test room:fixed difficulty,10/20/30-question original practice tests,deferred feedback,question map,flags,wall-clock timer,local draft/result resume and idempotent progress update. Not a complete official-paper simulation.
 - Optional locally generated music and effects, vibration where supported, reduced motion.
 - Scoped PWA worker with bounded saved-shell navigation wait.
 
