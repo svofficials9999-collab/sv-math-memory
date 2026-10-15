@@ -1,6 +1,6 @@
 # SV MATH MEMORY - మొత్తం పని: Master status
 
-15 October 2026, 20:52 IST verified release: **Learning beta 0.26**.
+16 October 2026, 01:50 IST verified release: **Learning beta 0.32** (multi-tab save repair, BUG_REPORT B1 RESOLVED).
 
 **మీ master promptలో అన్నీ పూర్తయ్యాయా? లేదు. పని ఇంకా కొనసాగుతోంది.**
 ఇది ఇప్పటివరకు పనిచేసే app + చేసిన పరీక్షలు + మిగిలిన పనుల ఒకే master index. ఇది పూర్తి syllabus లేదా finished product అని చెప్పే file కాదు.
@@ -11,6 +11,7 @@
 - [Original five games](https://svofficials9999-collab.github.io/sv-math-memory/index.html)
 - [Complete project at verified beta0.26 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/6e6849d413693a788ac79ca88d58d168b2e7196b)
 - [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/6e6849d413693a788ac79ca88d58d168b2e7196b)
+- [Verified beta 0.32 code checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/2bfde85871a4167be1a97d3a71fac4d0e909000a)
 
 `learn.html` contains the learning UI, JavaScript and compressed question bank. **It is not the whole PWA project by itself.** Original games, service worker, manifest, icons, sources and tests are separate project files. Downloading one HTML file does not by itself reproduce installation/offline caching. The checkpoint contains the complete repository at this release. Opening the existing app online once and completing its cache install is needed before normal offline use. External source links still need internet.
 
