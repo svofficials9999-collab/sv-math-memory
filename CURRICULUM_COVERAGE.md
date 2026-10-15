@@ -191,3 +191,7 @@ LCMlesson adds two-bell recurrence timeline,first positive common time,prime-fac
 
 ## Beta0.19: decimal representation/addition,PARTIAL
 Existing decimal lesson gains equal-whole100cell grids,shared0–1number line,comparison including0.50vs0.05,equivalent decimal-form acceptance,and hundredths addition/regrouping through two wholes. Integer hundredths avoid floating-point result drift.37activities59lessons4140questions unchanged. Current source is Grade7;Class5–10existing lesson uses this as foundation/revision,not fully certified board placement. Thousandths,subtraction,multiplication/division,rounding/context and full chapter remain incomplete.
+
+## Beta 0.20: decimal subtraction, PARTIAL
+Added an original nonnegative take-away grid with crossed removed cells, remaining hundredths, place-value exchanges (including 1.00−0.01 across zero), column subtraction and an addition check. A and B each range from 0 to 1. If A<B, the model explains the negative result and offers an explicit Swap button; it never silently takes the absolute value.
+There are 38 visual activities, 59 lessons and 4140 numeric items. General signed decimal operations, larger quantities, thousandths, measurement contexts, multiplication/division/rounding and full chapter coverage remain incomplete.
