@@ -1,6 +1,6 @@
 # SV MATH MEMORY - మొత్తం పని: Master status
 
-16 October 2026, 01:50 IST verified release: **Learning beta 0.32** (multi-tab save repair, BUG_REPORT B1 RESOLVED).
+16 October 2026, ~03:00 IST verified release: **Learning beta 0.33** (Phase 2 gameplay polish: volume control, second chance, hunt option eliminator, Test room crash durability; includes the 0.32 multi-tab save repair, BUG_REPORT B1 RESOLVED).
 
 **మీ master promptలో అన్నీ పూర్తయ్యాయా? లేదు. పని ఇంకా కొనసాగుతోంది.**
 ఇది ఇప్పటివరకు పనిచేసే app + చేసిన పరీక్షలు + మిగిలిన పనుల ఒకే master index. ఇది పూర్తి syllabus లేదా finished product అని చెప్పే file కాదు.
