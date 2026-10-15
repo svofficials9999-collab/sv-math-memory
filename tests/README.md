@@ -72,3 +72,6 @@ Beta0.23:browser-rounding.cjsadds2,203assertionsacrossEnglish/Teluguand5widths,a
 
 
 Beta 0.24: browser-integer-product.cjs adds 3,287 assertions. All 169 pairs at 320px in English and Telugu; representative pairs at 375/390/430/1280px. Checks cover before/action views, reversal, token/removal counts, totals, patterns, zero, strict invalid/wrong/Unicode-minus/Telugu digit input, Class 6 guard, labels, reflow and unchanged earned data. Total: 27,332 browser assertions including 43 offline; 25,117 numeric bank/lesson checks. No physical Android or native Telugu teacher certification.
+
+
+Beta 0.25: browser-integer-division.cjs adds 9,975 assertions. All 949 (n,d) pairs at 320px in English and Telugu, representative pairs at 375/390/430/1280px. Covers exact reduced quotient, inverse multiplication, zero-divisor reasoning, equivalent fractions, strict invalid/wrong/Unicode/Telugu input, Class 6 guard, labels, reflow and unchanged earned data. Full local suite 37,308 assertions including 44 offline; 25,117 numeric bank/lesson checks. No physical Android/native Telugu teacher certification.
