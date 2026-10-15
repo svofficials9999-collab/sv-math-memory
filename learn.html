@@ -29,7 +29,7 @@ function valid(s){return s&&s.version===2&&['xp',
 'perfect'].includes(x))&&s.history.every(h=>h&&typeof h.day==='string'&&typeof h.mode==='string'&&Number.isFinite(h.correct)&&Number.isFinite(h.total))&&Object.values(s.topics||{}).every(t=>t&&Number.isFinite(t.attempted)&&t.attempted>0&&Number.isFinite(t.correct)&&t.correct>=0&&t.correct<=t.attempted)&&Object.values(s.best||{}).every(x=>Number.isFinite(x)&&x>=0)&&s.mistakes.every(x=>typeof x==='string')&&s.days.every(x=>typeof x==='string')&&s.topics&&typeof s.topics==='object'&&s.best&&typeof s.best==='object'}
 try{let raw=localStorage.getItem(KEY);if(raw){let s=JSON.parse(raw);if(!valid(s))throw Error();state={...fresh(),...s}}}catch(e){warning='Saved progress could not load. Existing data has not been changed.'}
 // Bright palette migration changes theme only, never learning data.
-try{if(!localStorage.getItem('svmm.palette.v3')){state.theme='light';localStorage.setItem('svmm.palette.v3','1');if(localStorage.getItem(KEY))localStorage.setItem(KEY,JSON.stringify(state))}}catch(e){}
+try{if(!localStorage.getItem('svmm.palette.v3')){state.theme='light';const raw=localStorage.getItem(KEY);if(raw){const stored=JSON.parse(raw);if(valid(stored)){localStorage.setItem(KEY+'.palette-backup',raw);localStorage.setItem(KEY,JSON.stringify({...stored,theme:'light'}))}}localStorage.setItem('svmm.palette.v3','1')}}catch(e){}
 const T=(a,b)=>state.lang==='te'?b:a;
 function save(){try{let old=localStorage.getItem(KEY);if(old)localStorage.setItem(KEY+'.backup',old);localStorage.setItem(KEY,JSON.stringify(state));warning=''}catch(e){warning=T('Storage unavailable. Export a backup; progress lasts only this session.',
 'సేవ్ చేయలేకపోయాం. బ్యాకప్ తీసుకోండి.')}$('#warning').textContent=warning}
