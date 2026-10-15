@@ -4,8 +4,9 @@
 - Original five memory games retained at index.html.
 - 15 learning game loops plus diagnostic at learn.html.
 - Class and difficulty choice, hints, explanatory answer review.
-- 3042 original numeric practice items, including all 2016 legacy IDs.
-- 39 bilingual topic lessons with principle, worked example, common error, sample explanation and topic practice.
+- 3294 original numeric practice items, including all 2016 legacy IDs.
+- 43 bilingual topic lessons with principle, worked example, common error, sample explanation and topic practice.
+- Four working visual activity guides: angle slider, symmetry axes, right-triangle scale and square construction steps. These do not represent full proofs or a drawing editor.
 - Ten-class lesson trail; four earned-world badges remain.
 - XP, earned coins, three trophies, practice mission, streaks, personal bests.
 - Rules-based difficulty adjustment and weak-topic revision, not AI.
