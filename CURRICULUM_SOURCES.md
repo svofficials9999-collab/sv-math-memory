@@ -92,3 +92,9 @@ W3C guidance read:
 - https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html
 - https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html
 Added a keyboard bypass link and enlarged documentation-link/summary hit areas. Small inline link bounding boxes are an improvement opportunity,not automatically a WCAG failure:the target-size criterion has exceptions. Custom contrast checks cover solid opaque backgrounds only;gradients,screen-reader output and full conformance need separate review. No mathematics or curriculum-coverage change.
+
+## Learning beta0.15: primary number models
+Read NCERT Joyful Mathematics Class1 source PDFs:
+- https://ncert.nic.in/textbook/pdf/aejm104.pdf : Making10,concrete groups of ten and units up to20,ten-frames.
+- https://ncert.nic.in/textbook/pdf/aejm108.pdf : Fun with Numbers,groups of ten and counting21–99.
+These fetched editions say Reprint2025–26,not2026–27 certification. Original diagrams/wording added to existing lessons,not copied textbook pages or official questions. Class1/2 number-recognition gains two ten-frames up to20. Existing Class2–6 place-value lesson gains a0–99 ten-rod exchange model as foundational/revision work,not a claim of complete higher-class place-value coverage. Formal grade-by-board mapping and native Telugu review remain partial.
