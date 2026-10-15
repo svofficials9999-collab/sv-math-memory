@@ -1,4 +1,4 @@
-const PREFIX='svmm-shell-',CACHE=PREFIX+'v9-foundations';
+const PREFIX='svmm-shell-',CACHE=PREFIX+'v10-test-room';
 const ROOT=new URL('./',self.location.href),FILES=['./','index.html','manifest.webmanifest','concept.html','learn.html','CURRICULUM_SOURCES.md'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>Promise.all(FILES.map(p=>fetch(new URL(p,ROOT),{cache:'reload'}).then(r=>{if(!r.ok)throw Error(p);return c.put(new URL(p,ROOT),r)})))).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith(PREFIX)&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
