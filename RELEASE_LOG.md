@@ -277,7 +277,7 @@ Pages initially served 0.25 while publication was running. Testing waited for ex
 
 
 ## Learning beta 0.27 - selected geometry foundations
-Status: locally implemented and tested October 15, 2026; live verification follows publication. Full master IN PROGRESS.
+Status: implemented, locally tested and verified live October 15, 2026. Full master IN PROGRESS.
 
 Existing Class9+ lines-and-angles teaching adds definitions versus accepted assumptions versus theorems, positive equal-length addition/subtraction/double/half illustrations, a concise five-postulate summary, Euclidean parallelism and Playfair's equivalent formulation. A short contradiction proof explains why two distinct straight lines cannot share two distinct points, explicitly using the accepted unique-line property through two distinct points. It does not falsely derive uniqueness from the wording of postulate one alone. A reasoning choice distinguishes that property from a picture or right-angle postulate. Original SVG and bilingual prose, not textbook art or official questions. Exploration changes no earned data.
 
@@ -287,3 +287,7 @@ Sources and limits: CBSE2026–27 curriculum includes axioms/postulates. Precise
 
 Changed files:learn.html,sw.js,CURRICULUM_SOURCES.md,CURRICULUM_COVERAGE.md,AUDIT_REPORT.md,FEATURE_INVENTORY.md,KNOWN_ISSUES.md,MASTER_STATUS.md,RELEASE_LOG.md,tests/browser-geometry-foundations.cjs,tests/browser-accessibility.cjs,tests/browser-mock-extra.cjs,tests/browser-offline.cjs,tests/run-browser-check.mjs,tests/README.md.
 Rollback0.26checkpoint:https://github.com/svofficials9999-collab/sv-math-memory/commit/6e6849d413693a788ac79ca88d58d168b2e7196b . Restorelearn.html/sw.jstogetherwithfreshcache,neverclearuserstorage. Nojournalmigration.Finaltotalonly,nointermediatePDF/phasemessage.
+
+Beta 0.27 LIVE verified October 15, 2026, 21:05 IST: exact 529912-byte HTML and v31-geometry-foundations worker served by Pages. All 72,555 browser assertions passed, including 46 offline and 2,427 new geometry-foundation assertions; zero exceptions. All 78 length/part pairs checked across 320/375/390/430/1280 widths in both languages. 25,117 numeric bank/lesson checks passed. Actual 320px Telugu equal-segments diagram, five postulates and contradiction-proof feedback inspected live. All 4140 prior bank objects and original index/manifest/save format preserved. Verified checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/70e7a1d5b65c85e883f4451760920aa903cbd12d . Full master remains IN PROGRESS; HIGH multi-tab lost-update bug remains OPEN; journal migration not deployed.
+
+Testing waited for exact new HTML and worker bytes before the full successful live suite.
