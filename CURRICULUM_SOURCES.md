@@ -127,3 +127,7 @@ Read https://ncert.nic.in/textbook/pdf/gegp101.pdf section1.4 Exact and Approxim
 Primary source: https://ncert.nic.in/textbook/pdf/gegp202.pdf , section 2.2, token models and patterns, read October 15, 2026. Grade 7 Part II placement: https://ncert.nic.in/textbook/pdf/gegp2ps.pdf .
 Original examples and diagrams, not copied textbook art or official exam questions. A positive first factor adds groups; a negative first factor removes groups after zero pairs have been added. The number of removals is a positive magnitude, not a negative group count. Shape and sign labels accompany colour. Two factors from -6 to 6 only. The Class 6 model is unchanged. Division, all properties, multi-factor expressions and full chapter contexts remain partial. Native Telugu teacher review is pending.
 The extracted source has one apparent five-negative-one product typo; computed parity and token models were used instead of that line. The front matter is first edition October 2025; this is not a claim that every board's 2026-27 syllabus is covered.
+
+
+## Beta 0.25: division as inverse multiplication
+Primary source: https://ncert.nic.in/textbook/pdf/gegp202.pdf , section 2.2 Division of Integers, read October 15, 2026. Placement: https://ncert.nic.in/textbook/pdf/gegp2ps.pdf . Original examples, no official exam questions or copied art. Exact equation d × q = n supplies the independent verification and zero-divisor reasoning. Selected model only, not a complete chapter or board syllabus.
