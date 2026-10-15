@@ -188,3 +188,6 @@ Existing factors/HCF lesson gains original1–100 positive-factor rectangles,all
 
 ## Beta0.18: Class7 Finding Common Ground selected model,PARTIAL
 LCMlesson adds two-bell recurrence timeline,first positive common time,prime-factor counts:HCFminimum,LCMmaximum,and a two-number product-identity explanation. Intervals1–20,common start0;timeline truncates at60with explicit off-window warning. A later common time is distinguished from the least.36activities59lessons4140items unchanged. Different initial times,full word-problem modelling,larger inputs,division algorithm and chapter exploration remain incomplete.
+
+## Beta0.19: decimal representation/addition,PARTIAL
+Existing decimal lesson gains equal-whole100cell grids,shared0–1number line,comparison including0.50vs0.05,equivalent decimal-form acceptance,and hundredths addition/regrouping through two wholes. Integer hundredths avoid floating-point result drift.37activities59lessons4140questions unchanged. Current source is Grade7;Class5–10existing lesson uses this as foundation/revision,not fully certified board placement. Thousandths,subtraction,multiplication/division,rounding/context and full chapter remain incomplete.
