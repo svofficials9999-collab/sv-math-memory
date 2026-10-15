@@ -105,3 +105,8 @@ Read current CBSE2026–27 ClassIX andX curriculum:
 - https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths_SecP1X_2026-27.pdf (pairs,graphical solutions,consistency,substitution/elimination).
 - https://ncert.nic.in/textbook/pdf/jemh103.pdf (graphical interpretation:one,no,infinitely many solutions).
 Original eight line examples and diagrams added from Class9;not copied exam questions. Coefficients use ax+by=c,not textbook ax+by+c=0 sign convention. Exact fraction/cross-product reasoning avoids division by zero. This is a selected teaching activity,not complete linear-equations chapter or board mapping.
+
+## Learning beta0.17: Prime Time
+- https://ncert.nic.in/textbook/pdf/fegp105.pdf : Class6 Ganita Prakash Prime Time,sections5.2 and5.4. Rectangular factor arrangements,prime/composite definition,1 neither,1–100 sieve and repeated prime factors.
+- https://ncert.nic.in/textbook/pdf/fegp1ps.pdf : current front matter,Reprint2026–27,chapter5 Prime Time.
+Original diagrams,examples and controls,not copied textbook pages. Prime/composite classification uses number of distinct positive factors,not count of unordered rectangle pairs. Sieve has intermediate undecided states and proceeds until all1–100classified. Factorization shown for1–100 only;full divisibility/copime/context chapter remains partial.
