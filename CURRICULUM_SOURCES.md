@@ -119,3 +119,6 @@ Read https://ncert.nic.in/textbook/pdf/gegp103.pdf ,A Peek Beyond the Point,sect
 
 ## Learning beta 0.20: decimal subtraction
 Primary source: https://ncert.nic.in/textbook/pdf/gegp103.pdf , section 3.7, relevant addition/subtraction content read on 15 October 2026. It supports place-value subtraction, regrouping and checking with addition. The grids, crossed cells and column-exchange wording are original. The existing Class 5–10 decimal lesson uses this as foundation/revision; a Grade 7 source does not certify exact board placement for every class.
+
+## Learning beta 0.21: arithmetic expressions
+Primary source: https://ncert.nic.in/textbook/pdf/gegp102.pdf , section 2.2, brackets, terms and evaluating expressions; relevant sections read on 15 October 2026. Grade 7 placement matches the current Part I contents at https://ncert.nic.in/textbook/pdf/gegp1ps.pdf . Original counter/group diagrams and invented purchase context, not textbook questions/art. The selected families are a+b×c, (a+b)×c and change after two costs. General division/negative/nested-bracket rules remain outside this lab.
