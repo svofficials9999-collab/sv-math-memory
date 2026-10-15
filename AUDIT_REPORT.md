@@ -24,15 +24,15 @@ Local release checks: 2016 legacy keys independently recomputed, 1278 new keys i
 ## Beta0.4 live verification
 Published HTML, worker and sources were read back exact. All prior3042 IDs/answers/questions/class assignments retained. Live:1937 layout/lesson/mode checks,141 difficulty/answer-path checks,103 activity-control checks,9 fresh-browser offline/old-save checks. Zero JavaScript exceptions in those suites. SVG diagrams and labels inspected as actual live320px Telugu pixels. Activity diagrams illustrate relationships; they are not complete proof teaching or a freehand drawing editor. Current chapter map is CURRICULUM_COVERAGE.md.
 
-## Current master-request traceability at beta0.12
-This section supersedes older numeric totals above. Current:4140 numeric items,59 bilingual topic lessons,29 visual activities. Original five games,index/manifest/IDs/start/scope and3978 prior bank objects preserved;162 new original unit-count items appended. Code paths:learn.html,sw.js,tests/. Current test counts are in RELEASE_LOG.md;do not treat an assertion count as curriculum completeness.
+## Current master-request traceability at beta0.13
+This section supersedes older numeric totals above. Current:4140 numeric items,59 bilingual topic lessons,31 visual activities. Original five games,index/manifest/IDs/start/scope and3978 prior bank objects preserved;162 new original unit-count items appended. Code paths:learn.html,sw.js,tests/. Current test counts are in RELEASE_LOG.md;do not treat an assertion count as curriculum completeness.
 
 | User requirement | Current status | Evidence / remaining work | Severity / next action |
 |---|---|---|---|
 |Repository audit and four requested files|MET as an initial audit,not a final certification|AUDIT_REPORT.md,FEATURE_INVENTORY.md,KNOWN_ISSUES.md,ROADMAP.md|Keep findings current;formal accessibility and physical-device audit still unknown|
 |Recoverable checkpoint,existing app/data,no backend|MET for checkpoint/preservation;development branch preference NOT MET|Git history;original index/manifest and old bank objects exact;v1/v2 keys retained;changes made on main through tested small releases|High:keep rollback and avoid deletion|
 |Colourful mobile UI,theme/language,effects|PARTIAL|Gradients,cards,reduced-motion,dark/light,English/Telugu;phone-width pixels inspected|Rich map/counters/character customisation incomplete|
-|Full Classes1–10 correct curriculum|NOT MET|59 short lessons,4140 numeric questions and29 activities;CURRICULUM_COVERAGE.md remains partial|High:complete primary/board-specific semantic mapping and teaching|
+|Full Classes1–10 correct curriculum|NOT MET|59 short lessons,4140 numeric questions and31 activities;CURRICULUM_COVERAGE.md remains partial|High:complete primary/board-specific semantic mapping and teaching|
 |15 real game loops|MET as working basic loops,PARTIAL in depth|All16 including diagnostic complete rounds at3 difficulties in tests|Boss/logic/game worlds remain simple;do not claim distinct deep mechanics|
 |XP,coins,trophies,streaks,missions,worlds|PARTIAL|Local earned progression,badges/trail,three trophies and mission|Rich unlockable worlds/level progression incomplete|
 |Transparent adaptive learning|MET as a basic rules-based system,not AI|Diagnostic,accuracy-based difficulty,hints,mistakes,revision,free practice|Broader topic diagnostics and pedagogical validation incomplete|
@@ -54,3 +54,5 @@ Beta0.10 adds selected original primary measurement teaching based on the verifi
 Beta0.11 adds selected fraction representation/common-unit work and an original geometric Pythagoras area proof. Full current chapter/grade coverage remains NOT MET.
 
 Beta0.12 adds selected parallel-angle reasoning and rotational-symmetry models. Full current chapters/grade coverage remains NOT MET.
+
+Beta0.13 adds distributive-area and coordinate distance/midpoint/internal-section representations. Full current chapters/grade coverage remains NOT MET.
