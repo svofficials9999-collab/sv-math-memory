@@ -126,3 +126,6 @@ The following are exact chapter-title inventories,not proof of complete chapter 
 Class1 current-book contents still UNVERIFIED. Class2 official index was read at https://epathshala.nic.in/wp-content/doc/book/flipbook/bejm101.html ;edition metadata/full chapter contents remain unverified. No primary grade is declared complete.
 
 Beta0.7 adds visual equal-part strips,metre/cm conversion blocks,a clock with continuously moving hour hand,pictograph key changes,money/change/shortfall feedback,and an integer number line. Screen diagrams are schematic,not physical measuring instruments. No real payments. All prior3564 question objects and original saves remain unchanged.
+
+## Beta0.8 testing support,not curriculum completion
+Added a separate original-practice Test room with deferred explanations,fixed difficulty,question map,review flags,wall-clock timer,local draft resume,final review and idempotent scoring. This improves practice-test mechanics;it does NOT fill missing chapters or make an official board/entrance simulator complete. Existing guided exam practice is now explicitly named as guided. Module labels are bilingual. Forced Navodaya/Class5 and SSC/Class10 pools now align with displayed class/history. Final Telangana SSC pattern and complete current entrance scope remain unverified.
