@@ -1,6 +1,6 @@
 # SV MATH MEMORY - మొత్తం పని: Master status
 
-15 October 2026, 18:31 IST verified release: **Learning beta 0.16**.
+15 October 2026, 18:40 IST verified release: **Learning beta 0.17**.
 
 **మీ master promptలో అన్నీ పూర్తయ్యాయా? లేదు. పని ఇంకా కొనసాగుతోంది.**
 ఇది ఇప్పటివరకు పనిచేసే app + చేసిన పరీక్షలు + మిగిలిన పనుల ఒకే master index. ఇది పూర్తి syllabus లేదా finished product అని చెప్పే file కాదు.
@@ -9,23 +9,23 @@
 
 - [ప్రస్తుతం పనిచేసే Math learning app / single HTML learning file](https://svofficials9999-collab.github.io/sv-math-memory/learn.html)
 - [Original five games](https://svofficials9999-collab.github.io/sv-math-memory/index.html)
-- [Complete project at verified beta0.16 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/091f5e929272e311c556b1dbf484a7802761ac9f)
-- [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/091f5e929272e311c556b1dbf484a7802761ac9f)
+- [Complete project at verified beta0.17 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/edb0e42249d2c73b81312b9ceaebca6f52119f76)
+- [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/edb0e42249d2c73b81312b9ceaebca6f52119f76)
 
 `learn.html` contains the learning UI, JavaScript and compressed question bank. **It is not the whole PWA project by itself.** Original games, service worker, manifest, icons, sources and tests are separate project files. Downloading one HTML file does not by itself reproduce installation/offline caching. The checkpoint contains the complete repository at this release. Opening the existing app online once and completing its cache install is needed before normal offline use. External source links still need internet.
 
 ## Verified totals - సంఖ్యలు
 
-- **59** bilingual topic lessons, **4140** numeric practice-bank items, **34** visual teaching activities.
+- **59** bilingual topic lessons, **4140** numeric practice-bank items, **35** visual teaching activities.
 - Original **5** games kept; learning area has **15 basic game loops + diagnostic**. Several modes share question presentation. These are not 15 deep, completely different games.
-- **12528 live browser assertions passed**, including **2571** new linear-pair checks and **35** offline checks. **25113 numeric assertions passed**. Zero JavaScript exceptions in the successful suites.
+- **16081 live browser assertions passed**, including **3552** new prime-model checks and **36** offline checks. **25113 numeric assertions passed**. Zero JavaScript exceptions in the successful suites.
 - English/Telugu, 320/375/390/430/1280 widths and actual phone-width screenshots inspected. These are browser/emulation checks, **not a physical Android test**.
-- All **4140** prior question objects unchanged in0.16; original index, manifest identity/start/scope and save keys preserved. No new dependency, paid API, backend or storage migration in0.16.
-- HTML size **425110 UTF-8 bytes**. Low-end-phone performance and actual compressed network transfer are **NOT TESTED**. A test assertion is a check, not one user, one question, or one complete chapter.
+- All **4140** prior question objects unchanged in0.17; original index, manifest identity/start/scope and save keys preserved. No new dependency, paid API, backend or storage migration in0.17.
+- HTML size **435222 UTF-8 bytes**. Low-end-phone performance and actual compressed network transfer are **NOT TESTED**. A test assertion is a check, not one user, one question, or one complete chapter.
 
 ## Latest selected teaching addition
 
-Beta0.16 adds a Class9+ pair-of-linear-equations graph:8 original line choices,64 ordered combinations,intersecting/parallel/coincident relationships,two sample points,exact fractions and substitution. The visible square is−5..5;off-window intersections are explicitly warned. Current CBSEIX2026–27 includes equation pairs. This is one selected model,not a complete algebra chapter. Younger-class one-variable equation activity stays.
+Beta0.17 adds a Class6+Prime Time model:factor rectangles/all unordered factor pairs for1–100,prime/composite/neither classification,prime factorisation with repetitions,and stepwise1–100sieve.1 is neither prime nor composite. Sieve distinguishes pending/circled/excluded and finishes with25independently verified primes. Thin rectangles scale to fit;exact labels supply counts. This is selected teaching,not a complete chapter. Earlier HCF and all previous activities stay.
 
 ## Status meanings
 
@@ -111,8 +111,8 @@ Current level/XP, attempts/correct/accuracy, average response time, topic estima
 
 | Requirement | Status | Evidence / limit |
 |---|---|---|
-| Responsive layout, offline core gameplay, cache versioning, storage warning, no unnecessary library | MET in tested browser cases |35 offline checks, saved-shell/cache tests; worker `v20-linear-pairs` |
-| Safe updates/no existing progress deletion | MET within checked versions | Same identity/start/scope, old saves accepted, no0.15 migration |
+| Responsive layout, offline core gameplay, cache versioning, storage warning, no unnecessary library | MET in tested browser cases |36 offline checks, saved-shell/cache tests; worker `v21-prime-time` |
+| Safe updates/no existing progress deletion | MET within checked versions | Same identity/start/scope, old saves accepted, no0.17 migration |
 | Reliable actual Android install/launcher | NOT MET / UNKNOWN | Previously reported installed-icon opening failure unresolved; web checks do not prove device repair |
 | Fast real low-end mobile loading/performance | UNKNOWN | No physical benchmark, transfer or battery certification |
 | Backups/restore | MET for learning export/restore | Browser data clearing still requires backup; no cloud recovery |
@@ -123,7 +123,7 @@ Current level/XP, attempts/correct/accuracy, average response time, topic estima
 
 ## 13. Release management
 
-Changed-file lists, test results, known limits, save/mobile/browser/config checks, versions/checkpoints/rollback notes and honest staged status: **MET for recorded releases** in `RELEASE_LOG.md`. Uniform complete per-finding/per-release formatting: **PARTIAL**. `main` commits trigger Pages publication; local pass does not equal live pass.0.16 was called live only after exact publication and successful rerun. Roll back `learn.html` and `sw.js` together with a fresh cache name; never clear user storage as a release step.
+Changed-file lists, test results, known limits, save/mobile/browser/config checks, versions/checkpoints/rollback notes and honest staged status: **MET for recorded releases** in `RELEASE_LOG.md`. Uniform complete per-finding/per-release formatting: **PARTIAL**. `main` commits trigger Pages publication; local pass does not equal live pass.0.17 was called live only after exact publication and successful rerun. Roll back `learn.html` and `sw.js` together with a fresh cache name; never clear user storage as a release step.
 
 ## 14. Staged roadmap
 
@@ -154,4 +154,4 @@ Actual tests, file changes, limits, no invented official status, no production-r
 - [Release log](https://github.com/svofficials9999-collab/sv-math-memory/blob/main/RELEASE_LOG.md)
 - [Repeatable tests](https://github.com/svofficials9999-collab/sv-math-memory/tree/main/tests)
 
-These project documents include older dated totals. The verified0.16 totals at the top of this master report supersede older totals; historical test counts are not added together. Current source editions and board gaps remain described in the coverage/source files.
+These project documents include older dated totals. The verified0.17 totals at the top of this master report supersede older totals; historical test counts are not added together. Current source editions and board gaps remain described in the coverage/source files.
