@@ -8,3 +8,8 @@
 - Progress is device-local. Browser/site data deletion removes it. Export a backup before any device-level repair.
 - Physical Android touch, WebAPK launch and install registration cannot be established from desktop/mobile-emulation tests.
 - External source pages require internet. Learning and games are intended to work offline after a successful shell cache install.
+
+- Test room tests are original class-topic samples,not curriculum-complete official papers. Fixed counts/times are app practice settings,not a board-pattern claim.
+- Test room retains one draft/latest result on the device. It has a wall-clock timer that continues hidden/closed. Storage failure is shown;lost browser storage cannot be recovered without a separate backup.
+- Scoring is tested for repeat submit and reload idempotence. Concurrent multi-tab edits/races are not certified.
+- The government-hosted2027–28 NVS prospectus's arithmetic heading says12 topics but lists9. Full current entrance scope needs a primary-source cross-check;only the arithmetic subsection timing is quoted.
