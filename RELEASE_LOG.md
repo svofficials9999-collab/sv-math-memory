@@ -243,7 +243,7 @@ The first live attempt ran against the previous worker while Pages was publishin
 
 
 ## Learning beta 0.25 - division as a missing factor
-Status: locally implemented and tested October 15, 2026; live verification follows publication. Full master IN PROGRESS.
+Status: implemented, locally tested and verified live October 15, 2026. Full master IN PROGRESS.
 
 The existing Class 7+ integer lesson adds n ÷ d as d × q = n, with n from -36 to 36 and d from -6 to 6. Exact reduced fractions show that a quotient of integers need not be an integer. Nonzero divided by zero has no solution; zero divided by zero has many solutions to the multiplication equation, so neither has a defined unique quotient. The answer checker accepts equivalent fractions, Telugu digits and Unicode minus and verifies by exact multiplication. Class 6 and all previous activities remain unchanged. Exploration gives no XP and changes no saved progress.
 
@@ -253,3 +253,7 @@ Still partial: all integer properties, multi-factor expressions and full chapter
 
 Changed files: learn.html, sw.js, CURRICULUM_SOURCES.md, CURRICULUM_COVERAGE.md, AUDIT_REPORT.md, FEATURE_INVENTORY.md, KNOWN_ISSUES.md, MASTER_STATUS.md, RELEASE_LOG.md, tests/browser-integer-division.cjs, tests/browser-accessibility.cjs, tests/browser-mock-extra.cjs, tests/browser-offline.cjs, tests/run-browser-check.mjs, tests/README.md.
 Rollback 0.24 checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/ccc4111e4caac18b1fb6a108fa70f61c431352ff . Restore learn.html/sw.js together with a fresh cache version. Never clear user storage. Journal migration is not part of this release. No intermediate user handoff or PDF.
+
+Beta 0.25 LIVE verified October 15, 2026, 20:44 IST: exact 509996-byte HTML and v29-integer-division worker served by Pages. All 37,308 browser assertions passed, including 44 offline and 9,975 new integer-division assertions; zero exceptions. All 949 model pairs and 25,117 numeric bank/lesson checks passed. Actual 320px Telugu fraction, answer/feedback and both zero-divisor cases inspected. All 4140 prior bank objects and original index/manifest identity/save format preserved. Verified checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/4ae82389343956c9b54290d969181e0822d91e23 . Full master remains IN PROGRESS; HIGH multi-tab lost-update bug remains OPEN; journal migration not deployed.
+
+Pages initially still served 0.24 while publication was running. Testing waited for exact new HTML and worker before the successful full live suite. No failed live suite was suppressed.
