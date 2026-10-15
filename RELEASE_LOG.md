@@ -22,3 +22,8 @@ Not tested: physical Android installation/launcher state, native-teacher review 
 Rollback checkpoint: e120ca330047cdc98f80a93efd5c022ebcdc1baf. Restore affected source files from that commit. Use a NEW worker cache version when restoring so cached clients update. Never revert manifest identity or clear student browser data. Old-save keys remain compatible.
 
 Release file commits remain in repository history; documentation commits do not change app identity.
+
+## Learning beta0.4,15October2026
+Added four bilingual visual activity guides: angle slider/linear pair, rectangle/square reflection axes, proportional right-triangle/Pythagoras diagram and paper-based square construction steps. Added252 independently checked numeric questions. Now43 topic lessons and3294 numeric items; all prior3042 question IDs, answers, class assignments and question wording retained. No new storage schema, index or manifest changes. Worker cache v6-geometry-labs.
+
+Local pre-deploy:1937 browser checks,141 answer-path/difficulty checks,103 activity-control/layout checks; zero JS exceptions.25,442 data/metadata/class-sample checks plus2016 legacy keys independently recomputed. Actual Telugu activity pixels inspected at320px. Live/offline checks follow publication and are not assumed from these local results.
