@@ -69,3 +69,5 @@ Known gaps:complete syllabus/official exam coverage,teacher/native Telugu review
 Rollback:restore0.7 learn.html and sw.js from checkpoint d770169a35f188dd7505b41bca07ff857c234992 with a new cache version. Do not clear localStorage. Older code ignores the extra state field and separate draft key.
 
 Print verification:initial PDF omitted folded explanations;fixed beforeprint/afterprint to expand and restore review. Re-rendered Telugu sample:three pages with every answer/explanation and no blank trailing page;all three pages inspected. Added3 repeatable PDF assertions and tests/browser-print.cjs.
+
+Live0.8 final:HTML331538 bytes,worker/source/coverage read back exact.3343 browser assertions pass with zero JS exceptions against the deployed URL,including offline mock resume/result and3 PDF checks. Live320px Telugu active/result pixels and all3 pages of printed Telugu report inspected. Numeric bank24129 assertions pass;3978 previous objects exact.
