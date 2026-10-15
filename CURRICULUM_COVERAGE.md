@@ -153,3 +153,6 @@ Source: https://ncert.nic.in/textbook/pdf/aejm1ps.pdf ,explicit Reprint2026–27
 |So Many Toys (Data Handling)|PARTIAL;sorting/classifying/counting classroom data incomplete.|
 
 No primary class is declared complete. New source verification identifies missing concepts;it does not silently advance curriculum implementation status.
+
+## Beta0.10 primary measurement update
+Class1 Lina's Family / primary measurement remains PARTIAL. Added aligned strip length comparison,choice/check feedback,equal units without gaps/overlaps,smaller-unit/more-units relationship,equal-cup capacity with fixed fill mark,and mass balance with heavy side down/equal/zero. New lessons are available for Classes1–3 as introductory teaching/revision. The balance shows only relative direction,not a physical-angle model. Diagrams are schematic,not real measurement instruments. Remaining:tall/short/thick/thin and spatial contexts,real handspan/finger/footspan measurement,varied container/capacity contexts,all chapter-specific classroom activities and broader primary coverage. Now59 lessons,4140 original numeric questions,25 visual activities. No full chapter or grade is declared complete.
