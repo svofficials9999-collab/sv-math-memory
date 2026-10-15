@@ -40,3 +40,5 @@ Three PDF-print checks verify generation and folded-review restoration. A sample
 Beta0.9:browser-algebra.cjs adds221 equation/grid/exponent/AP assertions,includingClass9 nth-term-only behavior. Full suite3568 assertions,with24 offline checks. Numeric data checker24129 assertions. Counts are test evidence,not curriculum-completion proof.
 
 Beta0.10:4082 browser assertions including421 primary measurement checks and27 offline checks.59 lessons,4140 questions.25113 independent numeric assertions. Original3978 bank objects remain exact. Browser fixtures now expect worker v14-primary-measures.
+
+Beta0.11:5425 browser assertions,including1341 fraction/proof geometry checks and29 offline checks.4140 bank items/59 lessons unchanged;25113 numeric assertions.
