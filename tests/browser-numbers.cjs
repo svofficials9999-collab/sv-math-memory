@@ -1,0 +1,30 @@
+(async()=>{const fs=require('fs'),tabs=await(await fetch(`http://localhost:${process.env.CDP_PORT||9393}/json`)).json(),w=new WebSocket(tabs.find(x=>x.type==='page').webSocketDebuggerUrl);await new Promise(r=>w.onopen=r);let id=0,p={},errors=[];w.onmessage=e=>{let d=JSON.parse(e.data);if(d.method==='Runtime.exceptionThrown')errors.push(d.params);if(p[d.id]){p[d.id](d);delete p[d.id]}};const send=(method,params={})=>new Promise(r=>{p[++id]=r;w.send(JSON.stringify({id,method,params}))}),ev=async expression=>{const x=(await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true})).result;if(x.exceptionDetails)throw Error(JSON.stringify(x.exceptionDetails));return x.result.value};let checks=0;const check=(x,label)=>{if(!x)throw Error(label);checks++};await send('Runtime.enable');
+for(const width of [320,375,390,430,1280])for(const lang of ['en','te']){
+ await send('Emulation.setDeviceMetricsOverride',{width,height:844,deviceScaleFactor:1,mobile:width<500});await ev(`state.lang='${lang}';chosenClass=1;lessonDetail('number-recognition');window.beforeNumbers=JSON.stringify(state);window.beforeStore=JSON.stringify({...localStorage})`);
+ check(await ev(`$('#frame-remove').disabled&&$('#ten-frames .frame-counter')===null&&$('#ten-frames').querySelectorAll('rect').length===20`),'empty frames');
+ for(let n=0;n<=20;n++){
+  await ev(`$('#frame-target').value=${n};$('#frame-target').oninput();${n?"$('#frame-add').click()":''};$('#frame-check').click()`);
+  check(await ev(`document.querySelectorAll('.frame-counter').length===${n}&&$('#frame-feedback').textContent.startsWith(${JSON.stringify(lang==='en'?'Correct':'సరైనది')})&&$('#ten-frames').getAttribute('aria-label').includes('${n}')`),'all frame targets');
+ }
+ check(await ev(`$('#frame-add').disabled`),'upper bound');await ev(`$('#frame-target').value=3;$('#frame-target').oninput();$('#frame-check').click()`);check(await ev(`$('#frame-feedback').textContent.includes(${JSON.stringify(lang==='en'?'remove':'తీయండి')})`),'too many feedback');await ev(`$('#frame-clear').click();$('#frame-check').click()`);check(await ev(`$('#frame-feedback').textContent.includes(${JSON.stringify(lang==='en'?'add more':'చేర్చండి')})`),'too few feedback');await ev(`$('#frame-add').click();$('#frame-add').click();$('#frame-remove').click()`);check(await ev(`document.querySelectorAll('.frame-counter').length===1`),'subtract one');
+ await ev(`chosenClass=2;lessonDetail('place-value')`);
+ for(const n of [0,1,9,10,11,19,20,37,50,90,99]){
+  await ev(`$('#bundle-number').value=${n};$('#bundle-number').oninput()`);
+  check(await ev(`document.querySelectorAll('.ten-rod').length===${Math.floor(n/10)}&&document.querySelectorAll('.single-unit').length===${n%10}&&$('#bundle-model').getAttribute('aria-label').includes('${n}')`),'standard model');
+  for(let t=Math.floor(n/10);t>=0;t--){
+   check(await ev(`document.querySelectorAll('.ten-rod').length===${t}&&document.querySelectorAll('.single-unit').length===${n-10*t}&&document.querySelectorAll('.ten-rod rect').length+document.querySelectorAll('.single-unit').length===${n}`),'trade invariant');
+   await ev(`$('#bundle-guess').value='${n}';$('#bundle-check').click()`);check(await ev(`$('#bundle-feedback').textContent.startsWith(${JSON.stringify(lang==='en'?'Correct':'సరైనది')})`),'answer invariant');await ev(`$('#bundle-open').click()`);
+  }
+  check(await ev(`$('#bundle-open').disabled&&document.querySelectorAll('.single-unit').length===${n}`),'all ungrouped');
+  for(let t=0;t<Math.floor(n/10);t++){await ev(`$('#bundle-close').click()`);check(await ev(`document.querySelectorAll('.ten-rod').length===${t+1}&&document.querySelectorAll('.single-unit').length===${n-10*(t+1)}`),'regroup invariant')}
+  check(await ev(`$('#bundle-close').disabled`),'regroup limit');
+ }
+ for(const raw of ['', ' ', '1.5','-1','abc','1e1','Infinity']){await ev(`$('#bundle-guess').value=${JSON.stringify(raw)};$('#bundle-check').click()`);check(await ev(`$('#bundle-feedback').textContent.startsWith(${JSON.stringify(lang==='en'?'Enter':'0–99')})`),'invalid answer')}
+ await ev(`$('#bundle-guess').value='1';$('#bundle-check').click()`);check(await ev(`!$('#bundle-feedback').textContent.startsWith(${JSON.stringify(lang==='en'?'Correct':'సరైనది')})`),'wrong answer');
+ check(await ev(`JSON.stringify(state)===window.beforeNumbers&&JSON.stringify({...localStorage})===window.beforeStore`),'no score/save mutation');
+ for(const topic of ['number-recognition','place-value']){await ev(`lessonDetail('${topic}')`);check(await ev(`document.documentElement.scrollWidth<=innerWidth`),'reflow');check(await ev(`(()=>{let v=e=>e.getBoundingClientRect().height>0;return [...$('#number-bundles-lab').querySelectorAll('button,input,svg')].filter(v).every(e=>e.getAttribute('aria-label')||e.labels?.length||e.textContent.trim())})()`),'labels');if(width===320&&lang==='te'){await ev(`state.theme='light';lessonDetail('${topic}');${topic==='number-recognition'?"for(let i=0;i<13;i++)$('#frame-add').click();$('#frame-check').click()":"$('#bundle-open').click()"};$('#number-bundles-lab').scrollIntoView()`);let r=await send('Page.captureScreenshot',{format:'png'});fs.writeFileSync((process.env.RESULT_DIR||'.test-output')+'/numbers-'+topic+'-te.png',Buffer.from(r.result.data,'base64'))}}
+}
+// Exhaustive decomposition geometry on all0–99 targets without rebuilding lessons.
+await ev(`chosenClass=2;lessonDetail('place-value')`);
+for(let n=0;n<=99;n++){await ev(`$('#bundle-number').value=${n};$('#bundle-number').oninput()`);check(await ev(`document.querySelectorAll('.ten-rod rect').length+document.querySelectorAll('.single-unit').length===${n}&&$('#bundle-number-label').textContent==='${n}'`),'every two-digit geometry')}
+await ev(`chosenClass=3;lessonDetail('addition')`);check(await ev(`!$('#number-bundles-lab')`),'unrelated unchanged');check(errors.length===0,'exceptions');fs.writeFileSync((process.env.RESULT_DIR||'.test-output')+'/numbers-results.json',JSON.stringify({checks,errors},null,2));console.log({numbersChecks:checks,errors});w.close()})().catch(e=>{console.error(e);process.exit(1)});
