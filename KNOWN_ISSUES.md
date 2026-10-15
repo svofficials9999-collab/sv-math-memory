@@ -13,3 +13,6 @@
 - Test room retains one draft/latest result on the device. It has a wall-clock timer that continues hidden/closed. Storage failure is shown;lost browser storage cannot be recovered without a separate backup.
 - Scoring is tested for repeat submit and reload idempotence. Concurrent multi-tab edits/races are not certified.
 - The government-hosted2027–28 NVS prospectus's arithmetic heading says12 topics but lists9. Full current entrance scope needs a primary-source cross-check;only the arithmetic subsection timing is quoted.
+
+- Accessibility review is bounded,not WCAG conformance certification. Full screen-reader flows,live-region verbosity,gradient contrast,all zoom/context combinations and physical Android assistive technology still need review.
+- HTML size404849 bytes;local gzip193670 bytes. No measured low-end-phone performance or guaranteed network-transfer claim.
