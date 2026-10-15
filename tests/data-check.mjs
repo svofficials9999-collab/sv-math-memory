@@ -14,7 +14,7 @@ const lessons=JSON.parse(html.slice(lessonStart,lessonEnd));
 const gcd=(a,b)=>{while(b){[a,b]=[b,a%b]}return a};
 const sums=a=>a.reduce((x,y)=>x+y,0),product=a=>a.reduce((x,y)=>x*y,1);
 const operations={
- sub:a=>a[0]-a[1],add:sums,mul:product,time:a=>60*a[0]+a[1],
+ 'grouped-median':a=>10+((a[0]+a[1]+a[2])/2-a[0])*10/a[1], 'grouped-mode':a=>10+(a[1]-a[0])*10/(2*a[1]-a[0]-a[2]), sub:a=>a[0]-a[1],add:sums,mul:product,time:a=>60*a[0]+a[1],
  'fraction-add':a=>(a[0]+a[1])/a[2],power:a=>a[0]**a[1],sqrt:a=>Math.sqrt(a[0]),
  'quad-angle':a=>360-sums(a),'triangle-angle':a=>180-sums(a),volume:product,
  poly:a=>a[0]*a[3]**2+a[1]*a[3]+a[2],'linear-two':a=>(a[0]+a[1])/2,
