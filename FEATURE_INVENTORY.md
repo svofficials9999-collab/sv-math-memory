@@ -6,7 +6,7 @@
 - Class and difficulty choice, hints, explanatory answer review.
 - 3978 original numeric practice items, including all 2016 legacy IDs.
 - 56 bilingual topic lessons with principle, worked example, common error, sample explanation and topic practice.
-- 18 working visual activity guides/labs,including geometry,data,grouped statistics,tangents,clock,equal shares,units,pictographs,money and integer movement. These do not cover full chapters or provide a freehand drawing editor.
+- 22 working visual activity guides/labs,including geometry,data,grouped statistics,tangents,clock,equal shares,units,pictographs,money and integer movement. These do not cover full chapters or provide a freehand drawing editor.
 - Ten-class lesson trail; four earned-world badges remain.
 - XP, earned coins, three trophies, practice mission, streaks, personal bests.
 - Rules-based difficulty adjustment and weak-topic revision, not AI.
@@ -30,3 +30,5 @@
 - Teacher/native-language content review.
 - Physical Android testing and verified resolution of installed-icon failure.
 - No cloud account, leaderboard, payments or commercial student profiling.
+
+- Beta0.9 adds equation substitution,coordinate grid,same-base positive exponents and class-gated AP nth-term/sum activities.
