@@ -108,3 +108,11 @@ Original equal-whole decimal grids/shared number line,comparison and exact integ
 | Simultaneous-tab progress overwritten | CONFIRMED OPEN | Isolated local current-source diagnostic: two correct answers, one per tab, stored 1/1 instead of 2/2 | learn.html, save()/record() | HIGH | Prevent stale writes, preserve existing format/data, test rounds/mock/settings/restore in multiple tabs |
 
 This diagnostic is separate from the passing local/live teaching regression suite. It touched no real user data.
+
+
+## Learning beta0.22 - selected large-number teaching,15October2026
+Status: locally implemented and tested; live verification follows publication. Full master scope remains IN PROGRESS.
+Path: learn.html, existing place-value lesson; availability extends fromClasses2–6 toClasses2–10. OnlyClass7+ gets the new large-number model and matching rendered lesson text. Younger-class lessons and models remain unchanged.
+Added: Indian/international comma grouping of the same integer, lakh/crore/million/billion equivalences, all10 decimal places, digit×place contribution, expanded sum, zero-place explanation, original example cycle, English/Telugu and strict whole-number/Telugu-digit self-checks. Range0–9,999,999,999. Top Indian groups use crores rather than an added arab label. Not full number-word spelling, rounding, estimation, contextual reasoning or complete chapter coverage. No official exam-paper claim.
+Evidence:21,840 local browser assertions, including1,721 new large-number and41 offline checks; zero exceptions.11,030 integer model cases inside one invariant assertion.25,117 numeric bank/lesson checks. Actual320px Telugu grouping/place-card pixels inspected.59 lessons,40 activities,4140 prior bank objects unchanged. Original5-game index and manifest byte exact. No save-schema, backend, dependency or network change. HTML485247UTF-8bytes,worker v26-large-numbers. Physical Android/native Telugu teacher review remain unverified.
+The confirmed HIGH multi-tab lost-update bug remains OPEN in this release. A separate save-store migration candidate is NOT included or deployed; approval is still required before that migration. This release does not claim multi-tab persistence safety.
