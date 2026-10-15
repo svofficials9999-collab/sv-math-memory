@@ -166,3 +166,8 @@ Current27 visual activities,59 lessons,4140 original numeric items unchanged. No
 Grade7 parallel/intersecting lines now has original8-angle transversal diagram,selectable opposite/corresponding/alternate/interior pairs,angle controls/checker and linked reasoning. Class6 retains its earlier simple angle lab without the new parallel activity. Full paper-folding/construction/context tasks remain incomplete.
 Grade6 symmetry now includes a fixed-outline rotation overlay,matching-angle feedback and orders1/2/3/4 for selected polygons. Every full turn matches;nontrivial rotational symmetry requires a match strictly between0° and360°. Reflection remains a separate test. All arbitrary figures/circle/radial-arm creation tasks are not covered.
 Current29 visual activities,59 lessons,4140 original numeric items unchanged. No full chapter/grade/exam certification.
+
+## Beta0.13:distributive area and coordinate distance,still partial
+Algebra now includes a positive-length rectangle split into same-height pieces to explain ax+bx=(a+b)x,like terms and the warning against combining unlike variables. From Class7;Class6 retains earlier substitution teaching. Signed/zero area models and broader expression modelling remain incomplete.
+Coordinate geometry now includes two adjustable points,uniform-scale right-triangle distance derivation,exact squared-distance expressions,rounded irrational distance,and midpoint reasoning. Class10 additionally shows weighted positive internal section ratios/exact expressions;coincident endpoint length-ratio undefined status is explicit. External division and all applications/context problems remain incomplete.
+Current31 visual activities,59 lessons,4140 original numeric items unchanged. No complete chapter/grade/exam certification.
