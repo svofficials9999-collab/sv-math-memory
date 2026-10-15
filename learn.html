@@ -110,9 +110,7 @@ const names={'addition':'కూడిక',
 'trigonometry':'త్రికోణమితి',
 'advanced-practice':'ఉన్నత సాధన',
 'memory':'జ్ఞాపకం'};
-Object.assign(names,{'grouped-median':'వర్గీకృత మధ్యగతం','grouped-mode':'వర్గీకృత బాహుళకం','circle-tangents':'స్పర్శరేఖాఖండాలు'});
-const tn=t=>state.lang==='te'?(names[t]||t):t.replaceAll('-',
-' '),title=m=>{let x=modes.find(x=>x[0]===m);return x?x[state.lang==='te'?3:2]:E(m)};
+const tn=t=>{const l=LESSONS.find(l=>l.topic===t);return l?(state.lang==='te'?l.te:l.en):(state.lang==='te'?(names[t]||t):t.replaceAll('-',' '))},title=m=>{let x=modes.find(x=>x[0]===m);return x?x[state.lang==='te'?3:2]:E(m)};
 function tone(kind='tap'){if(!state.sound||!state.effects)return;try{audio||=new(window.AudioContext||window.webkitAudioContext)();audio.resume();let o=audio.createOscillator(),g=audio.createGain();o.connect(g);g.connect(audio.destination);o.frequency.value={tap:330,correct:660,error:190,combo:780,coin:840,level:940,victory:1040}[kind]||330;g.gain.setValueAtTime(.04,audio.currentTime);g.gain.exponentialRampToValueAtTime(.001,audio.currentTime+.15);o.start();o.stop(audio.currentTime+.16);if(state.vibrate&&navigator.vibrate)navigator.vibrate(15)}catch(e){}}
 function music(on,boss=false){clearInterval(musicTimer);musicTimer=null;if(!on||!state.sound||!state.music)return;let i=0;const play=()=>{if(document.hidden)return;try{audio||=new(window.AudioContext||window.webkitAudioContext)();audio.resume();let o=audio.createOscillator(),g=audio.createGain();o.connect(g);g.connect(audio.destination);o.frequency.value=(boss?[196,247,294,247]:[262,330,392,330])[i++%4];g.gain.setValueAtTime(.015,audio.currentTime);g.gain.exponentialRampToValueAtTime(.001,audio.currentTime+.4);o.start();o.stop(audio.currentTime+.42)}catch(e){}};play();musicTimer=setInterval(play,800)}
 function fireworks(){if(matchMedia('(prefers-reduced-motion: reduce)').matches||document.hidden)return;$('#celebrate').innerHTML=Array.from({length:24},(_,i)=>`<i class="spark" style="left:${i*4.2}%;top:${i%4*5}%;background:${['#94f1d5',
