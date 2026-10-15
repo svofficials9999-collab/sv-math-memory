@@ -181,3 +181,14 @@ Predeployment: 19208 local browser assertions, including 918 subtraction and 39 
 Rollback 0.19: https://github.com/svofficials9999-collab/sv-math-memory/commit/ff0546b1b22b3dba4aa2d1e70de0b4cb58fffd79 . Restore learn.html and sw.js together with a fresh cache name; never clear storage. Full curriculum, exams, native/physical/accessibility/concurrency checks remain incomplete. No repeated per-release user messages or PDFs; total handoff only at the end.
 
 Beta 0.20 LIVE verified 15 October 2026, 19:11 IST: exact 463120-byte HTML, v24 worker, original index/manifest and 4140 prior bank objects. 19208 live browser assertions, 25113 numeric assertions, 39 offline checks, zero exceptions; an additional 10201 arithmetic/regrouping input pairs. Actual 320px Telugu take-away/borrowing pixels inspected. App checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/45c293562a9e0473dd2cf4f5afae7f98466fe450 . Full master scope remains incomplete.
+
+## Learning beta 0.21, 15 October 2026
+Files: learn.html, sw.js, CURRICULUM_SOURCES.md, CURRICULUM_COVERAGE.md, AUDIT_REPORT.md, FEATURE_INVENTORY.md, KNOWN_ISSUES.md, RELEASE_LOG.md, MASTER_STATUS.md, tests/browser-expression.cjs, tests/browser-accessibility.cjs, tests/browser-mock-extra.cjs, tests/browser-offline.cjs, tests/run-browser-check.mjs, tests/README.md.
+
+Added Class 7+ expression meanings to the existing algebra lesson: a+b×c, (a+b)×c, and amount received minus two bracketed costs. Original loose/group counters, common-scale bars, first-step choice, answer/step/comparison feedback and accidental-equality explanation. Inputs 0–10; no arbitrary text evaluation. Class 6 unchanged.
+
+HTML 474563 bytes, footer 0.21, worker v25-arithmetic-expressions. 39 activities, 59 lessons, 4140 exact prior bank objects. No old bank, index, manifest, save-schema, dependency or network change.
+
+Local suite: 20078 browser assertions, 869 new expression and 40 offline checks, zero exceptions. Additional 3993 expression-model combinations and prior 10201 subtraction-pair invariants pass. 25113 numeric assertions pass. Two languages, five widths, extreme/zero/accidental-equality, invalid/wrong/Telugu answers, class gate, group counts, scale, labels/reflow and no store mutation. Actual 320px Telugu group/steps pixels inspected. Live follows publication.
+
+Rollback 0.20: https://github.com/svofficials9999-collab/sv-math-memory/commit/45c293562a9e0473dd2cf4f5afae7f98466fe450 . Restore learn.html/sw.js together with a fresh cache name; never clear storage. Full master remains incomplete. Total handoff only at the end, no repeated user messages or PDFs.
