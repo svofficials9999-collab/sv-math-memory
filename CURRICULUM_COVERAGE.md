@@ -132,3 +132,24 @@ Added a separate original-practice Test room with deferred explanations,fixed di
 
 ## Beta0.9 selected algebra representations,still partial
 Four bilingual controls-based activities added to equations,coordinate geometry,powers and progressions. Equations undo equal operations on both sides and check substitution. Uniform -5..5 coordinate grid demonstrates ordered pairs,quadrants,axes and origin. Positive-integer powers demonstrate same-base multiplication with explicit factors and contrast with addition. AP shows nth terms;Class10 additionally shows finite sums and pairing derivation. Class9 does not show the general AP sum formula. No additional numeric questions or complete-chapter claim. Current22 visual activities,56 lessons,3978 questions.
+
+## Class1 current-book gap map,primary source verified
+Source: https://ncert.nic.in/textbook/pdf/aejm1ps.pdf ,explicit Reprint2026–27. This supersedes the earlier UNVERIFIED Class1 contents entry;it does not imply complete chapter coverage.
+
+| Chapter | Current app / remaining work |
+|---|---|
+|Finding the Furry Cat! (Pre-number Concepts)|PARTIAL counting;spatial language,sorting,matching and qualitative comparisons incomplete.|
+|What is Long? What is Round? (Shapes)|PARTIAL numeric/basic shapes;solid/flat shapes and sorting/context incomplete.|
+|Mango Treat (Numbers1to9)|PARTIAL counting;concrete/picture/number correspondence incomplete.|
+|Making10 (Numbers10to20)|PARTIAL arithmetic/place value;ten-frame/grouping visual models incomplete.|
+|How Many? (Single-digit Addition/Subtraction)|PARTIAL numeric practice;picture/context/story reasoning incomplete.|
+|Vegetable Farm (Addition/Subtraction up to20)|PARTIAL numeric practice;within20 contextual models incomplete.|
+|Lina's Family (Measurement)|PARTIAL;chapter text https://ncert.nic.in/textbook/pdf/aejm107.pdf read in full. Height,length,thickness,near/far,nonstandard units,heavy/light and capacity in equal cups/jugs still need original interactive teaching. Metre/cm arithmetic is not a substitute.|
+|Fun with Numbers (Numbers21to99)|PARTIAL place value;two-digit representations/comparison incomplete.|
+|Utsav (Patterns)|PARTIAL number patterns;shape/colour/repeating-pattern reasoning incomplete.|
+|How do I Spend my Day? (Time)|PARTIAL;routine/order/day language not fully taught by an older-child clock lab.|
+|How Many Times? (Multiplication)|PARTIAL;equal groups/repeated addition representations incomplete.|
+|How Much Can We Spend? (Money)|PARTIAL;age-specific recognition and simple exchanges incomplete.|
+|So Many Toys (Data Handling)|PARTIAL;sorting/classifying/counting classroom data incomplete.|
+
+No primary class is declared complete. New source verification identifies missing concepts;it does not silently advance curriculum implementation status.
