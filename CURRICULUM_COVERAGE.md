@@ -195,3 +195,7 @@ Existing decimal lesson gains equal-whole100cell grids,shared0–1number line,co
 ## Beta 0.20: decimal subtraction, PARTIAL
 Added an original nonnegative take-away grid with crossed removed cells, remaining hundredths, place-value exchanges (including 1.00−0.01 across zero), column subtraction and an addition check. A and B each range from 0 to 1. If A<B, the model explains the negative result and offers an explicit Swap button; it never silently takes the absolute value.
 There are 38 visual activities, 59 lessons and 4140 numeric items. General signed decimal operations, larger quantities, thousandths, measurement contexts, multiplication/division/rounding and full chapter coverage remain incomplete.
+
+## Beta 0.21: expression meaning, PARTIAL
+The existing algebra lesson gains a Class 7+ lab for a+b×c versus (a+b)×c, loose counters/equal groups, and subtracting both costs in a pretend purchase. First-step choice, answer check, visible steps and comparison explain that equal values for special inputs do not mean identical expressions. The minus before a two-cost bracket applies to both costs. Inputs are whole numbers 0–10. Class 6 keeps its earlier lesson without the new model.
+Totals: 39 visual activities, 59 lessons, 4140 unchanged numeric items. This addresses selected Grade 7 Arithmetic Expressions ideas, not the complete chapter. Signed terms, mixed division, nested brackets and fuller reasoning/context remain.
