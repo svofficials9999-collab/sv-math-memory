@@ -172,7 +172,7 @@ The confirmed HIGH multi-tab lost-update bug remains OPEN in this release. A sep
 This candidate does not make any previously incomplete master category complete. Full boards, exams, native teacher review, physical Android, complete accessibility/performance/security and final all-file audit still remain.
 
 
-Beta0.22 LIVE verification:21,840browserassertions,41offline,zeroexceptions,25,117numericbank/lessonassertions. Actual320pxTelugugrouping/expandedplacepixelsinspected. Exact485247byteHTMLandv26worker. Verifiedcheckpoint:https://github.com/svofficials9999-collab/sv-math-memory/commit/082009df138a701a41d19863469bedf2b9c3efe8 . The separate journal migration remains undeployed pending owner approval; the HIGH multi-tab bug is still open in production.
+Beta0.22 LIVE verification:21,840browserassertions,41offline,zeroexceptions,25,117numericbank/lessonassertions. Actual320pxTelugugrouping/expandedplacepixelsinspected. Exact485247byteHTMLandv26worker. Verifiedcheckpoint:https://github.com/svofficials9999-collab/sv-math-memory/commit/0e23040254911dad1265bb3597d4f8a1803bead3 . The separate journal migration remains undeployed pending owner approval; the HIGH multi-tab bug is still open in production.
 
 
 ## Learning beta0.23 - selected nearest-multiple teaching
