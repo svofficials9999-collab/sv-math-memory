@@ -185,3 +185,6 @@ Class9/10 equations lesson adds eight original selectable lines,64 ordered pair 
 
 ## Beta0.17: Grade6 Prime Time representation,PARTIAL
 Existing factors/HCF lesson gains original1–100 positive-factor rectangles,all unordered pairs,prime/composite/neither classification,prime factorization with repetitions,and stepwise Sieve of Eratosthenes.1 is neither prime nor composite;prime decomposition is not provided for1. Sieve marks pending/circled/excluded distinctly and ends with25primes. Earlier HCF content retained.35visual activities;59lessons4140items unchanged. Full divisibility rules,co-prime reasoning,larger values,contextual problems and chapter activities remain incomplete.
+
+## Beta0.18: Class7 Finding Common Ground selected model,PARTIAL
+LCMlesson adds two-bell recurrence timeline,first positive common time,prime-factor counts:HCFminimum,LCMmaximum,and a two-number product-identity explanation. Intervals1–20,common start0;timeline truncates at60with explicit off-window warning. A later common time is distinguished from the least.36activities59lessons4140items unchanged. Different initial times,full word-problem modelling,larger inputs,division algorithm and chapter exploration remain incomplete.
