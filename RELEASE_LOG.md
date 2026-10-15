@@ -325,7 +325,7 @@ Beta 0.29 LIVE verified October 15, 2026, 21:54 IST: exact 546720-byte HTML and 
 Pages initially served 0.28 while publication was running. Testing waited for exact new HTML and worker bytes before the full successful live suite.
 
 ## Learning beta 0.30 - chords and angles at the centre
-Status: locally implemented and tested October 15, 2026; live verification follows publication. Full master IN PROGRESS.
+Status: implemented, locally tested and verified live October 15, 2026. Full master IN PROGRESS.
 
 Class 9+ circles teaching adds a central-angle model on one circle: radius r from 1 to 10 with independent distances of chords AB and CD from centre O. The diagram draws both chords with radii to their endpoints and angle arcs at O, including boundary cases d = 0 (diameter, 180°) and d = r (a single point, 0°). The exact relation (half chord)² = r² − d² drives the comparison; the angle itself is shown as θ = 2·atan2(half, d), rounded to 0.1° for display only. Equal chords subtend equal angles at the centre and chords subtending equal angles are equal; between unequal chords the longer one subtends the larger angle. The proof panel gives SSS congruence for equal chords implying equal angles and SAS for the converse. A three-choice strict self-check asks which central angle is larger, including the equal case. Original SVG and bilingual prose, not textbook art or official questions. Exploration gives no XP and changes no earned data.
 
@@ -335,3 +335,7 @@ Sources and limits: live current NCERT Class 9 chapter 5 Circles (iemh105.pdf, v
 
 Changed files: learn.html, sw.js, CURRICULUM_SOURCES.md, CURRICULUM_COVERAGE.md, AUDIT_REPORT.md, FEATURE_INVENTORY.md, KNOWN_ISSUES.md, MASTER_STATUS.md, RELEASE_LOG.md, tests/browser-subtended-angles.cjs, tests/run-browser-check.mjs, tests/browser-offline.cjs, tests/browser-accessibility.cjs, tests/browser-mock-extra.cjs, tests/README.md.
 Rollback 0.29 checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/3f0ab969aa66fe2fe62058ccf457550179f39938 . Restore learn.html/sw.js together with a fresh cache version. Never clear user storage. Journal migration is not included. Final total only; no intermediate PDF or phase message.
+
+Beta 0.30 LIVE verified October 15, 2026, 22:52 IST: exact 556113-byte HTML and v34-subtended-angles worker served by Pages. All 79,884 browser assertions passed, including 49 offline and 2,639 new subtended-angle assertions; zero exceptions. All 85 radius/distance-pair cases checked across 320/375/390/430/1280 widths in both languages. 25,117 numeric bank/lesson checks passed. Actual 320px Telugu angle diagram, congruence proof and comparison feedback inspected live. All 4140 prior bank objects and original index/manifest/save format preserved. Verified checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/adad494b4e37e813645b4fc9d4075134a747e360 . Full master remains IN PROGRESS; HIGH multi-tab lost-update bug remains OPEN; journal migration not deployed.
+
+Pages initially served 0.29 while publication was running. Testing waited for exact new HTML and worker bytes before the full successful live suite.
