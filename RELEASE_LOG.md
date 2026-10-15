@@ -31,3 +31,10 @@ Local pre-deploy:1937 browser checks,141 answer-path/difficulty checks,103 activ
 Publication verification for0.4: live HTML, worker, sources, original index and chapter coverage file read back exact. Live1937+141+103 browser checks passed; fresh isolated-profile install and offline bank/lesson/practice/save/reload/legacy-save preservation9 checks passed. No JavaScript exceptions. Actual320px Telugu activity diagrams inspected after live loading.
 
 Known test-harness caveat fixed before offline verification: cache-name creation precedes completion of install. Tests now wait for the actual cached lesson response and an activated worker, not merely a cache key. This was a test readiness issue, not an app source patch.
+
+## Learning beta0.5,15October2026
+Five bilingual teaching/activity modules added: graphs, estimated grouped mean, triangle correspondence, acute-angle trig identity derivation and height/eye-height application.216 additional numeric questions,3510 total,48 lessons. All3294 prior bank entries retained exact, including IDs/answers/questions/class/difficulty/metadata. No save schema, original index, manifest identity/scope/start URL changes. Inline dependency-free app; cache v7-data-reasoning.
+
+Before deploy:2120 browser checks on320/375/390/430/1280 with EN/TE, all lesson/class practice availability,16 mode loops across three difficulties, active-round language preservation, save/reload, graph scale/controls, grouped validation/zero total, correspondence feedback and formulas. Zero JS exceptions.14006 data/option/compatibility/coverage assertions;216 new numeric answers independently recomputed. Actual320px Telugu pixels inspected, grouped table readability corrected and retested. Live/offline checks must follow publication.
+
+Still beta/incomplete: full official syllabus/papers, all proofs, native teacher review and physical Android launch verification remain.
