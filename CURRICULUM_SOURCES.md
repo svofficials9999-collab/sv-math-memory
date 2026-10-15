@@ -74,3 +74,9 @@ Primary chapter sources read on15October2026:
 - NCERT Grade6 Ganita Prakash,Fractions,explicit Reprint2026–27: https://ncert.nic.in/textbook/pdf/fegp107.pdf . Sections7.6–7.8 support equivalent fractions,comparison and common-unit addition/subtraction.
 - NCERT Grade8 PartII,The Baudhayana-Pythagoras Theorem: https://ncert.nic.in/textbook/pdf/hegp202.pdf . Section2.4 motivates the area proof of the right-triangle theorem.
 New activities are original diagrams and wording,not reproduced textbook pages. Fraction operations are Class6+;Class4/5 shows equal parts/equivalent-length comparison only. Negative subtraction is withheld in this introductory activity with an explicit swap/add message. Pythagoras uses two equal outer squares minus four congruent right triangles;the two arrangements leave c² and a²+b². Polygon areas,side lengths and right angles are independently tested. No new question-bank items or complete-chapter claim.
+
+## Learning beta0.12:parallel angle pairs and rotational symmetry
+Primary sources read on15October2026:
+- NCERT Grade7 Parallel and Intersecting Lines: https://ncert.nic.in/textbook/pdf/gegp105.pdf . Sections5.5–5.8 support opposite/corresponding/alternate/same-side interior angle relations. Parallel-pair activity is available from Class7;Class6 retains the earlier basic angle/linear-pair lab.
+- NCERT Grade6 Symmetry: https://ncert.nic.in/textbook/pdf/fegp109.pdf . Section9.2 supports rotational symmetry about a fixed centre,matching angles,order and the distinction from reflection.
+Original diagrams show the actual uniform rotation and actual transversal slope. Corresponding/alternate equality and same-side180° sum are explicitly conditional on parallel lines. The rotation model includes square,non-square rectangle,equilateral and scalene triangles;vertices are independently rotated to verify matches. No new questions or complete-chapter claim.
