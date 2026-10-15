@@ -38,3 +38,5 @@ Beta0.8 adds207 Test room workflow checks and7 keyboard/automatic-timeout/storag
 Three PDF-print checks verify generation and folded-review restoration. A sample Telugu report was rendered and all three pages inspected;beforeprint opens explanations and afterprint restores the on-screen folds.
 
 Beta0.9:browser-algebra.cjs adds221 equation/grid/exponent/AP assertions,includingClass9 nth-term-only behavior. Full suite3568 assertions,with24 offline checks. Numeric data checker24129 assertions. Counts are test evidence,not curriculum-completion proof.
+
+Beta0.10:4082 browser assertions including421 primary measurement checks and27 offline checks.59 lessons,4140 questions.25113 independent numeric assertions. Original3978 bank objects remain exact. Browser fixtures now expect worker v14-primary-measures.
