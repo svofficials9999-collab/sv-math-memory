@@ -52,3 +52,5 @@ Beta0.14:7982 browser assertions including82 bounded accessibility checks and32 
 Beta0.15:9956 browser assertions including1972 primary-number model checks and34 offline checks. All 100 standard 0–99 standard models,all 21 target 0–20 frame counts,and representative repeated exchange states checked in both languages across five widths.25113 numeric checks unchanged;4140 old bank objects exact. Physical phone/native review not certified.
 
 Beta0.16:12528 browser assertions,including2571 linear-pair and35 offline assertions. Independent point/line/classification/fraction checks across64ordered line pairs,both languages/five widths.25113 numeric assertions;4140 bank objects exact. Full physical/curriculum certification remains open.
+
+Beta0.17:16081browser assertions,including3552prime-model and36offline checks. Every1–100classification/pairs/decomposition,intermediate sieve states and representative rectangle geometry independently tested in both languages/five widths.25113numeric checks;4140bankobjects exact. Not a full curriculum/device certification.
