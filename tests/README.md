@@ -81,3 +81,6 @@ Beta 0.26: browser-integer-laws.cjs adds 32,818 assertions. All 1331 triples at 
 
 
 Beta0.27:browser-geometry-foundations.cjs adds2,427assertions.78validlength/partpairs at all five widths and both languages; arithmetic/equal-segment SVG/max clamping, reasoning choice correct/wrong/empty paths, five postulates present, younger-class guard, labels, reflow, no earned-data changes.72,555localbrowserincluding46offline;25,117numericbank/lessonchecks. Native teacher/physical Android not certified.
+
+
+Beta0.28: browser-circle-chord.cjs adds 2,048 assertions. All 65 valid (r,d) pairs at all five widths in English and Telugu; model square/half/length/kind, diameter/point/chord diagram states, distance-never-beyond-radius clamping, exact-square correct/wrong/invalid/Telugu-digit feedback, congruence proof text, younger-class guard, labels, reflow, no earned-data changes. Total local 74,604 browser assertions including 47 offline; 25,117 numeric bank/lesson checks. Native teacher/physical Android not certified.
