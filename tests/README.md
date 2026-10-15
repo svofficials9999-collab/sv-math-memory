@@ -29,6 +29,8 @@ Current verified checks:
 - 392 full-round/controls: all16 modes at three difficulties, actual matching-pair completion, results/review/replay, empty/wrong/hint/repeated-submit paths, valid/invalid backup restore, quota failure and emulated touch.
 - 20 offline: full bank, old learning save/original score compatibility, all14 visual activities, answer/save/reload.
 
-3126 browser assertions total, plus the independent numeric checker. Counts are release-specific; extend these tests when adding activities. The current expected bank/lesson counts and worker cache version in the tests intentionally pin this release and should be updated with a verified bank/cache change.
+3340 browser assertions total, plus the independent numeric checker. Counts are release-specific; extend these tests when adding activities. The current expected bank/lesson counts and worker cache version in the tests intentionally pin this release and should be updated with a verified bank/cache change.
 
 The test scripts use the app's local public functions to inspect state, alongside button clicks and one emulated touch. They do not establish physical Android launcher behavior, audio quality on real speakers, full accessibility conformance, exam equivalence, native Telugu review or teacher approval. Inspect screenshots as well as the JSON result. A passing exit code is not a visual review.
+
+Beta0.8 adds207 Test room workflow checks and7 keyboard/automatic-timeout/storage/offline checks. The runner includes browser-mock.cjs and browser-mock-extra.cjs. The bank/lesson counts remain3978/56;worker cache is svmm-shell-v10-test-room.
