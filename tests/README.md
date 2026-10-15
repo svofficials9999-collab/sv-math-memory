@@ -44,3 +44,5 @@ Beta0.10:4082 browser assertions including421 primary measurement checks and27 o
 Beta0.11:5425 browser assertions,including1341 fraction/proof geometry checks and29 offline checks.4140 bank items/59 lessons unchanged;25113 numeric assertions.
 
 Beta0.12:6778 browser assertions,including1351 parallel/rotation checks and31 offline checks.4140 bank objects/59 lessons unchanged;25113 numeric assertions.
+
+Beta0.13:7900 browser assertions,including1121 distributive-area/coordinate checks and32 offline checks.4140 prior bank objects/59 lessons unchanged;25113 numeric assertions.
