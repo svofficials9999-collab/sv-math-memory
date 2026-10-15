@@ -102,3 +102,9 @@ Original equal-whole decimal grids/shared number line,comparison and exact integ
 - Full local suite: 20078 browser assertions, including 869 expression checks and 40 offline checks; zero JavaScript exceptions. An additional 3993 expression-model combinations check arithmetic against repeated grouping/addition, and the previous 10201 subtraction pairs still pass. 25113 numeric assertions pass.
 - Two languages/five widths; zero/extreme/accidental-equality cases, first-step/wrong/invalid/Telugu answers, group/counter counts, bar scale, labels/reflow, class gate and no state/store mutation.
 - Actual 320px Telugu repeated-group and two-cost expression steps inspected: readable, no overlap. Live verification follows publication. Full curriculum/exams/native/physical/accessibility/concurrency work remains open.
+
+| Finding | Status | Evidence | File path | Severity | Recommended fix |
+|---|---|---|---|---|---|
+| Simultaneous-tab progress overwritten | CONFIRMED OPEN | Isolated local current-source diagnostic: two correct answers, one per tab, stored 1/1 instead of 2/2 | learn.html, save()/record() | HIGH | Prevent stale writes, preserve existing format/data, test rounds/mock/settings/restore in multiple tabs |
+
+This diagnostic is separate from the passing local/live teaching regression suite. It touched no real user data.
