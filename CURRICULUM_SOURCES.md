@@ -39,3 +39,14 @@ The official CBSE2026-27 IX/X documents already listed above support the content
 Three bilingual lessons and interactive labs,54 original numeric questions (3564 total).51 lessons. The grouped-data activities show cumulative frequencies, interpolation and explicit empty/tied/edge cases. Median and mode estimates are not claimed to recover unknown original observations. All prior3510 question objects, save keys, original games and manifest remain unchanged.
 
 Formula reference read: https://ncert.nic.in/textbook/pdf/jemh113.pdf . This NCERT Statistics chapter supports formula definitions, NOT verification of the entire current board syllabus. It restricts the grouped mode formula to equal-width classes. The tangent proof uses the perpendicular-radius theorem as a known result, then Pythagoras; it does not purport to prove the perpendicular theorem. Teacher and native Telugu review remain pending.
+
+## Learning beta0.7: foundational visual teaching
+Five bilingual lessons: equal shares,metres/centimetres,clock reading,pictographs,money/change. Six activities including signed-integer movement.414 new original numeric items,3978 total;56 lessons. Integer subtraction/multiplication additions are restricted to Classes7–8,not young learners. All prior3564 question objects remain exact.
+
+Current primary-book contents read on15October2026:
+- Class3 Maths Mela: https://ncert.nic.in/textbook/pdf/cemm1ps.pdf
+- Class4 Maths Mela: https://ncert.nic.in/textbook/pdf/demm1ps.pdf
+- Grade5 Maths Mela,reprintedFebruary2026: https://www.ncert.nic.in/textbook/pdf/eemm1ps.pdf
+- Class2 official book index: https://epathshala.nic.in/wp-content/doc/book/flipbook/bejm101.html . The visible chapter links identify Joyful Mathematics,including grouping/sharing,time,money and data handling. This index does not alone establish all current edition metadata.
+
+Only chapter contents/front matter were read for these three new primary sources,not all textbook chapter exercises. Activities/questions are original,not reproduced textbook content. These sources improve mapping; they do not establish complete board coverage or teacher approval.
