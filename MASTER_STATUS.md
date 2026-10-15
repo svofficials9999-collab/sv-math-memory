@@ -9,7 +9,7 @@
 
 - [ప్రస్తుతం పనిచేసే Math learning app / single HTML learning file](https://svofficials9999-collab.github.io/sv-math-memory/learn.html)
 - [Original five games](https://svofficials9999-collab.github.io/sv-math-memory/index.html)
-- [Complete project at verified beta0.21 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/0e23040254911dad1265bb3597d4f8a1803bead3)
+- [Complete project at verified beta0.22 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/0e23040254911dad1265bb3597d4f8a1803bead3)
 - [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/0e23040254911dad1265bb3597d4f8a1803bead3)
 
 `learn.html` contains the learning UI, JavaScript and compressed question bank. **It is not the whole PWA project by itself.** Original games, service worker, manifest, icons, sources and tests are separate project files. Downloading one HTML file does not by itself reproduce installation/offline caching. The checkpoint contains the complete repository at this release. Opening the existing app online once and completing its cache install is needed before normal offline use. External source links still need internet.
@@ -76,7 +76,7 @@ Beta 0.22 adds Class7+ large-number teaching to the existing place-value lesson:
 | Statistics/probability; coordinate geometry/trigonometry/advanced maths | PARTIAL | Selected data/coordinate/trig teaching and numeric items; not complete courses |
 | Correct class progression/board mapping | PARTIAL | Selected class gates and current source checks; every chapter/board not certified |
 | IDs/class/topic/difficulty/question/answer/explanation/options/objective/source status | PARTIAL overall | Existing bank has structured metadata and deterministic arithmetic validation; objectives and source/review provenance are not fully certified per item |
-| Deterministic arithmetic answers and option tests; do not invent official questions | MET within tested numeric bank |25113 checks; original practice is labelled, not official paper content |
+| Deterministic arithmetic answers and option tests; do not invent official questions | MET within tested numeric bank |25117 checks; original practice is labelled, not official paper content |
 | Native Telugu mathematics teacher validation | UNKNOWN / NOT DONE | Authored Telugu text exists; native/teacher sign-off pending |
 
 ## 5. Game modes
@@ -112,7 +112,7 @@ Current level/XP, attempts/correct/accuracy, average response time, topic estima
 | Requirement | Status | Evidence / limit |
 |---|---|---|
 | Responsive layout, offline core gameplay, cache versioning, storage warning, no unnecessary library | MET in tested browser cases |41 offline checks, saved-shell/cache tests; worker `v26-large-numbers` |
-| Safe updates/no existing progress deletion | MET within checked versions | Same identity/start/scope, old saves accepted, no0.21 migration |
+| Safe updates/no existing progress deletion | MET within checked versions | Same identity/start/scope, old saves accepted, no0.22 migration |
 | Reliable actual Android install/launcher | NOT MET / UNKNOWN | Previously reported installed-icon opening failure unresolved; web checks do not prove device repair |
 | Fast real low-end mobile loading/performance | UNKNOWN | No physical benchmark, transfer or battery certification |
 | Backups/restore | MET for learning export/restore | Browser data clearing still requires backup; no cloud recovery |
