@@ -1,6 +1,6 @@
 # SV MATH MEMORY - మొత్తం పని: Master status
 
-15 October 2026, 18:49 IST verified release: **Learning beta 0.18**.
+15 October 2026, 18:59 IST verified release: **Learning beta 0.19**.
 
 **మీ master promptలో అన్నీ పూర్తయ్యాయా? లేదు. పని ఇంకా కొనసాగుతోంది.**
 ఇది ఇప్పటివరకు పనిచేసే app + చేసిన పరీక్షలు + మిగిలిన పనుల ఒకే master index. ఇది పూర్తి syllabus లేదా finished product అని చెప్పే file కాదు.
@@ -9,23 +9,23 @@
 
 - [ప్రస్తుతం పనిచేసే Math learning app / single HTML learning file](https://svofficials9999-collab.github.io/sv-math-memory/learn.html)
 - [Original five games](https://svofficials9999-collab.github.io/sv-math-memory/index.html)
-- [Complete project at verified beta0.18 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/91d6d85e106874fb72404e2ff759d9f70213b7f3)
-- [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/91d6d85e106874fb72404e2ff759d9f70213b7f3)
+- [Complete project at verified beta0.19 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/ff0546b1b22b3dba4aa2d1e70de0b4cb58fffd79)
+- [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/ff0546b1b22b3dba4aa2d1e70de0b4cb58fffd79)
 
 `learn.html` contains the learning UI, JavaScript and compressed question bank. **It is not the whole PWA project by itself.** Original games, service worker, manifest, icons, sources and tests are separate project files. Downloading one HTML file does not by itself reproduce installation/offline caching. The checkpoint contains the complete repository at this release. Opening the existing app online once and completing its cache install is needed before normal offline use. External source links still need internet.
 
 ## Verified totals - సంఖ్యలు
 
-- **59** bilingual topic lessons, **4140** numeric practice-bank items, **36** visual teaching activities.
+- **59** bilingual topic lessons, **4140** numeric practice-bank items, **37** visual teaching activities.
 - Original **5** games kept; learning area has **15 basic game loops + diagnostic**. Several modes share question presentation. These are not 15 deep, completely different games.
-- **17424 live browser assertions passed**, including **1342** new common-ground checks and **37** offline checks. **25113 numeric assertions passed**. Zero JavaScript exceptions in the successful suites.
+- **18289 live browser assertions passed**, including **864** new decimal checks and **38** offline checks. **25113 numeric assertions passed**. Zero JavaScript exceptions in the successful suites.
 - English/Telugu, 320/375/390/430/1280 widths and actual phone-width screenshots inspected. These are browser/emulation checks, **not a physical Android test**.
-- All **4140** prior question objects unchanged in0.18; original index, manifest identity/start/scope and save keys preserved. No new dependency, paid API, backend or storage migration in0.18.
-- HTML size **444356 UTF-8 bytes**. Low-end-phone performance and actual compressed network transfer are **NOT TESTED**. A test assertion is a check, not one user, one question, or one complete chapter.
+- All **4140** prior question objects unchanged in0.19; original index, manifest identity/start/scope and save keys preserved. No new dependency, paid API, backend or storage migration in0.19.
+- HTML size **454700 UTF-8 bytes**. Low-end-phone performance and actual compressed network transfer are **NOT TESTED**. A test assertion is a check, not one user, one question, or one complete chapter.
 
 ## Latest selected teaching addition
 
-Beta0.18 adds Class7+LCM recurring-bell timelines and HCF/LCMprime-factor counts. Positive intervals1–20,same start0;first common positive time differs from later common times. Timeline truncates60with off-window warning. Minimum/maximum prime counts explain HCF/LCM and their two-positive-integer product identity. This is selected teaching,not arbitrary schedules or a full chapter. Earlier lessons and all previous activities stay.
+Beta0.19 adds equal-whole hundredths grids,shared0–1number line,decimal comparison/equivalence,and exact hundredths addition with visible tenths/ones carry. Inputs0–1each,sum0–2. Existing Class5–10decimal lesson uses it as foundation/revision;the verified source is Grade7,not proof of exact current Grade5board placement. All101shadings/all201sumstrings checked. Earlier59lessons and36activities stay. Full decimal chapter and board mapping remain partial.
 
 ## Status meanings
 
@@ -111,8 +111,8 @@ Current level/XP, attempts/correct/accuracy, average response time, topic estima
 
 | Requirement | Status | Evidence / limit |
 |---|---|---|
-| Responsive layout, offline core gameplay, cache versioning, storage warning, no unnecessary library | MET in tested browser cases |37 offline checks, saved-shell/cache tests; worker `v22-common-ground` |
-| Safe updates/no existing progress deletion | MET within checked versions | Same identity/start/scope, old saves accepted, no0.18 migration |
+| Responsive layout, offline core gameplay, cache versioning, storage warning, no unnecessary library | MET in tested browser cases |38 offline checks, saved-shell/cache tests; worker `v23-decimal-hundredths` |
+| Safe updates/no existing progress deletion | MET within checked versions | Same identity/start/scope, old saves accepted, no0.19 migration |
 | Reliable actual Android install/launcher | NOT MET / UNKNOWN | Previously reported installed-icon opening failure unresolved; web checks do not prove device repair |
 | Fast real low-end mobile loading/performance | UNKNOWN | No physical benchmark, transfer or battery certification |
 | Backups/restore | MET for learning export/restore | Browser data clearing still requires backup; no cloud recovery |
@@ -123,7 +123,7 @@ Current level/XP, attempts/correct/accuracy, average response time, topic estima
 
 ## 13. Release management
 
-Changed-file lists, test results, known limits, save/mobile/browser/config checks, versions/checkpoints/rollback notes and honest staged status: **MET for recorded releases** in `RELEASE_LOG.md`. Uniform complete per-finding/per-release formatting: **PARTIAL**. `main` commits trigger Pages publication; local pass does not equal live pass.0.18 was called live only after exact publication and successful rerun. Roll back `learn.html` and `sw.js` together with a fresh cache name; never clear user storage as a release step.
+Changed-file lists, test results, known limits, save/mobile/browser/config checks, versions/checkpoints/rollback notes and honest staged status: **MET for recorded releases** in `RELEASE_LOG.md`. Uniform complete per-finding/per-release formatting: **PARTIAL**. `main` commits trigger Pages publication; local pass does not equal live pass.0.19 was called live only after exact publication and successful rerun. Roll back `learn.html` and `sw.js` together with a fresh cache name; never clear user storage as a release step.
 
 ## 14. Staged roadmap
 
@@ -131,7 +131,7 @@ Small tested releases have been used: **MET**. Requested releases1–7 all fully
 
 ## 15. Reporting and full completion
 
-Actual tests, file changes, limits, no invented official status, no production-ready/world-class claim: **MET for bounded release reports**. Every master-prompt term fully delivered: **NOT MET**. Overall project: **IN PROGRESS**. This report is the requested status handoff, not a full-completion announcement. No promised finish date without evidence.
+Actual tests, file changes, limits, no invented official status, no production-ready/world-class claim: **MET for bounded release reports**. Every master-prompt term fully delivered: **NOT MET**. Overall project: **IN PROGRESS**. Latest instruction:continue every category/file quietly and deliver the total only at the end;no repeated per-release messages or PDFs. This maintained index is not a full-completion announcement. No promised finish date without evidence.
 
 ## మిగిలిన ముఖ్యమైన పని - remaining work
 
@@ -154,4 +154,7 @@ Actual tests, file changes, limits, no invented official status, no production-r
 - [Release log](https://github.com/svofficials9999-collab/sv-math-memory/blob/main/RELEASE_LOG.md)
 - [Repeatable tests](https://github.com/svofficials9999-collab/sv-math-memory/tree/main/tests)
 
-These project documents include older dated totals. The verified0.18 totals at the top of this master report supersede older totals; historical test counts are not added together. Current source editions and board gaps remain described in the coverage/source files.
+These project documents include older dated totals. The verified0.19 totals at the top of this master report supersede older totals; historical test counts are not added together. Current source editions and board gaps remain described in the coverage/source files.
+
+## Beta0.19 live evidence
+Exact454700byte HTML andv23worker published;original index/manifest and4140questionobjects preserved.18289livebrowser assertions,25113numeric,38offline pass;zero JavaScript exceptions. Actual320px Telugu grids/carry screens inspected. Published checkpoint above contains tested app/docs/tests before this live-evidence/master-index update. Latest deployment:https://github.com/svofficials9999-collab/sv-math-memory/actions/runs/38742670934 . No full-scope completion or real-device/native review claim.
