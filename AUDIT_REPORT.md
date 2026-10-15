@@ -24,7 +24,7 @@ Local release checks: 2016 legacy keys independently recomputed, 1278 new keys i
 ## Beta0.4 live verification
 Published HTML, worker and sources were read back exact. All prior3042 IDs/answers/questions/class assignments retained. Live:1937 layout/lesson/mode checks,141 difficulty/answer-path checks,103 activity-control checks,9 fresh-browser offline/old-save checks. Zero JavaScript exceptions in those suites. SVG diagrams and labels inspected as actual live320px Telugu pixels. Activity diagrams illustrate relationships; they are not complete proof teaching or a freehand drawing editor. Current chapter map is CURRICULUM_COVERAGE.md.
 
-## Current master-request traceability at beta0.13
+## Current master-request traceability at beta0.14
 This section supersedes older numeric totals above. Current:4140 numeric items,59 bilingual topic lessons,31 visual activities. Original five games,index/manifest/IDs/start/scope and3978 prior bank objects preserved;162 new original unit-count items appended. Code paths:learn.html,sw.js,tests/. Current test counts are in RELEASE_LOG.md;do not treat an assertion count as curriculum completeness.
 
 | User requirement | Current status | Evidence / remaining work | Severity / next action |
@@ -56,3 +56,12 @@ Beta0.11 adds selected fraction representation/common-unit work and an original 
 Beta0.12 adds selected parallel-angle reasoning and rotational-symmetry models. Full current chapters/grade coverage remains NOT MET.
 
 Beta0.13 adds distributive-area and coordinate distance/midpoint/internal-section representations. Full current chapters/grade coverage remains NOT MET.
+
+## Beta0.14 bounded accessibility/reliability review
+- Checked representative home/settings/dashboard/worlds/library/mock/fraction/algebra/coordinate views in English/Telugu and light/dark palettes. No missing control/image names found in those selected views. This is not exhaustive screen-reader testing.
+- Found three inline documentation links with20px bounding-box height. Enlarged them to44px and summary hit areas to44px. Inline-link exceptions mean the original dimensions alone did not establish a WCAG violation.
+- Added first-tab bilingual skip link;Enter moves focus to the learning region. Existing visible focus ring retained. Keyboard skip and focus verified in isolated Chrome.
+- Bounded computed solid-background text contrast scan found no below-threshold values in sampled views. Gradient/image/transparency combinations were skipped,not certified.
+-320px English/Telugu light/dark layouts and a200% body zoom check for algebra reflow pass;reduced-motion disables entrance animation. Physical Android/screen-reader/low-vision review still UNKNOWN.
+- Stale visible beta0.7 footer corrected to0.14. No question/save/manifest change. HTML404849 bytes;local gzip193670 bytes is a compression measurement,not proof of server transfer size or mobile speed.
+-7982 browser assertions including82 bounded accessibility checks and32 offline checks pass locally;25113 numeric checks pass. Live outcome is recorded separately in RELEASE_LOG.md.
