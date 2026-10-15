@@ -1,6 +1,13 @@
 # Verified live - SV Math Memory
 
 Post-deploy verification records for the public URL. Each entry lists what was actually checked on the live site.
+## Learning beta 0.33 - 16 October 2026, ~03:00 IST
+
+- Pages served learn.html and sw.js byte-identical to the deployed commit (polled until exact match).
+- Live suite green against https://svofficials9999-collab.github.io/sv-math-memory/learn.html: 90,688 browser assertions including 49 offline, zero errors.
+- 390px mobile screenshots pixel-inspected: home en/te, settings showing the Volume slider, Telugu hunt round with the "రెండు తప్పులు తొలగించు" eliminator button, and after use exactly two wrong options disabled.
+- Footer shows "Learning beta 0.33"; worker cache svmm-shell-v37-powerups.
+- Not certified: physical Android installed-icon launch (B2), real speakers, full WCAG, teacher/native-language review.
 
 ## Learning beta 0.32 - 16 October 2026, ~01:50 IST
 
