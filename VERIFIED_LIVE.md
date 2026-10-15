@@ -1,0 +1,16 @@
+# Verified live - SV Math Memory
+
+Post-deploy verification records for the public URL. Each entry lists what was actually checked on the live site.
+
+## Learning beta 0.32 - 16 October 2026, ~01:50 IST
+
+Live URL: https://svofficials9999-collab.github.io/sv-math-memory/learn.html
+
+- Deploy: learn.html (575,869 bytes) and sw.js (svmm-shell-v36-multitab-save) served by GitHub Pages byte-identical to the locally verified build (md5-polled after commit).
+- Full browser suite against the live URL: PASS. 31 files, 90,674 assertions including 49 offline checks and the 10 new multi-tab save checks; zero page exceptions.
+- Live footer: "Learning beta 0.32". Bank of 4140 items and 59 lessons confirmed loaded from the live URL.
+- Mobile viewport 390x844: English home, Telugu home and lesson library rendered and screenshot-inspected; no layout breakage.
+- Old saves: the canonical save shape is unchanged from beta 0.31 (no migration); old-save load and restore equality are covered by the suite's offline and multitab checks against the live deployment.
+- NOT verified here: physical Android device behaviour (B2 remains OPEN, owner device needed), multi-device sync (out of scope; saves are device-local), native Telugu teacher review.
+
+Code checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/2bfde85871a4167be1a97d3a71fac4d0e909000a
