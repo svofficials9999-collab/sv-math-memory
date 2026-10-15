@@ -84,3 +84,6 @@ Beta0.27:browser-geometry-foundations.cjs adds2,427assertions.78validlength/part
 
 
 Beta0.28: browser-circle-chord.cjs adds 2,048 assertions. All 65 valid (r,d) pairs at all five widths in English and Telugu; model square/half/length/kind, diameter/point/chord diagram states, distance-never-beyond-radius clamping, exact-square correct/wrong/invalid/Telugu-digit feedback, congruence proof text, younger-class guard, labels, reflow, no earned-data changes. Total local 74,604 browser assertions including 47 offline; 25,117 numeric bank/lesson checks. Native teacher/physical Android not certified.
+
+
+Beta0.29: browser-equal-chords.cjs adds 2,639 assertions. All 85 radius/distance-pair cases at all five widths in English and Telugu; model squares and longer-chord ordering, diameter/point/chord diagram states for both chords, dual distance clamping, correct/wrong/equal comparison feedback, proof text, younger-class guard, labels, reflow, no earned-data changes. Total local 77,244 browser assertions including 48 offline; 25,117 numeric bank/lesson checks. Native teacher/physical Android not certified.
