@@ -66,3 +66,6 @@ Beta 0.21: browser-expression.cjs adds 869 assertions and checks all 3993 model 
 
 ### Beta0.22 large-number suite
 Run browser-large-numbers.cjs through run-browser-check.mjs.1,721 assertions acrossEnglish/Telugu and320/375/390/430/1280widths,10places,zero/max/leading/internalzero,presetcycle,invalid/wrong/Teluguanswers,classgates,labels,reflow,noearned-datachanges.11,030 deterministic integer cases verify reconstructed periods and place sums. Total21,840browser assertions including41offline;25,117numericbank/lessonchecks. These are automated browser tests,not physical Android or teacher approval.
+
+
+Beta0.23:browser-rounding.cjsadds2,203assertionsacrossEnglish/Teluguand5widths,all5units,zero/exact/tie/onebelowandabove/max,neighborandpointgeometry,strictinvalid/Telugudigits,classes1–6guard,labels/reflow,noearned-datachange.15,130numericmodelcasesinoneinvariantassertion.Total24,044browserincluding42offline,25,117numericbank/lesson.NotphysicalAndroidornative-teachervalidation.
