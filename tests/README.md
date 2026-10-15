@@ -48,3 +48,5 @@ Beta0.12:6778 browser assertions,including1351 parallel/rotation checks and31 of
 Beta0.13:7900 browser assertions,including1121 distributive-area/coordinate checks and32 offline checks.4140 prior bank objects/59 lessons unchanged;25113 numeric assertions.
 
 Beta0.14:7982 browser assertions including82 bounded accessibility checks and32 offline checks. Contrast scan skips gradients/translucency and does not certify WCAG or real screen-reader output.4140 bank objects/59 lessons unchanged;25113 numeric assertions.
+
+Beta0.15:9956 browser assertions including1972 primary-number model checks and34 offline checks. All 100 standard 0–99 standard models,all 21 target 0–20 frame counts,and representative repeated exchange states checked in both languages across five widths.25113 numeric checks unchanged;4140 old bank objects exact. Physical phone/native review not certified.
