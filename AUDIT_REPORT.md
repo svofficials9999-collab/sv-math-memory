@@ -1,4 +1,53 @@
-# SV Math Memory audit, 15 October 2026
+# SV MATHVERSE master-plan Phase 1 audit, 16 October 2026
+
+Audit of the actual repository `svofficials9999-collab/sv-math-memory` and the live site
+https://svofficials9999-collab.github.io/sv-math-memory/ against master-plan section 2.
+Nothing below is invented; unverified items say UNKNOWN - VERIFICATION REQUIRED, untested items say NOT TESTED.
+
+## Repository files and architecture
+Verified from the live `main` tree (commit a1908aedc780eb44e7181cbc7ae025b4c497da4b and Phase 1 docs commits after it):
+- Root: `learn.html` (568,746 bytes, the learning app), `index.html` (20,920 bytes, original five-game landing),
+  `concept.html` (6,247 bytes), `game-data.json` (890 bytes, original-game configuration),
+  `manifest.webmanifest` (499 bytes), `sw.js` (1,640 bytes, worker v35-circumcentre), two install icons, eight documentation files.
+- `tests/`: `run-browser-check.mjs` runner, `data-check.mjs` numeric checker, 30 browser check modules, `tests/README.md`. No npm dependencies; Node 22+ and a Chrome/Chromium binary.
+- Single-file architecture: question bank and lessons are embedded in `learn.html`; no build step, no external runtime dependencies.
+
+## Live state matches the repository
+Byte-for-byte match (SHA-256) between live Pages responses and repo `main` for: learn.html, sw.js, index.html,
+manifest.webmanifest, concept.html, game-data.json. Every URL the worker precaches and every link in index.html
+returned HTTP 200 on 16 October 2026: `./`, index.html, learn.html, concept.html, manifest.webmanifest,
+CURRICULUM_SOURCES.md, both icon PNGs. learn.html contains no external links.
+
+## Tests actually executed (actual results, not claims)
+- Fresh-checkout local suite, `node tests/run-browser-check.mjs .`: PASS. 90,664 browser assertions across 31 modules
+  (five viewport widths 320/375/390/430/1280, English and Telugu, every class/lesson, all modes at three difficulties,
+  save/reload, full rounds, print, activities), including 49 offline assertions. Zero errors, zero uncaught exceptions.
+- Live suite against the deployed URL (`LIVE=...`): PASS, identical 90,664 assertions, 49 offline, zero errors.
+- Numeric checker `node tests/data-check.mjs learn.html`: PASS. Bank 4,140 questions, 59 lessons, 25,117 independent checks.
+
+## Section-2 checklist results
+- Existing files and architecture: VERIFIED (above).
+- Current game functionality: VERIFIED by suite (16 learning loops plus diagnostic, five original index.html games; full-round checks cover instructions, validation, difficulty, scoring, results, replay, exit, feedback).
+- Existing UI and animations: VERIFIED present (card/flip, reward and progress effects; reduced-motion support). Per-screen visual quality review beyond release screenshots: NOT TESTED in this audit.
+- Existing sounds: VERIFIED present. Synthesized Web Audio (AudioContext + oscillator) effects and music, gated by separate sound/music settings; no audio files loaded. Speaker quality on physical devices: NOT TESTED.
+- Question bank: VERIFIED 4,140 items, 59 lessons, metadata and keys recomputed independently by data-check.
+- Save-game system: VERIFIED for save/reload, backup export/restore and old-format compatibility in an isolated profile. HIGH multi-tab stale-write defect OPEN (see BUG_REPORT.md).
+- PWA configuration: VERIFIED. Manifest valid (name, id, start_url, scope ./, standalone, 192/512 icons); scoped worker precaches six entries, network-with-1.2s-saved-shell navigation fallback, versioned cache (v35-circumcentre), old-cache cleanup on activate.
+- Mobile responsiveness: VERIFIED at five widths in English and Telugu. Physical Android device behaviour: NOT TESTED.
+- Offline functionality: VERIFIED by 49 offline assertions (full bank, old save compatibility, all visual activities, answer/save/reload) against a cached shell.
+- Performance: learn.html fetched in 0.158 s total (0.124 s TTFB, 568,746 bytes) from the test host over the Pages CDN on 16 October 2026. Single 568,746-byte HTML contains the full bank; compressed transfer and low-end-device runtime performance: NOT TESTED.
+- Broken buttons and links: none found; all navigation covered by the passing suites, all URLs return 200.
+- Console errors: zero uncaught exceptions across 90,664 local and 90,664 live assertions.
+- Accessibility: bounded checks only (82 assertions: keyboard bypass, contrast, reflow, reduced motion). NOT WCAG certification; full screen-reader and physical assistive-tech review NOT TESTED.
+- Existing tests: VERIFIED present and passing (above).
+- Deployment configuration: GitHub Pages serves this repo's `main` root (evidence: live site serves exact repo bytes). Pages API details are not visible to unauthenticated inspection: UNKNOWN - VERIFICATION REQUIRED, no impact observed.
+
+## Git checkpoint
+Phase 1 docs commit reference is reported with the Phase 1 final report; the preceding verified app checkpoint is
+https://github.com/svofficials9999-collab/sv-math-memory/commit/a1908aedc780eb44e7181cbc7ae025b4c497da4b .
+No app file (learn.html, sw.js, index.html, manifest, game data, icons) was modified by this audit; docs-only commits.
+
+---
 
 Status: IN PROGRESS. Learning beta, not production-ready or full board syllabus.
 
