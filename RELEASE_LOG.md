@@ -43,7 +43,9 @@ Live0.5 checks: HTML/worker/sources/coverage exact.2120 browser assertions pass 
 
 ## Learning beta0.6,15October2026
 Changed: learn.html,sw.js,CURRICULUM_SOURCES.md,CURRICULUM_COVERAGE.md,tests/data-check.mjs,RELEASE_LOG.md.
-Three bilingual lessons/activities: grouped median,grouped mode,equal tangents.54 new numeric questions,3564 total,51 lessons. All3510 prior question objects preserved exact; index/manifest/start_url/IDs/save keys untouched. No new network/dependency. HTML277955 UTF-8 bytes.
-Predeploy:2150 general browser assertions and171 added activity assertions pass (2321 total),zero JS exceptions at320/375/390/430/1280 in English/Telugu. Independent data checker21621 assertions pass,recomputing all3564 numeric answers. Repeating-decimal traps avoided in new questions by choosing terminating answers. No data migration.
+Three bilingual lessons/activities: grouped median,grouped mode,equal tangents.54 new numeric questions,3564 total,51 lessons. All3510 prior question objects preserved exact; index/manifest/start_url/IDs/save keys untouched. No new network/dependency. HTML277811 UTF-8 bytes.
+Predeploy:2150 general browser assertions and173 added activity assertions pass (2323 total),zero JS exceptions at320/375/390/430/1280 in English/Telugu. Independent data checker21621 assertions pass,recomputing all3564 numeric answers. Repeating-decimal traps avoided in new questions by choosing terminating answers. No data migration.
 Rollback: prior version remains in Git history; restore learn.html and sw.js together from previous beta0.5,using a new worker cache name rather than deleting local storage.
 Known issues: full official syllabus/exam coverage,teacher review,native Telugu review,physical Android launch reliability remain incomplete/unverified.
+
+Live0.6:2323 browser assertions pass,zero JS exceptions.14 fresh-profile offline/compatibility checks pass. Actual live320px Telugu median/mode/tangent screenshots inspected. Topic selectors now use bilingual lesson titles.
