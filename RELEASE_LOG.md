@@ -293,7 +293,7 @@ Beta 0.27 LIVE verified October 15, 2026, 21:05 IST: exact 529912-byte HTML and 
 Testing waited for exact new HTML and worker bytes before the full successful live suite.
 
 ## Learning beta 0.28 - perpendicular from centre to a chord
-Status: locally implemented and tested October 15, 2026; live verification follows publication. Full master IN PROGRESS.
+Status: implemented, locally tested and verified live October 15, 2026. Full master IN PROGRESS.
 
 Class 9+ circles teaching adds an original centre-to-chord model: radius r from 1 to 10 and centre distance d from 0 to r on sliders. A circle diagram draws chord AB, the perpendicular foot M and the right-angle marker. Boundary cases are named explicitly: d = 0 gives a diameter with M = O, where OM is a zero-length segment and must not be called a line making a right angle; d = r gives one boundary point, not a chord with two distinct endpoints. The proof panel gives right-angle-hypotenuse-side congruence for AM = MB, Pythagoras AM² = r² − d², and the SSS converse that the midpoint of a non-diameter chord implies perpendicularity. A strict self-check asks for the exact integer AM² with Telugu digit support; displayed decimal lengths are rounded to 3 places while the check stays exact. Original SVG and bilingual prose, not textbook art or official questions. Exploration gives no XP and changes no earned data.
 
@@ -303,3 +303,7 @@ Sources and limits: live current NCERT Class 9 chapter 5 Circles PDF (iemh105.pd
 
 Changed files: learn.html, sw.js, CURRICULUM_SOURCES.md, CURRICULUM_COVERAGE.md, AUDIT_REPORT.md, FEATURE_INVENTORY.md, KNOWN_ISSUES.md, MASTER_STATUS.md, RELEASE_LOG.md, tests/browser-circle-chord.cjs, tests/run-browser-check.mjs, tests/browser-offline.cjs, tests/browser-accessibility.cjs, tests/browser-mock-extra.cjs, tests/README.md.
 Rollback 0.27 checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/70e7a1d5b65c85e883f4451760920aa903cbd12d . Restore learn.html/sw.js together with a fresh cache version. Never clear user storage. Journal migration is not included. Final total only; no intermediate PDF or phase message.
+
+Beta 0.28 LIVE verified October 15, 2026, 21:22 IST: exact 538130-byte HTML and v32-circle-chords worker served by Pages. All 74,604 browser assertions passed, including 47 offline and 2,048 new circle-chord assertions; zero exceptions. All 65 radius/distance pairs checked across 320/375/390/430/1280 widths in both languages. 25,117 numeric bank/lesson checks passed. Actual 320px Telugu chord diagram, congruence proof and exact-square feedback inspected live. All 4140 prior bank objects and original index/manifest/save format preserved. Verified checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/5531e40a91ece3eab7a5c3dc4412edd4dafe2412 . Full master remains IN PROGRESS; HIGH multi-tab lost-update bug remains OPEN; journal migration not deployed.
+
+Pages initially served 0.27 while publication was running. Testing waited for exact new HTML and worker bytes before the full successful live suite.
