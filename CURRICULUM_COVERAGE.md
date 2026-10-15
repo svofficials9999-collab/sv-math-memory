@@ -94,3 +94,12 @@ Newer official catalogue read: https://www.scert.telangana.gov.in/DisplayImage.a
 
 ## Grades1-5
 General foundational practice is present. Current NCERT/Telangana book-by-book chapter coverage remains UNVERIFIED, rather than being declared complete using an older framework.
+
+## Beta0.5 additional partial coverage
+- Graphs: working three-day bar/line representation with labelled zero-based uniform scale, changing values and totals. Full collection/interpretation and complex graph tasks remain.
+- Grouped statistics: frequency inputs, midpoints and estimated mean; zero total/invalid frequencies handled. Grouped median and mode remain NOT STARTED.
+- Triangle congruence: corresponding vertices/sides, SSS worked reasoning and wrong-answer feedback. Other congruence proofs and applications remain partial.
+- Trigonometric identity: explicit acute-angle derivation from Pythagoras, division by c² and numeric examples. Broader identity applications remain incomplete.
+- Heights/distances: one45° level-ground example with observer eye height. General30°/60°, multiple triangles and depression angles remain incomplete.
+
+These additions do not change any row to full curriculum completion.
