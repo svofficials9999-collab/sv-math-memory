@@ -2,6 +2,25 @@
 for(const mode of await ev('modes.map(x=>x[0])'))for(const d of [1,2,3]){await ev(`state=fresh();chosenClass=10;topic='all';difficulty=${d};profile='school';if('${mode}'==='review')state.mistakes=bank.filter(q=>q.classLevel===10).slice(0,8).map(q=>q.id);begin('${mode}')`);if(mode==='match'){await ev(`for(const k of [...new Set(session.cards.map(c=>c.k))]){for(const i of session.cards.map((c,i)=>c.k===k?i:-1).filter(i=>i>=0))document.querySelector('[data-tile="'+i+'"]').click()}`);await ev(`new Promise(r=>setTimeout(r,700))`);check(await ev(`page==='result'&&session.matched.length===4&&state.correct===4&&session.finished`),'full pairs '+d)}else{let n=0;while(!await ev('session.finished')&&n<11){await ev(`if($('#hide'))$('#hide').click();if(session.mode==='hunt'){[...document.querySelectorAll('[data-answer]')].find(b=>Math.abs(Number(b.dataset.answer)-session.question.answer)<1e-8).click()}else{$('#answer').value=String(session.question.answer);$('#submit').click()}`);check(await ev('session.done&&session.answers.at(-1).ok'),'answer '+mode+d+n);n++;if(mode==='endless'&&n===5)await ev(`$('#stop').click()`);else await ev(`$('#next').click()`)}check(await ev(`page==='result'&&session.finished&&state.history.length===1&&state.correct===session.answers.length&&session.answers.length>=5`),'full round '+mode+d)}check(await ev(`!!$('#again')&&!!$('#print')&&document.querySelectorAll('details').length===session.answers.length`),'review cards '+mode+d);await ev(`$('#again').click()`);check(await ev(`page==='setup'&&!!$('#begin')`),'again '+mode+d)}
 // Empty, wrong, hint, repeated-submit, language and next-question paths.
 await ev(`state=fresh();chosenClass=7;topic='all';difficulty=2;begin('mixed');$('#answer').value='';$('#submit').click()`);check(await ev('state.attempted===0&&!session.done'),'empty input');await ev(`$('#hint').click();$('#answer').value='100000000';$('#submit').click();$('#submit').click()`);check(await ev('state.attempted===1&&state.correct===0&&state.mistakes.length===1'),'wrong once');await ev(`$('#lang').click();$('#next').click();$('#hint').click();$('#answer').value=String(session.question.answer);$('#submit').click()`);check(await ev('state.attempted===2&&state.correct===1&&state.xp===5&&state.coins===0'),'hint reward');
+check(await ev(`!document.querySelector('#elim')`),'no eliminator outside hunt');
+await ev(`$('#next').click();$('#answer').value='999999999';$('#submit').click()`);
+check(await ev(`!!document.querySelector('#second')`),'second chance offered');
+check(await ev(`state.attempted===3&&state.correct===1&&state.mistakes.length===2`),'wrong recorded before second chance');
+await ev(`$('#second').click()`);
+check(await ev(`state.attempted===2&&state.correct===1&&state.mistakes.length===1&&!session.done`),'second chance undoes wrong');
+await ev(`$('#answer').value=String(session.question.answer);$('#submit').click()`);
+check(await ev('state.attempted===3&&state.correct===2&&state.mistakes.length===1'),'second chance retry scored');
+await ev(`$('#next').click();$('#answer').value='999999999';$('#submit').click()`);
+check(await ev(`!document.querySelector('#second')`),'second chance once per round');
+await ev(`$('#next').click();state=fresh();chosenClass=5;topic='all';difficulty=1;begin('hunt')`);
+check(await ev(`!!document.querySelector('#elim')`),'eliminator shown in hunt');
+await ev(`$('#elim').click()`);
+check(await ev(`[...document.querySelectorAll('[data-answer]')].filter(x=>x.disabled).length===2`),'eliminator disables two');
+check(await ev(`[...document.querySelectorAll('[data-answer]')].filter(x=>!x.disabled&&Math.abs(Number(x.dataset.answer)-session.question.answer)<1e-8).length===1`),'eliminator keeps correct');
+await ev(`[...document.querySelectorAll('[data-answer]')].find(x=>!x.disabled&&Math.abs(Number(x.dataset.answer)-session.question.answer)<1e-8).click()`);
+check(await ev('state.correct===1&&state.xp===5&&state.coins===0'),'eliminator reward reduced');
+await ev(`$('#next').click()`);
+check(await ev(`!session.done&&document.querySelector('#elim')&&!document.querySelector('#elim').disabled`),'eliminator re-arms next question');
 // Backup round-trip and invalid restore must not overwrite current state.
 await ev(`finish();settings();window.beforeBackup=JSON.stringify(state);window.backupFile=new File([window.beforeBackup],'backup.json',{type:'application/json'});var dt=new DataTransfer();dt.items.add(window.backupFile);$('#restore').files=dt.files;$('#restore').dispatchEvent(new Event('change'));new Promise(r=>setTimeout(r,50))`);check(await ev('JSON.stringify(state)===window.beforeBackup'),'restore valid');await ev(`var dt=new DataTransfer();dt.items.add(new File(['{"bad":true}'],'bad.json'));$('#restore').files=dt.files;$('#restore').dispatchEvent(new Event('change'));new Promise(r=>setTimeout(r,50))`);check(await ev('JSON.stringify(state)===window.beforeBackup'),'restore invalid safe');
 // Storage failure is handled without an uncaught error.
