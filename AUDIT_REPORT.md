@@ -23,3 +23,26 @@ Local release checks: 2016 legacy keys independently recomputed, 1278 new keys i
 
 ## Beta0.4 live verification
 Published HTML, worker and sources were read back exact. All prior3042 IDs/answers/questions/class assignments retained. Live:1937 layout/lesson/mode checks,141 difficulty/answer-path checks,103 activity-control checks,9 fresh-browser offline/old-save checks. Zero JavaScript exceptions in those suites. SVG diagrams and labels inspected as actual live320px Telugu pixels. Activity diagrams illustrate relationships; they are not complete proof teaching or a freehand drawing editor. Current chapter map is CURRICULUM_COVERAGE.md.
+
+## Current master-request traceability at beta0.8
+This section supersedes older numeric totals above. Current:3978 numeric items,56 bilingual topic lessons,18 visual activities. Original five games,index/manifest/IDs/start/scope and3978 prior bank objects preserved. Code paths:learn.html,sw.js,tests/. Current test counts are in RELEASE_LOG.md;do not treat an assertion count as curriculum completeness.
+
+| User requirement | Current status | Evidence / remaining work | Severity / next action |
+|---|---|---|---|
+|Repository audit and four requested files|MET as an initial audit,not a final certification|AUDIT_REPORT.md,FEATURE_INVENTORY.md,KNOWN_ISSUES.md,ROADMAP.md|Keep findings current;formal accessibility and physical-device audit still unknown|
+|Recoverable checkpoint,existing app/data,no backend|MET for checkpoint/preservation;development branch preference NOT MET|Git history;original index/manifest and old bank objects exact;v1/v2 keys retained;changes made on main through tested small releases|High:keep rollback and avoid deletion|
+|Colourful mobile UI,theme/language,effects|PARTIAL|Gradients,cards,reduced-motion,dark/light,English/Telugu;phone-width pixels inspected|Rich map/counters/character customisation incomplete|
+|Full Classes1–10 correct curriculum|NOT MET|56 short lessons,3978 numeric questions and18 activities;CURRICULUM_COVERAGE.md remains partial|High:complete primary/board-specific semantic mapping and teaching|
+|15 real game loops|MET as working basic loops,PARTIAL in depth|All16 including diagnostic complete rounds at3 difficulties in tests|Boss/logic/game worlds remain simple;do not claim distinct deep mechanics|
+|XP,coins,trophies,streaks,missions,worlds|PARTIAL|Local earned progression,badges/trail,three trophies and mission|Rich unlockable worlds/level progression incomplete|
+|Transparent adaptive learning|MET as a basic rules-based system,not AI|Diagnostic,accuracy-based difficulty,hints,mistakes,revision,free practice|Broader topic diagnostics and pedagogical validation incomplete|
+|Optional audio/music/vibration controls|PARTIAL / physical output UNKNOWN|Local oscillator tones and toggles;no narration or audio downloads|Physical speaker/audio quality and vibration not verified|
+|Structured complete exam preparation|NOT MET|Guided profile practice and separate original Test room;no official questions claimed|High:full SSC/CBSE/entrance/other-exam blueprints still incomplete|
+|Timed tests,review,explanations,reports|MET for original class-topic practice|Test room,deferred feedback,flags,timeout,resume,review,print with answers|Not equivalent to a complete official board/entrance paper|
+|Dashboard and private local progress|MET as a basic dashboard|Level/XP/accuracy/time/topic/mastery/history/revision;no accounts/tracking|Teacher validation and richer charts incomplete|
+|PWA/offline/storage reliability|PARTIAL with repeatable evidence|Scoped cache,bounded navigation,offline suite,old-save checks,quota warning|High:physical Android launcher issue unresolved|
+|Complete all requested testing|NOT MET|Repeatable numeric/browser/activity/round/mock/offline/PDF checks;actual pixels inspected|Physical device,formal accessibility,native/teacher review still unknown|
+|Release log and honest status|MET for staged releases|RELEASE_LOG.md,source/coverage notes,Git checkpoints|No full-completion/world-class/production-ready claim|
+|Finish all work before final handoff|IN PROGRESS,NOT COMPLETE|The durable task remains active|Continue bounded verified releases;do not mark task complete|
+
+Test room storage adds svmm.mock.v1 and an optional state.mockRuns list. Old v2 saves remain accepted;no existing progress deletion/migration. One local draft/latest result is retained. Timer continues hidden/closed. Current basic local tests do not establish concurrent multi-tab race safety or native Android WebAPK behavior.
