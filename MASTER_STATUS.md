@@ -1,6 +1,6 @@
 # SV MATH MEMORY - మొత్తం పని: Master status
 
-15 October 2026, 20:26 IST verified release: **Learning beta 0.24**.
+15 October 2026, 20:44 IST verified release: **Learning beta 0.25**.
 
 **మీ master promptలో అన్నీ పూర్తయ్యాయా? లేదు. పని ఇంకా కొనసాగుతోంది.**
 ఇది ఇప్పటివరకు పనిచేసే app + చేసిన పరీక్షలు + మిగిలిన పనుల ఒకే master index. ఇది పూర్తి syllabus లేదా finished product అని చెప్పే file కాదు.
@@ -9,23 +9,23 @@
 
 - [ప్రస్తుతం పనిచేసే Math learning app / single HTML learning file](https://svofficials9999-collab.github.io/sv-math-memory/learn.html)
 - [Original five games](https://svofficials9999-collab.github.io/sv-math-memory/index.html)
-- [Complete project at verified beta0.24 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/ccc4111e4caac18b1fb6a108fa70f61c431352ff)
-- [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/ccc4111e4caac18b1fb6a108fa70f61c431352ff)
+- [Complete project at verified beta0.25 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/4ae82389343956c9b54290d969181e0822d91e23)
+- [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/4ae82389343956c9b54290d969181e0822d91e23)
 
 `learn.html` contains the learning UI, JavaScript and compressed question bank. **It is not the whole PWA project by itself.** Original games, service worker, manifest, icons, sources and tests are separate project files. Downloading one HTML file does not by itself reproduce installation/offline caching. The checkpoint contains the complete repository at this release. Opening the existing app online once and completing its cache install is needed before normal offline use. External source links still need internet.
 
 ## Verified totals - సంఖ్యలు
 
-- **59** bilingual topic lessons, **4140** numeric practice-bank items, **42** visual teaching activities.
+- **59** bilingual topic lessons, **4140** numeric practice-bank items, **43** visual teaching activities.
 - Original **5** games kept; learning area has **15 basic game loops + diagnostic**. Several modes share question presentation. These are not 15 deep, completely different games.
-- **27332 live browser assertions passed**, including **3287** new integer-product checks and **43** offline checks. **25117 numeric assertions passed**. Zero JavaScript exceptions in the successful suites.
+- **37308 live browser assertions passed**, including **9975** new integer-division checks and **44** offline checks. **25117 numeric assertions passed**. Zero JavaScript exceptions in the successful suites.
 - English/Telugu, 320/375/390/430/1280 widths and actual phone-width screenshots inspected. These are browser/emulation checks, **not a physical Android test**.
-- All **4140** prior question objects unchanged in0.24; original index, manifest identity/start/scope and save keys preserved. No new dependency, paid API, backend or storage migration in0.24.
-- HTML size **503606 UTF-8 bytes**. Low-end-phone performance and actual compressed network transfer are **NOT TESTED**. A test assertion is a check, not one user, one question, or one complete chapter.
+- All **4140** prior question objects unchanged in0.25; original index, manifest identity/start/scope and save keys preserved. No new dependency, paid API, backend or storage migration in0.25.
+- HTML size **509996 UTF-8 bytes**. Low-end-phone performance and actual compressed network transfer are **NOT TESTED**. A test assertion is a check, not one user, one question, or one complete chapter.
 
 ## Latest selected teaching addition
 
-Beta 0.24 adds Class 7+ two-factor integer products from -6 to 6. Positive first factors place groups; negative first factors remove groups after zero pairs are added. Sign and shape labels, before/action views, remaining counts, strict answer checks, Telugu digit input and a pattern through zero support the model. Existing Class 6 integer teaching and all previous activities remain. Integer division, all properties and full chapter contexts are still incomplete.
+Beta 0.25 adds Class 7+ integer division as a missing-factor equation d × q = n. Exact reduced fractions, equivalent-answer checks, Telugu digits, Unicode minus and both zero-divisor cases support the model. All earlier multiplication token teaching remains. Integer properties, multi-factor expressions and full chapter contexts are still incomplete.
 
 ## Status meanings
 
@@ -201,10 +201,14 @@ The first live attempt ran against the previous worker while Pages was publishin
 
 
 ## Learning beta 0.25 - division as a missing factor
-Status: locally implemented and tested October 15, 2026; live verification follows publication. Full master IN PROGRESS.
+Status: implemented, locally tested and verified live October 15, 2026. Full master IN PROGRESS.
 
 The existing Class 7+ integer lesson adds n ÷ d as d × q = n, with n from -36 to 36 and d from -6 to 6. Exact reduced fractions show that a quotient of integers need not be an integer. Nonzero divided by zero has no solution; zero divided by zero has many solutions to the multiplication equation, so neither has a defined unique quotient. The answer checker accepts equivalent fractions, Telugu digits and Unicode minus and verifies by exact multiplication. Class 6 and all previous activities remain unchanged. Exploration gives no XP and changes no saved progress.
 
 Local results: 37,308 browser assertions, including 9,975 new division assertions and 44 offline assertions; zero exceptions. All 949 model pairs checked. 25,117 numeric bank/lesson checks passed. Actual 320px Telugu fractions, feedback, zero/zero and nonzero/zero screenshots inspected. HTML 509996 UTF-8 bytes, footer 0.25, worker v29-integer-division. 43 teaching activities, 59 bilingual lessons and all 4140 prior bank objects preserved. No new dependency, backend, save format or authoritative save store.
 
 Still partial: all integer properties, multi-factor expressions and full chapter contexts. Native Telugu teacher review, physical Android and complete board-specific coverage remain unverified. The HIGH production multi-tab lost-update bug is still OPEN. The separately tested journal migration is NOT included and remains undeployed pending owner approval.
+
+Beta 0.25 LIVE verified October 15, 2026, 20:44 IST: exact 509996-byte HTML and v29-integer-division worker served by Pages. All 37,308 browser assertions passed, including 44 offline and 9,975 new integer-division assertions; zero exceptions. All 949 model pairs and 25,117 numeric bank/lesson checks passed. Actual 320px Telugu fraction, answer/feedback and both zero-divisor cases inspected. All 4140 prior bank objects and original index/manifest identity/save format preserved. Verified checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/4ae82389343956c9b54290d969181e0822d91e23 . Full master remains IN PROGRESS; HIGH multi-tab lost-update bug remains OPEN; journal migration not deployed.
+
+Pages initially still served 0.24 while publication was running. Testing waited for exact new HTML and worker before the successful full live suite. No failed live suite was suppressed.
