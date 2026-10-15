@@ -10,7 +10,7 @@ Source: https://ncert.nic.in/textbook/pdf/fegp1ps.pdf
 | Patterns in Mathematics | PARTIAL: number sequences | Shape patterns, reasoning and exploratory activities |
 | Lines and Angles | PARTIAL: angle slider, linear pair | Lines/rays/segments, measuring and more reasoning |
 | Number Play | PARTIAL: number patterns and factors | Place-value games, estimates and textbook-specific explorations |
-| Data Handling and Presentation | PARTIAL: basic data/averages | Grade6 pictographs, bar graphs, collection and interpretation |
+| Data Handling and Presentation | PARTIAL: basic data/averages and editable bar/line chart | Grade6 pictographs, collection and fuller interpretation |
 | Prime Time | PARTIAL: HCF/factor practice | Primes/composites, divisibility, factorisation and applications |
 | Perimeter and Area | PARTIAL: rectangles | Irregular shapes, unit squares and contextual problems |
 | Fractions | PARTIAL: fractions of quantities | Representation, comparisons and all operations |
@@ -31,7 +31,7 @@ Sources: https://ncert.nic.in/textbook/pdf/gegp1ps.pdf and https://ncert.nic.in/
 | Number Play | PARTIAL: patterns | Grade-specific reasoning explorations |
 | A Tale of Three Intersecting Lines | PARTIAL: triangle angle arithmetic | Triangle properties, constructions and reasoning |
 | Working with Fractions | PARTIAL: fractional quantities | All operations and contexts |
-| Geometric Twins | NOT STARTED as a full chapter | Congruence, correspondence and demonstrations |
+| Geometric Twins | PARTIAL: SSS correspondence demonstration | Other criteria, applications and broader demonstrations |
 | Operations with Integers | PARTIAL: addition | Multiplication/division, signs, properties and contexts |
 | Finding Common Ground | PARTIAL: HCF/LCM | General factorisation/divisibility and applications |
 | Another Peek Beyond the Point | PARTIAL: decimals | Multiplication/division and practical contexts |
@@ -64,7 +64,7 @@ Source: https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths
 
 Number System; Introduction to Polynomials; Sequences and Progressions; Exploring Algebraic Identities; Linear Equations in Two Variables; Coordinate Geometry; Introduction to Euclid's Geometry (Axioms and Postulates); Lines and Angles; Triangles (Congruence Theorems); 4-gons (Quadrilaterals); Circles; Area and Perimeter; Surface Area and Volume; Statistics; Introduction to Probability.
 
-App: basic numeric concepts for most categories, NOT full chapter coverage. Euclid/axioms and triangle congruence proof teaching are NOT STARTED. Graphing, reasoning, proofs, full identities, statistical interpretation and all applications remain incomplete. Current source includes sequences/progressions and probability in grade9; older syllabus lists are not a substitute.
+App: basic numeric concepts for most categories, NOT full chapter coverage. Euclid/axioms are NOT STARTED. Triangle congruence has an SSS correspondence demonstration, not full proof teaching. Graphing, reasoning, proofs, full identities, statistical interpretation and all applications remain incomplete. Current source includes sequences/progressions and probability in grade9; older syllabus lists are not a substitute.
 
 ## CBSE Grade10,2026-27
 Source: https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths_SecP1X_2026-27.pdf
@@ -78,13 +78,13 @@ Source: https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths
 | Arithmetic Progressions | PARTIAL: nth term | Derivation, sums and applications |
 | Coordinate Geometry | PARTIAL: distance | Section formula, derivations and contexts |
 | Triangles | PARTIAL: similarity scale | Basic proportionality proof and criteria |
-| Circles | PARTIAL: circle formula revision | Tangent theorems and proofs |
+| Circles | PARTIAL: circle formula revision, equal tangents proof using perpendicular-radius theorem | Proof of perpendicular-radius theorem and broader circle work |
 | Introduction to Trigonometry | PARTIAL:3-4-5 ratios | Standard angles, definitions and applications |
-| Trigonometric Identities | NOT STARTED as a full lesson | sin²+cos² identity proof and applications |
-| Heights and Distances | NOT STARTED | Angles of elevation/depression and contexts |
+| Trigonometric Identities | PARTIAL: acute-angle sin²+cos² derivation | Broader identity applications |
+| Heights and Distances | PARTIAL:45° example with eye height | General elevation/depression, multiple triangles and contexts |
 | Areas Related to Circles | PARTIAL: full-circle formula | Sectors, segments and applications |
 | Surface Areas and Volumes | PARTIAL: cuboid | Other solids and combinations |
-| Statistics | PARTIAL: ungrouped ideas | Grouped mean/median/mode and methods |
+| Statistics | PARTIAL: ungrouped ideas and grouped mean/median/mode labs | Other methods, datasets and contextual reasoning |
 | Probability | PARTIAL: simple outcomes | More events and contextual reasoning |
 
 The official document gives3hours/80marks theory plus20internal assessment. The app's short ten-question practice is NOT that complete paper. No official exam question claim is made.
