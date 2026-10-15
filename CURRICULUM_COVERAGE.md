@@ -108,3 +108,21 @@ These additions do not change any row to full curriculum completion.
 - Grouped statistics: estimated median with cumulative frequency/interpolation; estimated mode with an equal-width interior modal class. Zero observations, invalid frequencies, tied modes and unsupported edge cases have explicit feedback. Full statistical applications remain incomplete.
 - Circles: equal tangents theorem derived from the known perpendicular-radius theorem using Pythagoras, plus numeric checks. The perpendicular theorem and broader circle chapters remain incomplete.
 No chapter is marked complete on the strength of these selected activities.
+
+## Beta0.7 primary-book gap map
+Current source contents read:
+Class3: https://ncert.nic.in/textbook/pdf/cemm1ps.pdf
+Class4: https://ncert.nic.in/textbook/pdf/demm1ps.pdf
+Grade5: https://www.ncert.nic.in/textbook/pdf/eemm1ps.pdf
+
+The following are exact chapter-title inventories,not proof of complete chapter contents. Generic app skills are mapped only where the topic is clear; opaque chapter names remain unverified until their chapter text is read. All mappings remain PARTIAL or UNVERIFIED.
+
+| Class | Verified contents inventory | Current app / remaining work |
+|---|---|---|
+|3|What's in a Name?;Toy Joy;Double Century;Vacation with My Nani Maa;Fun with Shapes;House of Hundreds–I;Raksha Bandhan;Fair Share;House of Hundreds–II;Fun at Class Party!;Filling and Lifting;Give and Take;Time Goes On;The Surajkund Fair|PARTIAL: counting/place value,arithmetic,shapes,equal sharing,length,time,money/data. Full semantic chapter mapping,measurement/capacity tasks,shape/movement and contextual reasoning incomplete.|
+|4|Shapes Around Us;Hide and Seek;Pattern Around Us;Thousands Around Us;Sharing and Measuring;Measuring Length;The Cleanest Village;Weigh it,Pour it;Equal Groups;Elephants,Tigers,and Leopards;Fun with Symmetry;Ticking Clocks and Turning Calendar;The Transport Museum;Data Handling|PARTIAL: arithmetic,patterns,fractions,length,clock,pictographs. Primary symmetry,capacity/mass,calendar,spatial tasks and chapter-specific contexts incomplete.|
+|5|We the Travellers–I;Fractions;Angles as Turns;We the Travellers–II;Far and Near;The Dairy Farm;Shapes and Patterns;Weight and Capacity;Coconut Farm;Symmetrical Designs;Grandmother's Quilt;Racing Seconds;Animal Jumps;Maps and Locations;Data Through Pictures|PARTIAL: fractions,arithmetic,length,time,data. Angle/turn activities,mass/capacity,map/location,area,primary symmetry and chapter-specific contexts incomplete.|
+
+Class1 current-book contents still UNVERIFIED. Class2 official index was read at https://epathshala.nic.in/wp-content/doc/book/flipbook/bejm101.html ;edition metadata/full chapter contents remain unverified. No primary grade is declared complete.
+
+Beta0.7 adds visual equal-part strips,metre/cm conversion blocks,a clock with continuously moving hour hand,pictograph key changes,money/change/shortfall feedback,and an integer number line. Screen diagrams are schematic,not physical measuring instruments. No real payments. All prior3564 question objects and original saves remain unchanged.
