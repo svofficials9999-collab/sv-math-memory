@@ -68,3 +68,9 @@ Class1 measurement chapter read in full: https://ncert.nic.in/textbook/pdf/aejm1
 
 ## Learning beta0.10 primary measurement
 Three original bilingual lessons/activities added for Classes1–3:aligned length comparisons/equal nonstandard units,capacity in equal cups,and mass comparison with identical unit cubes. Content grounding:the official Class1 measurement chapter https://ncert.nic.in/textbook/pdf/aejm107.pdf already read in full and its2026–27 prelims https://ncert.nic.in/textbook/pdf/aejm1ps.pdf . The app uses new abstract block/jug/balance diagrams,not reproduced textbook illustrations. These activities cover selected qualitative/unit ideas,not the full measurement chapter. Real handspan/footspan/small-container work still needs hands-on practice.162 new original unit-count questions;all4140 numeric keys independently checked. Native Telugu/mathematics-teacher review remains pending.
+
+## Learning beta0.11: fractions and geometric proof
+Primary chapter sources read on15October2026:
+- NCERT Grade6 Ganita Prakash,Fractions,explicit Reprint2026–27: https://ncert.nic.in/textbook/pdf/fegp107.pdf . Sections7.6–7.8 support equivalent fractions,comparison and common-unit addition/subtraction.
+- NCERT Grade8 PartII,The Baudhayana-Pythagoras Theorem: https://ncert.nic.in/textbook/pdf/hegp202.pdf . Section2.4 motivates the area proof of the right-triangle theorem.
+New activities are original diagrams and wording,not reproduced textbook pages. Fraction operations are Class6+;Class4/5 shows equal parts/equivalent-length comparison only. Negative subtraction is withheld in this introductory activity with an explicit swap/add message. Pythagoras uses two equal outer squares minus four congruent right triangles;the two arrangements leave c² and a²+b². Polygon areas,side lengths and right angles are independently tested. No new question-bank items or complete-chapter claim.
