@@ -98,3 +98,10 @@ Read NCERT Joyful Mathematics Class1 source PDFs:
 - https://ncert.nic.in/textbook/pdf/aejm104.pdf : Making10,concrete groups of ten and units up to20,ten-frames.
 - https://ncert.nic.in/textbook/pdf/aejm108.pdf : Fun with Numbers,groups of ten and counting21–99.
 These fetched editions say Reprint2025–26,not2026–27 certification. Original diagrams/wording added to existing lessons,not copied textbook pages or official questions. Class1/2 number-recognition gains two ten-frames up to20. Existing Class2–6 place-value lesson gains a0–99 ten-rod exchange model as foundational/revision work,not a claim of complete higher-class place-value coverage. Formal grade-by-board mapping and native Telugu review remain partial.
+
+## Learning beta0.16: linear equation graphs
+Read current CBSE2026–27 ClassIX andX curriculum:
+- https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths_SecP1IX_2026-27.pdf (Linear Equations in Two Variables includes pairs,graphical method,substitution/elimination and solution nature).
+- https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Maths_SecP1X_2026-27.pdf (pairs,graphical solutions,consistency,substitution/elimination).
+- https://ncert.nic.in/textbook/pdf/jemh103.pdf (graphical interpretation:one,no,infinitely many solutions).
+Original eight line examples and diagrams added from Class9;not copied exam questions. Coefficients use ax+by=c,not textbook ax+by+c=0 sign convention. Exact fraction/cross-product reasoning avoids division by zero. This is a selected teaching activity,not complete linear-equations chapter or board mapping.
