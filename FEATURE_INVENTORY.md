@@ -40,3 +40,5 @@
 - Beta0.12:parallel-line angle-pair controls/reasoning from Class7 and rotational-symmetry matching/order overlays from Class6.
 
 - Beta0.13:like-term distributive area model from Class7;coordinate distance/midpoint from Class9 and positive internal section from Class10.
+
+- Beta0.14:bilingual keyboard bypass link,44px documentation links/summary hit areas,current release footer. Bounded keyboard/name/solid-background contrast/reflow/reduced-motion tests,not full accessibility certification.
