@@ -85,3 +85,12 @@ One Class7+originalLCMmodel:two bells,positive integer intervals1–20,same star
 ## Beta0.19: decimal hundredths
 Original equal-whole decimal grids/shared number line,comparison and exact integer-hundredths addition/carry representation added to existing decimal lesson. Inputs0–1,sum0–2.0.50=0.5but0.05different explicitly taught.37activities59lessons4140items,no bank/save/index/manifest/network/dependency/schema changes.
 18289local browser assertions pass,zero JavaScript exceptions,including864decimal and38offline.25113numeric pass;4140prior bankobjects exact. All101shadings/all201sumstrings and representative carry/extreme pairs,geometry,wrong/invalid/equivalent/Telugu forms,labels/reflow,no score/store mutation tested in2languages/five widths. Actual320px Telugu grids/carry steps inspected. Full chapter/current-board placement/native/physical/accessibility certification incomplete. Live separately recorded.
+
+## Beta 0.20: predeployment evidence
+- Implemented: decimal take-away/regrouping with A and B in 0–100 integer hundredths. Negative-result guard, explicit swap, removed/remaining cell patterns, text labels, borrowing through zero and addition check.
+- Preserved: 4140 prior question objects, original index, manifest identity/start/scope and save schema. No dependency or network change.
+- Version: footer 0.20, worker v24-decimal-subtraction, HTML 463120 UTF-8 bytes. 38 activities, 59 lessons.
+- Tests: 19208 local browser assertions, including 918 subtraction and 39 offline checks; zero JavaScript exceptions. An additional 10201 ordered input pairs check arithmetic/regrouping invariants. 25113 numeric assertions pass.
+- Pixels: actual 320px Telugu take-away grid and 1.00−0.01 exchange steps inspected; readable, no overlap or horizontal overflow.
+- Test-harness recovery: the first local run lacked CURRICULUM_SOURCES.md, so its service worker could not finish installation. Added the missing fixture, updated cache names and reran the complete suite successfully. This was a local fixture fault, not a live-app failure.
+- Limits: live verification follows publication. Full curriculum, native review, physical-device and complete accessibility checks remain open.
