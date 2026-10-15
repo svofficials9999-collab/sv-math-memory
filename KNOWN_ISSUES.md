@@ -15,8 +15,10 @@
 - The government-hosted2027–28 NVS prospectus's arithmetic heading says12 topics but lists9. Full current entrance scope needs a primary-source cross-check;only the arithmetic subsection timing is quoted.
 
 - Accessibility review is bounded,not WCAG conformance certification. Full screen-reader flows,live-region verbosity,gradient contrast,all zoom/context combinations and physical Android assistive technology still need review.
-- HTML size425110 bytes at0.16;compressed network transfer not measured. No measured low-end-phone performance or guaranteed network-transfer claim.
+- HTML size435222 bytes at0.17;compressed network transfer not measured. No measured low-end-phone performance or guaranteed network-transfer claim.
 
 - Beta0.15 primary models cover0–20 ten-frames and0–99 tens/ones only. They do not establish larger-place-value,full primary syllabus or native Telugu/teacher certification. Source primary PDFs fetched are Reprint2025–26.
 
 - Beta0.16 linear graph covers8selected lines,not arbitrary coefficients or complete modelling/substitution/elimination chapter. Visible square is−5..5;off-window crossing warning included.
+
+- Beta0.17factor/sieve model limited1–100;thin rectangle cells shrink to fit and are not touch targets. Full divisibility/co-prime/contextual chapter coverage remains incomplete. Telugu terminology still needs native teacher review.
