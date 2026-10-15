@@ -1,6 +1,6 @@
 # SV MATH MEMORY - మొత్తం పని: Master status
 
-15 October 2026, 19:11 IST verified release: **Learning beta 0.20**.
+15 October 2026, 19:17 IST verified release: **Learning beta 0.21**.
 
 **మీ master promptలో అన్నీ పూర్తయ్యాయా? లేదు. పని ఇంకా కొనసాగుతోంది.**
 ఇది ఇప్పటివరకు పనిచేసే app + చేసిన పరీక్షలు + మిగిలిన పనుల ఒకే master index. ఇది పూర్తి syllabus లేదా finished product అని చెప్పే file కాదు.
@@ -9,23 +9,23 @@
 
 - [ప్రస్తుతం పనిచేసే Math learning app / single HTML learning file](https://svofficials9999-collab.github.io/sv-math-memory/learn.html)
 - [Original five games](https://svofficials9999-collab.github.io/sv-math-memory/index.html)
-- [Complete project at verified beta0.20 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/45c293562a9e0473dd2cf4f5afae7f98466fe450)
-- [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/45c293562a9e0473dd2cf4f5afae7f98466fe450)
+- [Complete project at verified beta0.21 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/ce91b7dabbeefcbbc1bb2336dec49942c733089a)
+- [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/ce91b7dabbeefcbbc1bb2336dec49942c733089a)
 
 `learn.html` contains the learning UI, JavaScript and compressed question bank. **It is not the whole PWA project by itself.** Original games, service worker, manifest, icons, sources and tests are separate project files. Downloading one HTML file does not by itself reproduce installation/offline caching. The checkpoint contains the complete repository at this release. Opening the existing app online once and completing its cache install is needed before normal offline use. External source links still need internet.
 
 ## Verified totals - సంఖ్యలు
 
-- **59** bilingual topic lessons, **4140** numeric practice-bank items, **38** visual teaching activities.
+- **59** bilingual topic lessons, **4140** numeric practice-bank items, **39** visual teaching activities.
 - Original **5** games kept; learning area has **15 basic game loops + diagnostic**. Several modes share question presentation. These are not 15 deep, completely different games.
-- **19208 live browser assertions passed**, including **918** new subtraction checks and **39** offline checks. **25113 numeric assertions passed**. Zero JavaScript exceptions in the successful suites.
+- **20078 live browser assertions passed**, including **869** new expression checks and **40** offline checks. **25113 numeric assertions passed**. Zero JavaScript exceptions in the successful suites.
 - English/Telugu, 320/375/390/430/1280 widths and actual phone-width screenshots inspected. These are browser/emulation checks, **not a physical Android test**.
-- All **4140** prior question objects unchanged in0.20; original index, manifest identity/start/scope and save keys preserved. No new dependency, paid API, backend or storage migration in0.20.
-- HTML size **463120 UTF-8 bytes**. Low-end-phone performance and actual compressed network transfer are **NOT TESTED**. A test assertion is a check, not one user, one question, or one complete chapter.
+- All **4140** prior question objects unchanged in0.21; original index, manifest identity/start/scope and save keys preserved. No new dependency, paid API, backend or storage migration in0.21.
+- HTML size **474563 UTF-8 bytes**. Low-end-phone performance and actual compressed network transfer are **NOT TESTED**. A test assertion is a check, not one user, one question, or one complete chapter.
 
 ## Latest selected teaching addition
 
-Beta 0.20 adds decimal subtraction using equal-whole grids with crossed removed cells, place-value exchanges through zero and an addition check. A/B each range from 0 to 1. A<B has an explicit negative-result limit and an intentional Swap button; the app never silently changes A−B into an absolute difference. The previous addition/comparison model stays. There are 38 visual activities. This is selected foundation/revision, not complete decimal chapters or certified placement across every class.
+Beta 0.21 adds Class 7+ arithmetic-expression meanings to the existing algebra lesson: a+b×c, (a+b)×c and amount received minus two bracketed costs. Loose/group counters, common-scale bars, first-step/value checks and step comparisons explain grouping. Inputs are whole numbers 0–10. Class 6 stays unchanged. This is selected Grade 7 teaching, not the complete chapter. Earlier activities remain.
 
 ## Status meanings
 
@@ -85,7 +85,7 @@ Math Memory, Speed Math, Equation Matching, Number Hunt, Missing Number, Logic P
 
 ## 6. Progression
 
-XP, levels, earned coins, achievements/trophies, streak display, small mission, personal bests and local topic estimates: **MET at basic level**. Unlockable worlds, rich difficulty progression/rewards and sustained game design: **PARTIAL**. Progress persistence: **PARTIAL with repeatable save tests**; clearing browser data still loses local progress. Concurrent multi-tab races: **UNKNOWN**. No gambling, paid advantage or forced purchase implemented; breaks have no penalty.
+XP, levels, earned coins, achievements/trophies, streak display, small mission, personal bests and local topic estimates: **MET at basic level**. Unlockable worlds, rich difficulty progression/rewards and sustained game design: **PARTIAL**. Progress persistence: **PARTIAL with repeatable save tests**; clearing browser data still loses local progress. Concurrent multi-tab saving: **CONFIRMED BUG, HIGH PRIORITY**. An isolated two-tab diagnostic saved 1 attempt/1 correct after one correct answer per tab, rather than 2/2. No real user data was touched. Repair is next; no safety claim for simultaneous tabs. No gambling, paid advantage or forced purchase implemented; breaks have no penalty.
 
 ## 7. Transparent adaptive learning
 
@@ -111,19 +111,19 @@ Current level/XP, attempts/correct/accuracy, average response time, topic estima
 
 | Requirement | Status | Evidence / limit |
 |---|---|---|
-| Responsive layout, offline core gameplay, cache versioning, storage warning, no unnecessary library | MET in tested browser cases |39 offline checks, saved-shell/cache tests; worker `v24-decimal-subtraction` |
-| Safe updates/no existing progress deletion | MET within checked versions | Same identity/start/scope, old saves accepted, no0.20 migration |
+| Responsive layout, offline core gameplay, cache versioning, storage warning, no unnecessary library | MET in tested browser cases |40 offline checks, saved-shell/cache tests; worker `v25-arithmetic-expressions` |
+| Safe updates/no existing progress deletion | MET within checked versions | Same identity/start/scope, old saves accepted, no0.21 migration |
 | Reliable actual Android install/launcher | NOT MET / UNKNOWN | Previously reported installed-icon opening failure unresolved; web checks do not prove device repair |
 | Fast real low-end mobile loading/performance | UNKNOWN | No physical benchmark, transfer or battery certification |
 | Backups/restore | MET for learning export/restore | Browser data clearing still requires backup; no cloud recovery |
 
 ## 12. Testing
 
-**MET in bounded automated scope:** numeric bank; basic modes; major answer/control paths; three difficulties; rounds/results; language continuation; save/reload; offline; activities; selected touch/layout/keyboard/labels; print flow; zero exceptions in successful suites. **PARTIAL:** every button in every state, every unlock/reward edge, all links/audio output/security/performance. **UNKNOWN / NOT TESTED:** physical Android launch/touch/vibration/audio quality; full screen-reader/WCAG; native teacher/Telugu review; multi-tab concurrency. All requested testing complete: **NOT MET**.
+**MET in bounded automated scope:** numeric bank; basic modes; major answer/control paths; three difficulties; rounds/results; language continuation; save/reload; offline; activities; selected touch/layout/keyboard/labels; print flow; zero exceptions in successful suites. **PARTIAL:** every button in every state, every unlock/reward edge, all links/audio output/security/performance. **UNKNOWN / NOT TESTED:** physical Android launch/touch/vibration/audio quality; full screen-reader/WCAG; native teacher/Telugu review; multi-tab concurrency (now a confirmed lost-update bug). All requested testing complete: **NOT MET**.
 
 ## 13. Release management
 
-Changed-file lists, test results, known limits, save/mobile/browser/config checks, versions/checkpoints/rollback notes and honest staged status: **MET for recorded releases** in `RELEASE_LOG.md`. Uniform complete per-finding/per-release formatting: **PARTIAL**. `main` commits trigger Pages publication; local pass does not equal live pass.0.20 was called live only after exact publication and successful rerun. Roll back `learn.html` and `sw.js` together with a fresh cache name; never clear user storage as a release step.
+Changed-file lists, test results, known limits, save/mobile/browser/config checks, versions/checkpoints/rollback notes and honest staged status: **MET for recorded releases** in `RELEASE_LOG.md`. Uniform complete per-finding/per-release formatting: **PARTIAL**. `main` commits trigger Pages publication; local pass does not equal live pass.0.21 was called live only after exact publication and successful rerun. Roll back `learn.html` and `sw.js` together with a fresh cache name; never clear user storage as a release step.
 
 ## 14. Staged roadmap
 
@@ -154,7 +154,9 @@ Actual tests, file changes, limits, no invented official status, no production-r
 - [Release log](https://github.com/svofficials9999-collab/sv-math-memory/blob/main/RELEASE_LOG.md)
 - [Repeatable tests](https://github.com/svofficials9999-collab/sv-math-memory/tree/main/tests)
 
-These project documents include older dated totals. The verified0.20 totals at the top of this master report supersede older totals; historical test counts are not added together. Current source editions and board gaps remain described in the coverage/source files.
+These project documents include older dated totals. The verified0.21 totals at the top of this master report supersede older totals; historical test counts are not added together. Current source editions and board gaps remain described in the coverage/source files.
 
-## Beta 0.20 live evidence
-Exact 463120-byte HTML and v24 worker published; original index/manifest and all 4140 bank objects preserved. 19208 live browser assertions, 25113 numeric assertions and 39 offline checks pass, zero JavaScript exceptions. An additional 10201 ordered input pairs check subtraction arithmetic/regrouping invariants. Actual 320px Telugu take-away grid and 1.00−0.01 borrowing steps inspected. The checkpoint above contains the tested app, documentation and tests before this live-evidence/master-index update. Full scope remains IN PROGRESS.
+## Beta 0.21 live evidence
+Exact 474563-byte HTML and v25 worker published; original index/manifest and all 4140 bank objects preserved. 20078 live browser assertions, 25113 numeric assertions and 40 offline checks pass, zero JavaScript exceptions. Additional model invariants cover 3993 expression combinations and 10201 subtraction pairs. Actual 320px Telugu group/step pixels inspected. The checkpoint above contains the tested app/docs/tests before this live-evidence/master-index update.
+
+A separate isolated local two-tab diagnostic CONFIRMED a lost-update bug in existing shared progress saving: two correct answers in different tabs leave 1 attempt/1 correct saved instead of 2/2. This diagnostic is NOT included in the passing 20078 assertions and does not establish concurrency safety. Path: learn.html, save()/record(). Severity: HIGH. Next: prevent stale-tab writes and test multi-tab scoring/settings/restore/test-room cases without changing existing progress format or deleting data. Full master remains IN PROGRESS.
