@@ -110,3 +110,6 @@ Original eight line examples and diagrams added from Class9;not copied exam ques
 - https://ncert.nic.in/textbook/pdf/fegp105.pdf : Class6 Ganita Prakash Prime Time,sections5.2 and5.4. Rectangular factor arrangements,prime/composite definition,1 neither,1–100 sieve and repeated prime factors.
 - https://ncert.nic.in/textbook/pdf/fegp1ps.pdf : current front matter,Reprint2026–27,chapter5 Prime Time.
 Original diagrams,examples and controls,not copied textbook pages. Prime/composite classification uses number of distinct positive factors,not count of unordered rectangle pairs. Sieve has intermediate undecided states and proceeds until all1–100classified. Factorization shown for1–100 only;full divisibility/copime/context chapter remains partial.
+
+## Learning beta0.18: Finding Common Ground
+Read https://ncert.nic.in/textbook/pdf/gegp203.pdf ,Class7Ganita PrakashII Finding Common Ground:common repeat times,prime-factor minimum counts forHCF,maximum counts forLCM,and HCF×LCM=product for two positive numbers. Front matter https://ncert.nic.in/textbook/pdf/gegp2ps.pdf confirms chapter context. Original bell-timeline example,not copied textbook pages. New model beginsClass7;Class6oldLCMpractice remains. Intervals1–20,positive integers only,both bells start together at0. Different starts,arbitrary schedules and full contextual chapter remain incomplete.
