@@ -94,3 +94,11 @@ Original equal-whole decimal grids/shared number line,comparison and exact integ
 - Pixels: actual 320px Telugu take-away grid and 1.00−0.01 exchange steps inspected; readable, no overlap or horizontal overflow.
 - Test-harness recovery: the first local run lacked CURRICULUM_SOURCES.md, so its service worker could not finish installation. Added the missing fixture, updated cache names and reran the complete suite successfully. This was a local fixture fault, not a live-app failure.
 - Limits: live verification follows publication. Full curriculum, native review, physical-device and complete accessibility checks remain open.
+
+## Beta 0.21 predeployment evidence
+- Added Class 7+ arithmetic-expression meanings/steps to the existing algebra lesson. Three fixed expression families; no arbitrary expression evaluation or new dependency.
+- Preserved all 4140 bank objects, index, manifest identity/start/scope and save schema. No new network behavior.
+- HTML 474563 UTF-8 bytes, footer 0.21, worker v25-arithmetic-expressions. 39 visual activities, 59 lessons.
+- Full local suite: 20078 browser assertions, including 869 expression checks and 40 offline checks; zero JavaScript exceptions. An additional 3993 expression-model combinations check arithmetic against repeated grouping/addition, and the previous 10201 subtraction pairs still pass. 25113 numeric assertions pass.
+- Two languages/five widths; zero/extreme/accidental-equality cases, first-step/wrong/invalid/Telugu answers, group/counter counts, bar scale, labels/reflow, class gate and no state/store mutation.
+- Actual 320px Telugu repeated-group and two-cost expression steps inspected: readable, no overlap. Live verification follows publication. Full curriculum/exams/native/physical/accessibility/concurrency work remains open.
