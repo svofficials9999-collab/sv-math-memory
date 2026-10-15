@@ -5,15 +5,20 @@ Phase 1 audit evidence (AUDIT_REPORT.md). Statuses: OPEN / MONITORING / RESOLVED
 
 ## HIGH severity
 
-### B1. Stale-tab progress overwrite (multi-tab lost update) - OPEN
+### B1. Stale-tab progress overwrite (multi-tab lost update) - RESOLVED 16 October 2026
 Confirmed 15 October 2026 in an isolated local browser profile on the then-current source.
 Path: learn.html save()/record(). Two tabs each load zero progress; each answers one question
 correctly; stored result is 1 attempt / 1 correct instead of 2/2. A stale in-memory state
-overwrites the other tab's newer state. No user data was read or changed during reproduction.
-A journal/save-store fix exists in development but is deliberately NOT DEPLOYED pending owner
-approval of the saved-data migration. Covers ordinary rounds, test-room scoring/drafts,
-preferences, backup restore and storage failure before any multi-tab reliability claim.
-The passing main suite does not cover concurrent tabs.
+overwrote the other tab's newer state. No user data was read or changed during reproduction.
+Fix (Learning beta 0.32): per-operation pending keys written synchronously at mutation time,
+a Web Locks critical section draining operations from every tab (best-effort fallback without
+Web Locks), storage-event live sync between open tabs, apply-time dedup of same-run test-room
+submits, and the operation registry kept outside the student-visible snapshot. No save-format
+migration: old saves load unchanged by construction; restore-export equality holds exactly.
+Evidence: new tests/browser-multitab.cjs (10 checks, including the original B1 reproduction
+now merging to 2/2) green locally and live; full 90,674-assertion suites green locally and
+live; byte-exact deploy verified by polling. Code checkpoint:
+https://github.com/svofficials9999-collab/sv-math-memory/commit/2bfde85871a4167be1a97d3a71fac4d0e909000a
 
 ## MEDIUM severity
 
