@@ -6,7 +6,7 @@
 - Class and difficulty choice, hints, explanatory answer review.
 - 4140 original numeric practice items, including all 2016 legacy IDs.
 - 59 bilingual topic lessons with principle, worked example, common error, sample explanation and topic practice.
-- 36 working visual activity guides/labs,including geometry,data,grouped statistics,tangents,clock,equal shares,units,pictographs,money and integer movement. These do not cover full chapters or provide a freehand drawing editor.
+- 37 working visual activity guides/labs,including geometry,data,grouped statistics,tangents,clock,equal shares,units,pictographs,money and integer movement. These do not cover full chapters or provide a freehand drawing editor.
 - Ten-class lesson trail; four earned-world badges remain.
 - XP, earned coins, three trophies, practice mission, streaks, personal bests.
 - Rules-based difficulty adjustment and weak-topic revision, not AI.
@@ -50,3 +50,5 @@
 - Beta0.17:factor rectangles,prime/composite/neither and prime decomposition1–100,stepwise sieve;35activities total.59lessons4140items unchanged.
 
 - Beta0.18:Class7+LCMbell timeline andHCF/LCMprime-count reasoning,36activities total. Intervals1–20,positive integers,same start only.59lessons4140items unchanged.
+
+- Beta0.19:decimal equal-whole hundredths grids,shared number line,comparison/addition/carry;37activities59lessons4140items.
