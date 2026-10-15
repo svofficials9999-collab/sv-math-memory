@@ -86,3 +86,9 @@ Primary chapters read on15October2026:
 - NCERT Grade7 Expressions Using Letter-Numbers: https://ncert.nic.in/textbook/pdf/gegp104.pdf ,section4.4 rectangular-area/distributive reasoning and like terms. Original area activity available from Class7;earlier Class6 substitution lesson retained.
 - NCERT Coordinate Geometry: https://ncert.nic.in/textbook/pdf/jemh107.pdf ,distance and internal section/midpoint formulas. Current CBSE2026–27 IX/X documents already cited were checked for placement:Class9 distance/midpoint;Class10 internal section. The chapter supports formulas,not the entire current syllabus.
 Original uniform-grid model derives distance using Pythagoras,shows midpoint averages,and adds positive internal section ratios only in Class10. Coincident points have zero distance and an explicit undefined length-ratio warning. Exact expressions are separated from rounded decimal outputs. No new bank items or complete-chapter claim.
+
+## Learning beta0.14:bounded accessibility review
+W3C guidance read:
+- https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html
+- https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html
+Added a keyboard bypass link and enlarged documentation-link/summary hit areas. Small inline link bounding boxes are an improvement opportunity,not automatically a WCAG failure:the target-size criterion has exceptions. Custom contrast checks cover solid opaque backgrounds only;gradients,screen-reader output and full conformance need separate review. No mathematics or curriculum-coverage change.
