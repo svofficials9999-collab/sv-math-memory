@@ -28,3 +28,5 @@
 - Beta0.19decimal model covers only0–1hundredths per input and0–2sum. Full subtraction/multiplication/division/thousandths/rounding/context and precise board placement remain open.
 
 - Beta 0.20: HTML is 463120 UTF-8 bytes; physical low-end-phone performance remains unknown. Subtraction uses A/B in 0–1 and supports A≥B only. A<B is explicitly guarded, never silently replaced by an absolute difference. Full signed decimal operations/contexts remain partial. No save, schema, index or identity change.
+
+- Beta 0.21: HTML 474563 bytes; low-end physical performance remains unknown. Expression lab covers three fixed families with whole inputs 0–10; it is not an arbitrary calculator or complete operations chapter. Context prices are invented, not live prices or payments. Class 6 remains unchanged.
