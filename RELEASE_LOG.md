@@ -1,5 +1,20 @@
 # Release log
 
+## Learning beta 0.32, 16 October 2026
+
+Changes: multi-tab save repair (BUG_REPORT.md B1). The learning save engine now writes each change as a small pending operation (synchronous localStorage write at mutation time), merges operations from all open tabs through a Web Locks critical section with a best-effort fallback, live-syncs open tabs via storage events, and recovers exactly once after a crash mid-save. Same-run test-room double submits are deduplicated at apply time. No save-format migration: the canonical snapshot shape is unchanged, old saves load unchanged, and backup-restore equality holds exactly.
+
+Files: learn.html, sw.js, tests/run-browser-check.mjs, tests/browser-multitab.cjs (new), tests/browser-offline.cjs, tests/browser-mock-extra.cjs, tests/browser-accessibility.cjs, tests/README.md.
+
+Safety: index.html, manifest, start_url and scope untouched. No storage schema change, no score/progress reset, no account, backend or paid API. Cache version svmm-shell-v36-multitab-save. Rollback: revert learn.html and sw.js together to the Phase 1 checkpoint tree 7d5e4742d16f43d51a5be5cdec7d344baa4f6cc1; never clear user storage as a release step.
+
+Evidence:
+- New tests/browser-multitab.cjs: 10 checks. The B1 two-tab reproduction now merges to 2/2; XP merges across tabs; merged state survives reload; a preference change no longer wipes earned counters; the same test-room run cannot score twice; a crashed tab's pending operation is applied exactly once and removed; zero page exceptions in both tabs.
+- Full local suite: 90,674 browser assertions including 49 offline, zero errors. The same suite then passed against the live deployment.
+- Deploy: all 8 files committed through the GitHub web editor with exact get-file-content readback per file; Pages polled until learn.html and sw.js served byte-identical to the verified local build.
+- Live mobile-viewport check at 390x844: English home, Telugu home and lesson library screenshot-inspected; footer "Learning beta 0.32" present on the live page.
+- Numeric data checker unchanged: 25,117 assertions (4140 bank items, 59 lessons).
+
 ## Learning beta 0.3, 15 October 2026
 
 Changes: 39 bilingual teaching lessons and worked examples; class lesson trail; 1026 additional original numeric items (3042 total); Telugu explanations for all old and new items; in-round language continuation; fraction and Telugu-digit numeric input; source/coverage documentation.
