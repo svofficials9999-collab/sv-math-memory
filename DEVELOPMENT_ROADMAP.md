@@ -10,15 +10,14 @@ NOT STARTED / REQUIRES VERIFICATION.
 - Recoverable Git checkpoint: this commit; prior verified app checkpoint a1908ae (Beta 0.31).
 - No production app change made; learn.html and sw.js byte-identical before and after.
 
-## Phase 2 - Repair bugs and improve core gameplay: NOT STARTED (awaiting owner OK)
-Planned, in order:
-1. Fix B1 (HIGH stale-tab overwrite) with the prepared journal/save-store upgrade. BLOCKED on
-   owner approval of the saved-data migration; deploy only with explicit OK, with rollback =
-   restore previous learn.html/sw.js commit. Old saves must load unchanged.
+## Phase 2 - Repair bugs and improve core gameplay: IN PROGRESS (owner-approved 16 October 2026)
+1. DONE 16 Oct as beta 0.32: B1 multi-tab save repair deployed and verified live. No save-format
+   migration was needed: the snapshot shape is unchanged and old saves load unchanged (verified
+   by exact legacy-save equality checks).
 2. B2 physical Android installed-icon check: REQUIRES VERIFICATION on a real device owned by
    the founder (no free emulated substitute exists for WebAPK launch).
-3. Core-gameplay polish that needs no new systems: daily-seeded challenge, volume control,
-   named power-ups (hint exists; second chance / option eliminator are candidates).
+3. PARTIALLY DONE 16 Oct as beta 0.33: volume control, second chance and hunt option eliminator
+   shipped and verified live; daily-seeded challenge remains open.
 
 ## Phase 3 - Curriculum and validated question bank: NOT STARTED
 - Chapter-by-chapter Telangana/CBSE mapping against current official syllabi (verify against
