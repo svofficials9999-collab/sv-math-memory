@@ -1,6 +1,6 @@
 # SV MATH MEMORY - మొత్తం పని: Master status
 
-15 October 2026, 20:07 IST verified release: **Learning beta 0.22**.
+15 October 2026, 20:18 IST verified release: **Learning beta 0.23**.
 
 **మీ master promptలో అన్నీ పూర్తయ్యాయా? లేదు. పని ఇంకా కొనసాగుతోంది.**
 ఇది ఇప్పటివరకు పనిచేసే app + చేసిన పరీక్షలు + మిగిలిన పనుల ఒకే master index. ఇది పూర్తి syllabus లేదా finished product అని చెప్పే file కాదు.
@@ -9,23 +9,23 @@
 
 - [ప్రస్తుతం పనిచేసే Math learning app / single HTML learning file](https://svofficials9999-collab.github.io/sv-math-memory/learn.html)
 - [Original five games](https://svofficials9999-collab.github.io/sv-math-memory/index.html)
-- [Complete project at verified beta0.22 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/0e23040254911dad1265bb3597d4f8a1803bead3)
-- [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/0e23040254911dad1265bb3597d4f8a1803bead3)
+- [Complete project at verified beta0.23 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/082009df138a701a41d19863469bedf2b9c3efe8)
+- [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/082009df138a701a41d19863469bedf2b9c3efe8)
 
 `learn.html` contains the learning UI, JavaScript and compressed question bank. **It is not the whole PWA project by itself.** Original games, service worker, manifest, icons, sources and tests are separate project files. Downloading one HTML file does not by itself reproduce installation/offline caching. The checkpoint contains the complete repository at this release. Opening the existing app online once and completing its cache install is needed before normal offline use. External source links still need internet.
 
 ## Verified totals - సంఖ్యలు
 
-- **59** bilingual topic lessons, **4140** numeric practice-bank items, **40** visual teaching activities.
+- **59** bilingual topic lessons, **4140** numeric practice-bank items, **41** visual teaching activities.
 - Original **5** games kept; learning area has **15 basic game loops + diagnostic**. Several modes share question presentation. These are not 15 deep, completely different games.
-- **21840 live browser assertions passed**, including **1721** new large-number checks and **41** offline checks. **25117 numeric assertions passed**. Zero JavaScript exceptions in the successful suites.
+- **24044 live browser assertions passed**, including **2203** new rounding checks and **42** offline checks. **25117 numeric assertions passed**. Zero JavaScript exceptions in the successful suites.
 - English/Telugu, 320/375/390/430/1280 widths and actual phone-width screenshots inspected. These are browser/emulation checks, **not a physical Android test**.
 - All **4140** prior question objects unchanged in0.22; original index, manifest identity/start/scope and save keys preserved. No new dependency, paid API, backend or storage migration in0.22.
-- HTML size **485247 UTF-8 bytes**. Low-end-phone performance and actual compressed network transfer are **NOT TESTED**. A test assertion is a check, not one user, one question, or one complete chapter.
+- HTML size **494161 UTF-8 bytes**. Low-end-phone performance and actual compressed network transfer are **NOT TESTED**. A test assertion is a check, not one user, one question, or one complete chapter.
 
 ## Latest selected teaching addition
 
-Beta 0.22 adds Class7+ large-number teaching to the existing place-value lesson: Indian/international commas, lakh/crore/million/billion equivalence, all ten decimal places, expanded sum, zero positions and answer checks. The same lesson becomes available throughClass10. Classes1–6 retain their earlier text/model. Whole-number inputs0–9,999,999,999. Full number-word spelling, rounding, estimation and contextual chapter work remain incomplete.
+Beta0.23 adds Class7+ nearest-multiple reasoning: lower/upper multiples, midpoint, distances and upward exact-tie rule; nearest thousand,ten thousand,lakh,ten lakh,crore. Original line diagram and strict answer checks. Input0–9,999,999,999;rounding may produce10,000,000,000. Earlier grouping/place-value and all other teaching remain. Full estimation,decimal rounding,significant figures and contextual chapter work remain incomplete.
 
 ## Status meanings
 
@@ -111,8 +111,8 @@ Current level/XP, attempts/correct/accuracy, average response time, topic estima
 
 | Requirement | Status | Evidence / limit |
 |---|---|---|
-| Responsive layout, offline core gameplay, cache versioning, storage warning, no unnecessary library | MET in tested browser cases |41 offline checks, saved-shell/cache tests; worker `v26-large-numbers` |
-| Safe updates/no existing progress deletion | MET within checked versions | Same identity/start/scope, old saves accepted, no0.22 migration |
+| Responsive layout, offline core gameplay, cache versioning, storage warning, no unnecessary library | MET in tested browser cases |41 offline checks, saved-shell/cache tests; worker `v27-large-rounding` |
+| Safe updates/no existing progress deletion | MET within checked versions | Same identity/start/scope, old saves accepted, no0.23 migration |
 | Reliable actual Android install/launcher | NOT MET / UNKNOWN | Previously reported installed-icon opening failure unresolved; web checks do not prove device repair |
 | Fast real low-end mobile loading/performance | UNKNOWN | No physical benchmark, transfer or battery certification |
 | Backups/restore | MET for learning export/restore | Browser data clearing still requires backup; no cloud recovery |
@@ -172,4 +172,13 @@ The confirmed HIGH multi-tab lost-update bug remains OPEN in this release. A sep
 This candidate does not make any previously incomplete master category complete. Full boards, exams, native teacher review, physical Android, complete accessibility/performance/security and final all-file audit still remain.
 
 
-Beta0.22 LIVE verification:21,840browserassertions,41offline,zeroexceptions,25,117numericbank/lessonassertions. Actual320pxTelugugrouping/expandedplacepixelsinspected. Exact485247byteHTMLandv26worker. Verifiedcheckpoint:https://github.com/svofficials9999-collab/sv-math-memory/commit/0e23040254911dad1265bb3597d4f8a1803bead3 . The separate journal migration remains undeployed pending owner approval; the HIGH multi-tab bug is still open in production.
+Beta0.22 LIVE verification:21,840browserassertions,41offline,zeroexceptions,25,117numericbank/lessonassertions. Actual320pxTelugugrouping/expandedplacepixelsinspected. Exact485247byteHTMLandv26worker. Verifiedcheckpoint:https://github.com/svofficials9999-collab/sv-math-memory/commit/082009df138a701a41d19863469bedf2b9c3efe8 . The separate journal migration remains undeployed pending owner approval; the HIGH multi-tab bug is still open in production.
+
+
+## Learning beta0.23 - selected nearest-multiple teaching
+Status: local implementation tested15October2026; live verification follows publication. Full master remains IN PROGRESS.
+Path: learn.html,Class7+place-value lesson. Added original number line,lower/upper multiples,midpoint,distances,nearest thousand/ten thousand/lakh/ten lakh/crore,answer checks,exact-multiple and tie explanations. Exact ties round upward by explicit lab convention. Input0–9,999,999,999;rounded output can reach10,000,000,000. English/Telugu,Telugu-digit input;exact identifiers and minimum-capacity needs distinguished from estimates. No actual phone/account/student data requested.
+Local evidence:24,044browserassertions,including2,203newroundingand42offlinechecks;zeroexceptions.15,130numericroundingcasesinsideoneinvariantassertion,notseparateUIjourneys.25,117numericbank/lessonchecks. Actual320pxTeluguextreme/tielineandfeedbackpixelsinspected.59lessons41visualactivities4140exactpriorbankobjects. Originalindex/manifest/savesunchanged,nosavemigration/backend/dependency/networkchange. Fullrounding/estimationcontexts,decimalrounding,significantfigures,nativeTeluguteacherandphysicalAndroidremainincompleteorunverified.
+Productionmulti-tabbugstillHIGHOPEN;separatelytestedjournalmigrationisnotincludedandremainsundeployedpendingownerapproval.
+
+Beta0.23 LIVE verified15October2026,20:18IST:exact494161byteHTML,v27worker,4140priorbankobjectsandoriginalindex/manifest/savespreserved.24,044livebrowserassertions,42offline,zeroexceptions;25,117numericchecks,15,130additionalroundingmodelcasesinsideoneinvariantassertion. Actual320pxTeluguextremeandtienumber-linepixelsinspected. Verifiedcheckpoint:https://github.com/svofficials9999-collab/sv-math-memory/commit/082009df138a701a41d19863469bedf2b9c3efe8 . FullmasterstillINPROGRESS;productionmulti-tabbugHIGHOPEN,separatejournalmigrationundeployed.
