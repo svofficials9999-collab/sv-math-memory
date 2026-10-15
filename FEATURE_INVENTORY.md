@@ -52,3 +52,5 @@
 - Beta0.18:Class7+LCMbell timeline andHCF/LCMprime-count reasoning,36activities total. Intervals1–20,positive integers,same start only.59lessons4140items unchanged.
 
 - Beta0.19:decimal equal-whole hundredths grids,shared number line,comparison/addition/carry;37activities59lessons4140items.
+
+- Beta 0.20: decimal take-away, explicit negative-result limit, swap, crossed removals, column regrouping through zero and addition check. 38 visual activities, 59 lessons, 4140 numeric items.
