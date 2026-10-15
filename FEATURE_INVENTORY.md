@@ -4,9 +4,9 @@
 - Original five memory games retained at index.html.
 - 15 learning game loops plus diagnostic at learn.html.
 - Class and difficulty choice, hints, explanatory answer review.
-- 3978 original numeric practice items, including all 2016 legacy IDs.
-- 56 bilingual topic lessons with principle, worked example, common error, sample explanation and topic practice.
-- 22 working visual activity guides/labs,including geometry,data,grouped statistics,tangents,clock,equal shares,units,pictographs,money and integer movement. These do not cover full chapters or provide a freehand drawing editor.
+- 4140 original numeric practice items, including all 2016 legacy IDs.
+- 59 bilingual topic lessons with principle, worked example, common error, sample explanation and topic practice.
+- 25 working visual activity guides/labs,including geometry,data,grouped statistics,tangents,clock,equal shares,units,pictographs,money and integer movement. These do not cover full chapters or provide a freehand drawing editor.
 - Ten-class lesson trail; four earned-world badges remain.
 - XP, earned coins, three trophies, practice mission, streaks, personal bests.
 - Rules-based difficulty adjustment and weak-topic revision, not AI.
@@ -32,3 +32,5 @@
 - No cloud account, leaderboard, payments or commercial student profiling.
 
 - Beta0.9 adds equation substitution,coordinate grid,same-base positive exponents and class-gated AP nth-term/sum activities.
+
+- Beta0.10:primary nonstandard equal-unit length,capacity in equal cups and mass-balance comparison,with original feedback loops and unit-count practice.
