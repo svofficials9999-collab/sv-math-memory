@@ -69,3 +69,6 @@ Run browser-large-numbers.cjs through run-browser-check.mjs.1,721 assertions acr
 
 
 Beta0.23:browser-rounding.cjsadds2,203assertionsacrossEnglish/Teluguand5widths,all5units,zero/exact/tie/onebelowandabove/max,neighborandpointgeometry,strictinvalid/Telugudigits,classes1–6guard,labels/reflow,noearned-datachange.15,130numericmodelcasesinoneinvariantassertion.Total24,044browserincluding42offline,25,117numericbank/lesson.NotphysicalAndroidornative-teachervalidation.
+
+
+Beta 0.24: browser-integer-product.cjs adds 3,287 assertions. All 169 pairs at 320px in English and Telugu; representative pairs at 375/390/430/1280px. Checks cover before/action views, reversal, token/removal counts, totals, patterns, zero, strict invalid/wrong/Unicode-minus/Telugu digit input, Class 6 guard, labels, reflow and unchanged earned data. Total: 27,332 browser assertions including 43 offline; 25,117 numeric bank/lesson checks. No physical Android or native Telugu teacher certification.
