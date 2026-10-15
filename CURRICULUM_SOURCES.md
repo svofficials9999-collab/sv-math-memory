@@ -131,3 +131,7 @@ The extracted source has one apparent five-negative-one product typo; computed p
 
 ## Beta 0.25: division as inverse multiplication
 Primary source: https://ncert.nic.in/textbook/pdf/gegp202.pdf , section 2.2 Division of Integers, read October 15, 2026. Placement: https://ncert.nic.in/textbook/pdf/gegp2ps.pdf . Original examples, no official exam questions or copied art. Exact equation d × q = n supplies the independent verification and zero-divisor reasoning. Selected model only, not a complete chapter or board syllabus.
+
+
+## Beta 0.26: integer laws and signed terms
+Source: https://ncert.nic.in/textbook/pdf/gegp202.pdf , Expressions Using Integers through summary: commutativity, associativity, distributivity, and negative-factor parity. Read October 15, 2026. Placement: https://ncert.nic.in/textbook/pdf/gegp2ps.pdf . Original examples and unit bars; no copied textbook art or official exam question claim. Exact finite model checks support the implementation, not a general-proof claim. Source's apparent five-negative-one typo is not copied. Full chapter contexts remain open.
