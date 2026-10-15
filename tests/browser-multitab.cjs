@@ -18,6 +18,15 @@ check('merged survives reload',await A.ev(`state.attempted===2&&state.correct===
 // Preference change in B must not wipe counters from A.
 await B.ev(`state.lang='te';save()`);
 check('pref change keeps counters',await settle(A.ev,`state.lang==='te'&&state.attempted===2`));
+// Volume: synced preference field with a working settings slider.
+await B.ev(`state.volume=35;save()`);
+check('volume merges across tabs',await settle(A.ev,`state.volume===35&&state.attempted===2`));
+await A.ev(`settings()`);
+await A.ev(`$('#volume').value=70;$('#volume').dispatchEvent(new Event('input'));$('#save-settings').click()`);
+await A.send('Page.navigate',{url});await waitReady(A.ev);
+check('volume slider persists',await A.ev(`state.volume===70`));
+await A.ev(`settings()`);
+check('slider reflects saved volume',await A.ev(`$('#volume').value==='70'`));
 // Same mock run submitted from both tabs scores once.
 await A.ev(`mockBegin(1,1,10);localStorage.setItem('test.run',mock.run)`);
 const seeded=await A.ev(`JSON.stringify(mock)`);
