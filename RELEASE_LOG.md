@@ -80,3 +80,5 @@ Rollback checkpoint:beta0.8 commit2db94557cfafd5e0bedfffb876df70682c150869;resto
 Known issues remain:complete current syllabus/papers,Telugu/native mathematics-teacher review,physical Android launcher failure and concurrent multi-tab scoring races are not certified. Live verification is recorded only after publication.
 
 Live0.9:HTML342747 bytes,worker/source/coverage exact;original index/manifest exact.3568 live browser assertions pass,zero JavaScript exceptions,including221 algebra and24 offline checks. Numeric24129 assertions pass;all3978 prior bank objects exact. Actual live320px Telugu coordinate/AP pixels inspected. Temporary isolated-profile cleanup initially raced a Chrome child;runner now uses bounded removal retries and the entire live suite reran cleanly. No app/user data was affected.
+
+Documentation follow-up:verified NCERT Class1 official2026–27 prelims and full measurement chapter. Added13-chapter gap inventory;corrected earlier unknown edition/contents status. No app code,question or save changes. Complete Class1 teaching remains partial.
