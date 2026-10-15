@@ -1,6 +1,6 @@
 # SV MATH MEMORY - మొత్తం పని: Master status
 
-15 October 2026, 19:17 IST verified release: **Learning beta 0.21**.
+15 October 2026, 20:07 IST verified release: **Learning beta 0.22**.
 
 **మీ master promptలో అన్నీ పూర్తయ్యాయా? లేదు. పని ఇంకా కొనసాగుతోంది.**
 ఇది ఇప్పటివరకు పనిచేసే app + చేసిన పరీక్షలు + మిగిలిన పనుల ఒకే master index. ఇది పూర్తి syllabus లేదా finished product అని చెప్పే file కాదు.
@@ -9,23 +9,23 @@
 
 - [ప్రస్తుతం పనిచేసే Math learning app / single HTML learning file](https://svofficials9999-collab.github.io/sv-math-memory/learn.html)
 - [Original five games](https://svofficials9999-collab.github.io/sv-math-memory/index.html)
-- [Complete project at verified beta0.21 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/ce91b7dabbeefcbbc1bb2336dec49942c733089a)
-- [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/ce91b7dabbeefcbbc1bb2336dec49942c733089a)
+- [Complete project at verified beta0.21 checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/tree/0e23040254911dad1265bb3597d4f8a1803bead3)
+- [Verified release checkpoint](https://github.com/svofficials9999-collab/sv-math-memory/commit/0e23040254911dad1265bb3597d4f8a1803bead3)
 
 `learn.html` contains the learning UI, JavaScript and compressed question bank. **It is not the whole PWA project by itself.** Original games, service worker, manifest, icons, sources and tests are separate project files. Downloading one HTML file does not by itself reproduce installation/offline caching. The checkpoint contains the complete repository at this release. Opening the existing app online once and completing its cache install is needed before normal offline use. External source links still need internet.
 
 ## Verified totals - సంఖ్యలు
 
-- **59** bilingual topic lessons, **4140** numeric practice-bank items, **39** visual teaching activities.
+- **59** bilingual topic lessons, **4140** numeric practice-bank items, **40** visual teaching activities.
 - Original **5** games kept; learning area has **15 basic game loops + diagnostic**. Several modes share question presentation. These are not 15 deep, completely different games.
-- **20078 live browser assertions passed**, including **869** new expression checks and **40** offline checks. **25113 numeric assertions passed**. Zero JavaScript exceptions in the successful suites.
+- **21840 live browser assertions passed**, including **1721** new large-number checks and **41** offline checks. **25117 numeric assertions passed**. Zero JavaScript exceptions in the successful suites.
 - English/Telugu, 320/375/390/430/1280 widths and actual phone-width screenshots inspected. These are browser/emulation checks, **not a physical Android test**.
-- All **4140** prior question objects unchanged in0.21; original index, manifest identity/start/scope and save keys preserved. No new dependency, paid API, backend or storage migration in0.21.
-- HTML size **474563 UTF-8 bytes**. Low-end-phone performance and actual compressed network transfer are **NOT TESTED**. A test assertion is a check, not one user, one question, or one complete chapter.
+- All **4140** prior question objects unchanged in0.22; original index, manifest identity/start/scope and save keys preserved. No new dependency, paid API, backend or storage migration in0.22.
+- HTML size **485247 UTF-8 bytes**. Low-end-phone performance and actual compressed network transfer are **NOT TESTED**. A test assertion is a check, not one user, one question, or one complete chapter.
 
 ## Latest selected teaching addition
 
-Beta 0.21 adds Class 7+ arithmetic-expression meanings to the existing algebra lesson: a+b×c, (a+b)×c and amount received minus two bracketed costs. Loose/group counters, common-scale bars, first-step/value checks and step comparisons explain grouping. Inputs are whole numbers 0–10. Class 6 stays unchanged. This is selected Grade 7 teaching, not the complete chapter. Earlier activities remain.
+Beta 0.22 adds Class7+ large-number teaching to the existing place-value lesson: Indian/international commas, lakh/crore/million/billion equivalence, all ten decimal places, expanded sum, zero positions and answer checks. The same lesson becomes available throughClass10. Classes1–6 retain their earlier text/model. Whole-number inputs0–9,999,999,999. Full number-word spelling, rounding, estimation and contextual chapter work remain incomplete.
 
 ## Status meanings
 
@@ -111,7 +111,7 @@ Current level/XP, attempts/correct/accuracy, average response time, topic estima
 
 | Requirement | Status | Evidence / limit |
 |---|---|---|
-| Responsive layout, offline core gameplay, cache versioning, storage warning, no unnecessary library | MET in tested browser cases |40 offline checks, saved-shell/cache tests; worker `v25-arithmetic-expressions` |
+| Responsive layout, offline core gameplay, cache versioning, storage warning, no unnecessary library | MET in tested browser cases |41 offline checks, saved-shell/cache tests; worker `v26-large-numbers` |
 | Safe updates/no existing progress deletion | MET within checked versions | Same identity/start/scope, old saves accepted, no0.21 migration |
 | Reliable actual Android install/launcher | NOT MET / UNKNOWN | Previously reported installed-icon opening failure unresolved; web checks do not prove device repair |
 | Fast real low-end mobile loading/performance | UNKNOWN | No physical benchmark, transfer or battery certification |
@@ -157,6 +157,19 @@ Actual tests, file changes, limits, no invented official status, no production-r
 These project documents include older dated totals. The verified0.21 totals at the top of this master report supersede older totals; historical test counts are not added together. Current source editions and board gaps remain described in the coverage/source files.
 
 ## Beta 0.21 live evidence
-Exact 474563-byte HTML and v25 worker published; original index/manifest and all 4140 bank objects preserved. 20078 live browser assertions, 25113 numeric assertions and 40 offline checks pass, zero JavaScript exceptions. Additional model invariants cover 3993 expression combinations and 10201 subtraction pairs. Actual 320px Telugu group/step pixels inspected. The checkpoint above contains the tested app/docs/tests before this live-evidence/master-index update.
+Exact 474563-byte HTML and v25 worker published; original index/manifest and all 4140 bank objects preserved. 20078 live browser assertions, 25113 numeric assertions and 41 offline checks pass, zero JavaScript exceptions. Additional model invariants cover 3993 expression combinations and 10201 subtraction pairs. Actual 320px Telugu group/step pixels inspected. The checkpoint above contains the tested app/docs/tests before this live-evidence/master-index update.
 
 A separate isolated local two-tab diagnostic CONFIRMED a lost-update bug in existing shared progress saving: two correct answers in different tabs leave 1 attempt/1 correct saved instead of 2/2. This diagnostic is NOT included in the passing 20078 assertions and does not establish concurrency safety. Path: learn.html, save()/record(). Severity: HIGH. Next: prevent stale-tab writes and test multi-tab scoring/settings/restore/test-room cases without changing existing progress format or deleting data. Full master remains IN PROGRESS.
+
+
+## Learning beta0.22 - selected large-number teaching,15October2026
+Status: LIVE verified15October2026,20:07IST; full live suite passed. Full master scope remains IN PROGRESS.
+Path: learn.html, existing place-value lesson; availability extends fromClasses2–6 toClasses2–10. OnlyClass7+ gets the new large-number model and matching rendered lesson text. Younger-class lessons and models remain unchanged.
+Added: Indian/international comma grouping of the same integer, lakh/crore/million/billion equivalences, all10 decimal places, digit×place contribution, expanded sum, zero-place explanation, original example cycle, English/Telugu and strict whole-number/Telugu-digit self-checks. Range0–9,999,999,999. Top Indian groups use crores rather than an added arab label. Not full number-word spelling, rounding, estimation, contextual reasoning or complete chapter coverage. No official exam-paper claim.
+Evidence:21,840 local browser assertions, including1,721 new large-number and41 offline checks; zero exceptions.11,030 integer model cases inside one invariant assertion.25,117 numeric bank/lesson checks. Actual320px Telugu grouping/place-card pixels inspected.59 lessons,40 activities,4140 prior bank objects unchanged. Original5-game index and manifest byte exact. No save-schema, backend, dependency or network change. HTML485247UTF-8bytes,worker v26-large-numbers. Physical Android/native Telugu teacher review remain unverified.
+The confirmed HIGH multi-tab lost-update bug remains OPEN in this release. A separate save-store migration candidate is NOT included or deployed; approval is still required before that migration. This release does not claim multi-tab persistence safety.
+
+This candidate does not make any previously incomplete master category complete. Full boards, exams, native teacher review, physical Android, complete accessibility/performance/security and final all-file audit still remain.
+
+
+Beta0.22 LIVE verification:21,840browserassertions,41offline,zeroexceptions,25,117numericbank/lessonassertions. Actual320pxTelugugrouping/expandedplacepixelsinspected. Exact485247byteHTMLandv26worker. Verifiedcheckpoint:https://github.com/svofficials9999-collab/sv-math-memory/commit/0e23040254911dad1265bb3597d4f8a1803bead3 . The separate journal migration remains undeployed pending owner approval; the HIGH multi-tab bug is still open in production.
