@@ -75,3 +75,6 @@ Beta 0.24: browser-integer-product.cjs adds 3,287 assertions. All 169 pairs at 3
 
 
 Beta 0.25: browser-integer-division.cjs adds 9,975 assertions. All 949 (n,d) pairs at 320px in English and Telugu, representative pairs at 375/390/430/1280px. Covers exact reduced quotient, inverse multiplication, zero-divisor reasoning, equivalent fractions, strict invalid/wrong/Unicode/Telugu input, Class 6 guard, labels, reflow and unchanged earned data. Full local suite 37,308 assertions including 44 offline; 25,117 numeric bank/lesson checks. No physical Android/native Telugu teacher certification.
+
+
+Beta 0.26: browser-integer-laws.cjs adds 32,818 assertions. All 1331 triples at 320px in English/Telugu; representative triples at 375/390/430/1280. Both grouping paths, distributive paths, commutativity, zero/parity, signed unit counts, cancellation/reversal and remaining sum, correct/wrong/invalid/Telugu input, Class6 guard, labels, reflow, unchanged data. Total local 70,127 including45offline;25,117 numeric bank/lesson checks. Native teacher/physical Android not certified.
