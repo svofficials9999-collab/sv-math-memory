@@ -36,3 +36,5 @@ The test scripts use the app's local public functions to inspect state, alongsid
 Beta0.8 adds207 Test room workflow checks and7 keyboard/automatic-timeout/storage/offline checks. The runner includes browser-mock.cjs and browser-mock-extra.cjs. The bank/lesson counts remain3978/56;worker cache is svmm-shell-v12-test-room-print-layout.
 
 Three PDF-print checks verify generation and folded-review restoration. A sample Telugu report was rendered and all three pages inspected;beforeprint opens explanations and afterprint restores the on-screen folds.
+
+Beta0.9:browser-algebra.cjs adds221 equation/grid/exponent/AP assertions,includingClass9 nth-term-only behavior. Full suite3568 assertions,with24 offline checks. Numeric data checker24129 assertions. Counts are test evidence,not curriculum-completion proof.
