@@ -171,3 +171,6 @@ Current29 visual activities,59 lessons,4140 original numeric items unchanged. No
 Algebra now includes a positive-length rectangle split into same-height pieces to explain ax+bx=(a+b)x,like terms and the warning against combining unlike variables. From Class7;Class6 retains earlier substitution teaching. Signed/zero area models and broader expression modelling remain incomplete.
 Coordinate geometry now includes two adjustable points,uniform-scale right-triangle distance derivation,exact squared-distance expressions,rounded irrational distance,and midpoint reasoning. Class10 additionally shows weighted positive internal section ratios/exact expressions;coincident endpoint length-ratio undefined status is explicit. External division and all applications/context problems remain incomplete.
 Current31 visual activities,59 lessons,4140 original numeric items unchanged. No complete chapter/grade/exam certification.
+
+## Beta0.14:no curriculum change
+Keyboard bypass,touch reading controls and release label improved.59 lessons,4140 questions and31 visual activities unchanged. Accessibility test evidence is not curriculum or WCAG certification.
