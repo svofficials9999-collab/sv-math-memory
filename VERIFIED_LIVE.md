@@ -1,6 +1,12 @@
 # Verified live - SV Math Memory
 
 Post-deploy verification records for the public URL. Each entry lists what was actually checked on the live site.
+## Game sound effects - 16 October 2026, ~16:05 IST
+
+- Pages served index.html and sw.js byte-identical to the deployed commit (md5-polled until exact match).
+- Live suite green against the public URL including tests/browser-game-sounds.cjs: 61 sound checks (toggle, persistence, music start/stop, save untouched), zero errors.
+- Live index.html serves the sound module; 320px mobile screenshots pixel-inspected on the live deployment: original header/game layout unchanged, compact speaker toggle in footer.
+- Not certified: real-speaker audio quality on physical phones, teacher review.
 ## Learning beta 0.34 - 16 October 2026, ~13:50 IST
 
 - Pages served learn.html and sw.js byte-identical to the deployed commit (md5-polled until exact match).
