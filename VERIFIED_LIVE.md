@@ -1,6 +1,13 @@
 # Verified live - SV Math Memory
 
 Post-deploy verification records for the public URL. Each entry lists what was actually checked on the live site.
+## Learning beta 0.34 - 16 October 2026, ~13:50 IST
+
+- Pages served learn.html and sw.js byte-identical to the deployed commit (md5-polled until exact match).
+- Live suite green against https://svofficials9999-collab.github.io/sv-math-memory/learn.html: 92,726 browser assertions including 49 offline and 2,038 new chord-midpoint assertions, zero errors.
+- 320px Telugu mobile screenshots pixel-inspected on the live deployment: midpoint diagram (chord AB, midpoint M, dashed OM, right-angle marker), Theorem 4-5 proof card, SAS feedback.
+- Footer shows "Learning beta 0.34"; worker cache svmm-shell-v38-chord-midpoint; bank 4140 items and 59 lessons loaded live.
+- Not certified: physical Android installed-icon launch (B2), real speakers, full WCAG, teacher/native-language review.
 ## Learning beta 0.33 - 16 October 2026, ~03:00 IST
 
 - Pages served learn.html and sw.js byte-identical to the deployed commit (polled until exact match).
