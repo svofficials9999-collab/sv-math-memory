@@ -19,7 +19,7 @@ NOT STARTED / REQUIRES VERIFICATION.
 3. PARTIALLY DONE 16 Oct as beta 0.33: volume control, second chance and hunt option eliminator
    shipped and verified live; daily-seeded challenge remains open.
 
-## Phase 3 - Curriculum and validated question bank: NOT STARTED
+## Phase 3 - Curriculum and validated question bank: IN PROGRESS (first item shipped 16 October 2026: Beta 0.34 circle chord midpoint theorems lab, verified live)
 - Chapter-by-chapter Telangana/CBSE mapping against current official syllabi (verify against
   primary sources only; third-party PDFs were previously caught carrying false official labels).
 - Per-question learning-objective and verification-status metadata.
