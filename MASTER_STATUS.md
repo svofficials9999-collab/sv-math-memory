@@ -1,5 +1,6 @@
 # SV MATH MEMORY - మొత్తం పని: Master status
 
+16 October 2026, ~16:05 IST verified release: **Game sound effects** (original five games: WebAudio tap/flip/match/wrong/correct/hide/win/star effects + gentle play-round music, footer mute toggle persisted separately from saves; no gameplay/look changes; 61 new browser checks, live-verified).
 16 October 2026, ~13:50 IST verified release: **Learning beta 0.34** (Phase 3 learning content: circle chord midpoint theorems lab, Theorems 4-5 of current NCERT Class 9 Circles, 2,038 new browser assertions, 92,726 total). Includes beta 0.33 Phase 2 gameplay polish and the 0.32 multi-tab save repair (BUG_REPORT B1 RESOLVED).
 
 **మీ master promptలో అన్నీ పూర్తయ్యాయా? లేదు. పని ఇంకా కొనసాగుతోంది.**
