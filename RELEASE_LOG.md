@@ -1,5 +1,13 @@
 # Release log
 
+## Learning beta 0.34, 16 October 2026
+
+Changes: Phase 3 learning content - circle chord midpoint theorems lab (Class 9 Circles). Interactive sliders r = 1..10 and half-chord h = 0..r with an original SVG diagram: chord AB, midpoint M with equal-segment ticks, dashed OM and the right-angle marker. Boundary cases named explicitly: h = 0 collapses the chord to one point (A = B = M), h = r makes AB a diameter with M = O, where Theorem 4 does not apply. Reason self-check asks why OM is perpendicular to AB (SAS congruence of triangles OMA/OMB via radii CA = CB and AM = MB; wrong options are refused with feedback). Proof panel states Theorem 4 (centre-to-midpoint is perpendicular) and Theorem 5 (converse: perpendicular from centre bisects the chord) and notes that the perpendicular bisector of any chord passes through the centre. Bilingual English/Telugu, exploration changes no earned data, younger-class guard (Class 9+ only).
+
+Files: learn.html, sw.js, tests/run-browser-check.mjs, tests/browser-chord-midpoint.cjs (new), tests/browser-mock-extra.cjs, tests/browser-offline.cjs, tests/browser-accessibility.cjs.
+
+Verification: full local suite 92,726 browser assertions (49 offline) including 2,038 new chord-midpoint assertions across all 65 radius/half-chord pairs x 5 viewport widths x English/Telugu, zero errors; same suite green against the live URL after byte-exact Pages propagation; 320px Telugu diagram, proof and feedback screenshots pixel-inspected locally and on the live deployment. Cache svmm-shell-v38-chord-midpoint; footer beta 0.34. index.html, manifest, all 4140 bank objects and 59 lessons untouched; no save-format change. Rollback = restore the previous learn.html/sw.js commit.
+
 ## Learning beta 0.33, 16 October 2026
 
 Changes: core-gameplay polish (Phase 2 item 3). Settings volume control (default 100, scales tone/music gain, bilingual, synced across open tabs through the save engine). Second chance power-up: once per round, reverts a wrong attempt; the retry is scored normally. Option eliminator for hunt mode: disables two wrong options, re-arms each question, same XP/coin cost as a hint. Test room draft durability: a synchronous per-tab pending key is folded exactly once under the commit lock and once at boot, so a crashed tab's draft is recovered without double-scoring. Mock merge now diffs started/ends against the per-tab base instead of max/min, so legitimate same-tab changes survive. Test harness pins Chrome anti-throttling flags and polls the wall-clock check instead of a fixed wait. No save-format migration: the canonical snapshot shape is unchanged, old saves load unchanged.
