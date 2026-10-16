@@ -1,5 +1,13 @@
 # Release log
 
+## Game sound effects, 16 October 2026
+
+Changes: the original five games (index.html) were fully silent; they now play WebAudio oscillator sound effects - no audio files, no libraries, free by construction. Tap (all buttons), card flip, pair match, wrong pair/answer, correct answer, number-hide tick, completion fanfare and a practice-star chime, plus a gentle background music loop during play rounds only. A compact speaker button in the footer toggles mute; the preference persists in a separate localStorage key (svmm.snd) and never touches the svmm.v1 game save. Music stops on mute, on leaving play, and when the tab is hidden. No gameplay, scoring, layout or feature changes; manifest, start_url and scope untouched.
+
+Files: index.html, sw.js, tests/run-browser-check.mjs, tests/browser-game-sounds.cjs (new), tests/browser-mock-extra.cjs, tests/browser-offline.cjs.
+
+Verification: new tests/browser-game-sounds.cjs - 61 checks: module presence, labelled toggle, mute/unmute persistence across reload, audio context after gesture, music timer in play, mute stops music mid-round, unmute resumes, pair flip/scoring intact, game save byte-untouched, reflow at 320/390px, zero exceptions; full local suite green (92,787 browser assertions including 49 offline); same suite green against the live URL after byte-exact Pages propagation; 320px screenshots pixel-inspected locally and live (header and game layout unchanged, footer toggle compact). Cache svmm-shell-v39-game-sounds. Rollback = restore the previous index.html/sw.js commit.
+
 ## Learning beta 0.34, 16 October 2026
 
 Changes: Phase 3 learning content - circle chord midpoint theorems lab (Class 9 Circles). Interactive sliders r = 1..10 and half-chord h = 0..r with an original SVG diagram: chord AB, midpoint M with equal-segment ticks, dashed OM and the right-angle marker. Boundary cases named explicitly: h = 0 collapses the chord to one point (A = B = M), h = r makes AB a diameter with M = O, where Theorem 4 does not apply. Reason self-check asks why OM is perpendicular to AB (SAS congruence of triangles OMA/OMB via radii CA = CB and AM = MB; wrong options are refused with feedback). Proof panel states Theorem 4 (centre-to-midpoint is perpendicular) and Theorem 5 (converse: perpendicular from centre bisects the chord) and notes that the perpendicular bisector of any chord passes through the centre. Bilingual English/Telugu, exploration changes no earned data, younger-class guard (Class 9+ only).
