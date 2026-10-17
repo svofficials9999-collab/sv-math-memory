@@ -1,7 +1,7 @@
 {
   "name": "SV Math Memory",
   "short_name": "Math Memory",
-  "id": "/sv-math-memory/",
+  "id": "/sv-math-memory/app",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
