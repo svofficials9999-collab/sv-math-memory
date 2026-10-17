@@ -1,5 +1,13 @@
-# PROPOSED: per-question learning-objective and verification metadata (design only, NOT implemented)
-Date: 17 October 2026. Status: PROPOSAL for owner review. No app code, bank, save, lesson or manifest change is made by this document.
+# Per-question learning-objective and verification metadata
+Date: 17 October 2026. Status: IMPLEMENTED - Phase 1+2. On 17 October 2026 the owner was asked the three open questions below and delegated the decision ("you decide"); the decisions recorded here were announced to the owner the same day without objection. Phase 3 UI surfacing NOT done: metadata stays internal. Bank blob, lessons, index.html games (incl. sound module), manifest identity and save format remain byte-preserved.
+
+## Implementation record, 17 October 2026
+- bank-metadata.json committed (version 1): 4,140/4,140 items; vs enum backfilled 1:1 from the four existing verification strings, nothing upgraded; vAt 2026-10-17; alignRegistry embedded (25 codes).
+- Alignment backfill in the owner's priority order: Class 6 (180 items, ncert6.ch1-ch10, Ganita Prakash reprint 2026-27) and Class 10 (360 items, cbse10.ch1-ch15, CBSE Secondary 2026-27 code 041/241). Topics not named in a verified CURRICULUM_COVERAGE.md row carry no align code.
+- Loader: learn.html lazily fetches bank-metadata.json after the bank decode (loadBankMeta); feature-detected, failure-silent, no UI dependency, no look or feature change.
+- sw.js unchanged: the sidecar is NOT precached; the existing network-first/cache-fallback fetch handler covers it.
+- tests/metadata-check.mjs added (PASS: 13,509 checks); tests/data-check.mjs still PASS (25,117 checks); bank blob verified byte-identical after the loader patch.
+- Remaining: alignment backfill for classes 1-5 and 7-9 (future pass); Phase 3 UI surfacing stays out per the owner's decision.
 
 ## What already exists (verified by reading the live bank, 17 October 2026)
 The 4,140-object bank is embedded in learn.html as base64+gzip JSON. Every object already carries:
@@ -52,7 +60,7 @@ A new file `bank-metadata.json` (served gzipped by Pages; loaded lazily by the a
 - Phase 2 (after owner OK): lazy loader + integrity tests; verification enum backfill from the 4 existing strings.
 - Phase 3 (future): optional UI surfacing (e.g. objective line under a question) and per-question alignment backfill, class by class.
 
-## Open questions for the owner
-1. Approve Phase 1/2 as scoped, or doc-only for now?
-2. Is any UI surfacing of objectives wanted (Phase 3), or keep metadata internal?
-3. Priority order for alignment backfill (suggestion: Class 6 and Class 10 first - most-used and best-verified sources).
+## Owner decisions, 17 October 2026
+1. Phase 1/2 approved as scoped (sidecar + optional load, bank blob untouched).
+2. No UI surfacing; metadata stays internal.
+3. Alignment backfill order: Class 6 and Class 10 first (done); remaining classes in a future pass.
