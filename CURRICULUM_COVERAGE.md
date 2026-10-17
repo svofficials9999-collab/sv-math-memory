@@ -1,4 +1,10 @@
-# Current curriculum coverage, 15 October 2026
+# Current curriculum coverage, 17 October 2026
+
+Re-verification pass, 17 October 2026 (primary sources only, all read live today):
+- NCERT Grade 6 Ganita Prakash prelims (fegp1ps.pdf) read in full: title page says "Reprint 2026-27", reprinted January 2026, and the printed contents match all 10 chapter rows below. Rows remain PARTIAL; verification confirms chapter inventory, not app completeness.
+- NCERT Grade 7 Ganita Prakash Part I prelims (gegp1ps.pdf): "Reprint 2026-27", reprinted January 2026; Part I contents match rows 1-8. Part II (gegp2ps.pdf) is First Edition October 2025 with NO 2026 reprint line on its imprint page; its contents match rows 9-15. Part II remains the current edition on ncert.nic.in.
+- CBSE Secondary Mathematics 2026-27 PDFs re-fetched live from cbseacademic.nic.in: Class IX (Maths_SecP1IX_2026-27.pdf, title "Class IX (2026 – 27)") unit/chapter list matches the Grade 9 section below; Class X (Maths_SecP1X_2026-27.pdf, Subject Code 041 & 241) content areas, 3-hour/80-mark theory plus 20 internal assessment structure match the Grade 10 table.
+- Telangana: see the Telangana section for today's dated verification attempt.
 
 This is a gap map, NOT a claim of full curriculum implementation. A topic lesson and a numeric exercise do not cover an entire textbook chapter. All rows below remain PARTIAL or NOT STARTED. General lesson class ranges do not certify board-specific chapter placement.
 
@@ -20,6 +26,7 @@ Source: https://ncert.nic.in/textbook/pdf/fegp1ps.pdf
 
 ## NCERT Grade7, Ganita Prakash PartsI andII
 Sources: https://ncert.nic.in/textbook/pdf/gegp1ps.pdf and https://ncert.nic.in/textbook/pdf/gegp2ps.pdf
+Editions verified 17 October 2026: Part I Reprint 2026-27 (reprinted January 2026); Part II First Edition October 2025, still the current edition (no 2026 reprint on its imprint page).
 
 | Current chapter | App coverage | Still needed |
 |---|---|---|
@@ -91,6 +98,8 @@ The official document gives3hours/80marks theory plus20internal assessment. The 
 
 ## Telangana
 Newer official catalogue read: https://www.scert.telangana.gov.in/DisplayImage.aspx?encry=LAM99bLSUMS8OKP97qy2KA%3D%3D . It explicitly says2025-26 DRAFT. This alone does not verify a final2026-27 full syllabus or SSC pattern. A secondary site's2026-27 heading is not used as primary evidence. Current Telangana book-by-book mapping remains IN PROGRESS/UNVERIFIED.
+
+Verification attempt, 17 October 2026 (primary sources only): the mathematics textbooks currently hosted on the official domain remain the 2024-25 English-medium editions (https://scert.telangana.gov.in/pdf/publication/ebooks/7%20mathematics%20em%202024-25.pdf fetched live, PDF title "7 Mathematics"; the class 10 file at .../10%20mathematics%20em%202024-25.pdf served from the same official path). URLs guessed for 2025-26-named editions did not resolve during this pass (server timeouts, NOT proof of absence). SCERT dynamic catalogue pages (e-Textbooks.htm and the syllabus Displaycontent page) returned no readable content to automated access today, and the site refused the browser session outright. Press reports that a 2026-27 Telangana academic calendar was released are secondary sources and are not used as evidence here. No final 2026-27 Telangana mathematics syllabus or SSC pattern is verified from a primary source as of 17 October 2026.
 
 ## Grades1-5
 General foundational practice is present. Current NCERT/Telangana book-by-book chapter coverage remains UNVERIFIED, rather than being declared complete using an older framework.
@@ -319,3 +328,4 @@ Pages initially served 0.29 while publication was running. Testing waited for ex
 Beta 0.31 LIVE verified October 16, 2026, 00:01 IST: exact 568746-byte HTML and v35-circumcentre worker served by Pages. All 90,664 browser assertions passed, including 49 offline and 10,780 new circumcentre assertions; zero exceptions. All 66 angle/side triangle cases checked across 320/375/390/430/1280 widths in both languages: circumcentre from the perpendicular-bisector intersection, circumradius against abc/4K, acute/right/obtuse against the independent inside/on-edge/outside position test, right-case centre at the hypotenuse midpoint, and the collinear case with parallel bisectors and no circle. 25,117 numeric bank/lesson checks passed. Actual 320px Telugu circumcircle diagram, uniqueness proof, location feedback and collinear parallel-bisector pixels inspected live. All 4140 prior bank objects and original index/manifest/save format preserved. Verified checkpoint: https://github.com/svofficials9999-collab/sv-math-memory/commit/a1908aedc780eb44e7181cbc7ae025b4c497da4b . Full master remains IN PROGRESS; HIGH multi-tab lost-update bug remains OPEN; journal migration not deployed.
 
 Beta 0.34 (16 October 2026): Class 9+ circles teaching adds an original chord-midpoint model: radius r from 1 to 10 and half-chord h = AM from 0 to r on sliders. The diagram draws chord AB, midpoint M with equal-segment ticks, dashed OM and the right-angle marker. Boundary cases are named explicitly: h = 0 collapses the chord to one point (A = B = M); h = r makes AB a diameter with M = O, where Theorem 4 does not apply. A reason self-check asks why OM is perpendicular to AB: SAS congruence of triangles OMA and OMB from radii CA = CB and AM = MB is accepted; "it looks perpendicular" and "every chord is a diameter" are refused with feedback. The proof panel states Theorem 4, its SAS argument, Theorem 5 (converse) and the perpendicular-bisector-passes-through-centre corollary. Original SVG and bilingual prose, not textbook art or official questions. Exploration gives no XP and changes no earned data. Local and live: 92,726 browser assertions including 2,038 new and 49 offline, zero errors; 25,117 numeric bank/lesson checks. 320px Telugu diagram, proof and feedback inspected locally and live. Sources: live current NCERT Class 9 chapter 5 Circles (iemh105.pdf section 5.5, verified by reading its title and year) and CBSE 2026-27 secondary curriculum. Remaining circle theorems, exercise variants, constructions, applications and complete board coverage remain incomplete. Native Telugu teacher/physical Android review not done. Journal migration remains undeployed, awaiting owner approval.
+
