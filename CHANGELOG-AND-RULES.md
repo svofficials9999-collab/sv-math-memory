@@ -1,3 +1,4 @@
 # SV Math Memory
 2026-10-14firstplayablebeta. Separateapp;existingappsuntouched. Freeonly;preservefeatures/branding/dataonrevision. Englishfirst/TEtoggle,guide,Backonescreen,suggestionbox,createdbyD.Srinivas. Verifylivebeforecompletion. NoIQ/medical/fullcurriculumclaim.
 2026-10-17 bankmetadatasidecar. bank-metadata.json(4140items;vsenumbackfill;class6+class10NCERT/CBSEalignment). Lazyoptionalloaderinlearn.html;bankblobbyte-preserved;noUI/look/featurechange. tests/metadata-check.mjsadded. Verifylive.
+2026-10-19 MathVerse rename. Visible app name SV Math Memory -> SV MathVerse (page titles, headers, manifest name/short_name); install icons 192/512 replaced with owner-supplied MathVerse artwork; manifest id/start_url/scope unchanged; sw cache svmm-shell-v42-mathverse-rename; no layout/feature/data change. Verify live.
