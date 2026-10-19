@@ -1,6 +1,6 @@
 {
-  "name": "SV Math Memory",
-  "short_name": "Math Memory",
+  "name": "SV MathVerse",
+  "short_name": "MathVerse",
   "id": "/sv-math-memory/app",
   "start_url": "./",
   "scope": "./",
