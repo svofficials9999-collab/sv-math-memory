@@ -97,4 +97,96 @@ render=function(){
 })();
 </script>
 
+<style>
+.optrow{display:flex;gap:10px;margin:6px 0 4px}
+.optbtn{flex:1;min-height:58px;font-size:17px;border:2.5px solid #818cf8;background:#fff;border-radius:14px;font-weight:700}
+.optbtn.sel{background:linear-gradient(125deg,#5847d6,#ad2468);color:#fff;border-color:#5847d6;box-shadow:0 4px 10px #5847d655}
+</style>
+<script>
+/* v54 navfix: bulletproof in-app back (JS stack, history only as mirror) + tap-friendly option buttons instead of native selects. Patch layer; original code untouched. */
+(function(){
+var _render=render,_html=html,_go=go;
+var DEMO54={
+seq:{te:[["👀 ఈ సంఖ్యలు జాగ్రత్తగా చూడండి","3 &nbsp; 7 &nbsp; 1",1900],["అవి మాయమవుతాయి!","? &nbsp; ? &nbsp; ?",1600],["అదే వరుసలో టైప్ చేయండి","3 7 1 ⌨️",1800],["✅ సరైనది! +100","🎉",2300]],en:[["👀 Look at these numbers","3 &nbsp; 7 &nbsp; 1",1900],["They disappear!","? &nbsp; ? &nbsp; ?",1600],["Type them in the same order","3 7 1 ⌨️",1800],["✅ Correct! +100","🎉",2300]]},
+pairs:{te:[["👀 కార్డులు అన్నీ మూతి ఉంటాయి","? &nbsp; ? &nbsp; ? &nbsp; ?",1700],["రెండు కార్డులు నొక్కి తిప్పండి","4+5 &nbsp;·&nbsp; 9",1900],["లెక్క + దాని జవాబు జత అయితే...","4+5 = 9",1700],["✅ జంట సరిపోయింది! అన్ని 4 జంటలు కనుగొనండి","🎉",2300]],en:[["👀 All cards stay face down","? &nbsp; ? &nbsp; ? &nbsp; ?",1700],["Tap any two cards to flip them","4+5 &nbsp;·&nbsp; 9",1900],["A sum + its answer make a pair","4+5 = 9",1700],["✅ Pair matched! Find all 4 pairs","🎉",2300]]},
+mental:{te:[["👀 ఈ లెక్క జాగ్రత్తగా చూడండి","10 − 9",1900],["అది మాయమవుతుంది!","?",1600],["ఆ లెక్క జవాబు టైప్ చేయండి","1 ⌨️",1800],["✅ సరైనది! +100","🎉",2300]],en:[["👀 Look at this sum","10 − 9",1900],["It disappears!","?",1600],["Type the answer of that sum","1 ⌨️",1800],["✅ Correct! +100","🎉",2300]]},
+pattern:{te:[["👀 క్రమం చూడండి: ప్రతిసారీ +3 అవుతోంది","2, 5, 8, 11, ?",2100],["తరువాతి సంఖ్య టైప్ చేయండి","14 ⌨️",1900],["✅ సరైనది! +100","🎉",2400]],en:[["👀 Watch the pattern: +3 each time","2, 5, 8, 11, ?",2100],["Type the next number","14 ⌨️",1900],["✅ Correct! +100","🎉",2400]]},
+speed:{te:[["👀 ఈ సంఖ్యను త్వరగా గుర్తుపెట్టుకోండి!","472",1000],["మాయమైపోయింది!","?",1500],["అదే సంఖ్య టైప్ చేయండి","472 ⌨️",1800],["✅ సరైనది! +100","🎉",2300]],en:[["👀 Remember this number, quick!","472",1000],["Gone!","?",1500],["Type the same number","472 ⌨️",1800],["✅ Correct! +100","🎉",2300]]}
+};
+var demoTok54=0;
+function playDemo54(steps,idx,tok){
+ var el=document.getElementById('demo');
+ if(!el||tok!==demoTok54)return;
+ el.innerHTML='<div class="dmcap">'+steps[idx][0]+'</div><div class="dmmain">'+steps[idx][1]+'</div>';
+ later(function(){playDemo54(steps,(idx+1)%steps.length,tok)},steps[idx][2]||1700);
+}
+function startDemo54(){demoTok54++;var D=DEMO54[mode];if(D)playDemo54(D[lang==='te'?'te':'en'],0,demoTok54)}
+
+var NAVS=['home'],suppress=false;
+function curHash(){try{return(location.hash||'#home').slice(1)}catch(e){return 'home'}}
+go=function(s){
+ stop();if(s==='setup'&&!modes[mode])s='home';
+ if(NAVS[NAVS.length-1]!==s){NAVS.push(s);if(NAVS.length>30)NAVS.shift()}
+ screen=s;
+ suppress=true;try{history.pushState({s:s},'','#'+s)}catch(e){try{location.hash=s}catch(e2){}}
+ suppress=false;
+ bgm(s==='play');render();
+};
+function backOne(){
+ if(NAVS.length>1){
+  NAVS.pop();var s=NAVS[NAVS.length-1];
+  stop();if(s==='play')g=null;screen=s;
+  suppress=true;try{history.replaceState({s:s},'','#'+s)}catch(e){}
+  suppress=false;bgm(s==='play');render();return;
+ }
+ try{history.back()}catch(e){go('home')}
+};
+window.addEventListener('popstate',function(e){
+ if(suppress)return;
+ var h=(e.state&&e.state.s)||curHash();
+ stop();if(h==='setup'&&!modes[mode])h='home';
+ while(NAVS.length>1&&NAVS[NAVS.length-1]!==h)NAVS.pop();
+ if(NAVS[NAVS.length-1]!==h)NAVS.push(h);
+ screen=h;if(screen==='play')g=null;render();
+});
+html=function(s){
+ _html(s);
+ var b=document.getElementById('back');
+ if(b)b.onclick=function(){backOne()};
+};
+var selBand=0,selLevel=1;
+render=function(){
+ if(screen!=='setup'){_render();return}
+ document.body.dataset.mode=mode;
+ selBand=band;selLevel=level;
+ var lv=['1 - '+T('Easy','సులభం'),'2 - '+T('Medium','మధ్యం'),'3 - '+T('Hard','కష్టం')];
+ var bd=[T('Class','తరగతి')+' 1-2',T('Class','తరగతి')+' 3-5',T('Class','తరగతి')+' 6-10'];
+ html(back()+'<h1>'+name()+'</h1><div class="card">'
+ +'<div class="demostage" id="demo"></div>'
+ +'<div class="row"><button id="redemo">'+T('▶ Watch demo again','▶ మళ్లీ చూపించు')+'</button><button id="listen">'+T('🔊 Listen: how to play','🔊 ఎలా ఆడాలో వినండి')+'</button></div>'
+ +'<div class="howto"><b>'+T('How to play','ఎలా ఆడాలి')+'</b><ol>'+HOWTO[mode][lang==='te'?1:0].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ol></div>'
+ +'<label class="plainq">'+T('1) Which class are you in?','1) మీరు ఏ తరగతి చదువుతున్నారు?')+'</label>'
+ +'<div class="optrow" id="bandrow">'+bd.map(function(x,i){return '<button class="optbtn'+(i===selBand?' sel':'')+'" data-b="'+i+'">'+x+'</button>'}).join('')+'</div>'
+ +'<p id="bandinfo" class="muted">'+bands[selBand][lang==='te'?1:0]+'</p>'
+ +'<label class="plainq">'+T('2) How hard? (1 easy - 3 hard)','2) ఎంత కష్టం? (1 సులభం - 3 కష్టం)')+'</label>'
+ +'<div class="optrow" id="lvrow">'+lv.map(function(x,i){return '<button class="optbtn'+(i+1===selLevel?' sel':'')+'" data-l="'+(i+1)+'">'+x+'</button>'}).join('')+'</div>'
+ +'<p class="muted">'+T('Already set for you - just press the big Start button!','అన్నీ సిద్ధంగా ఉన్నాయి - నేరుగా పెద్ద "ఆట మొదలు పెట్టండి" నొక్కండి!')+'</p>'
+ +'<button class="primary bigstart" id="start">'+T('▶ Start the game','▶ ఆట మొదలు పెట్టండి')+'</button></div>');
+ document.querySelectorAll('#bandrow .optbtn').forEach(function(btn){btn.onclick=function(){
+  selBand=+btn.dataset.b;
+  document.querySelectorAll('#bandrow .optbtn').forEach(function(x){x.classList.toggle('sel',x===btn)});
+  document.getElementById('bandinfo').textContent=bands[selBand][lang==='te'?1:0];
+ }});
+ document.querySelectorAll('#lvrow .optbtn').forEach(function(btn){btn.onclick=function(){
+  selLevel=+btn.dataset.l;
+  document.querySelectorAll('#lvrow .optbtn').forEach(function(x){x.classList.toggle('sel',x===btn)});
+ }});
+ document.getElementById('redemo').onclick=function(){startDemo54()};
+ document.getElementById('listen').onclick=function(){speak(name()+'. '+T('How to play','ఎలా ఆడాలి')+'. '+HOWTO[mode][lang==='te'?1:0].join(' '))};
+ document.getElementById('start').onclick=function(){band=selBand;level=selLevel;round=score=right=0;g=null;go('play');next()};
+ startDemo54();
+};
+})();
+</script>
+
 </html>
