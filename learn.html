@@ -971,8 +971,7 @@ const __origLessonDetail=lessonDetail;lessonDetail=function(id){__origLessonDeta
   try{history.replaceState({t:tag(e)},'','#'+tag(e))}catch(_){}
   try{if(typeof window[e.f]==='function')window[e.f].apply(null,e.a)}finally{suppress=false}
   updateBack()}
- function backOne(){if(NAVS.length>1){NAVS.pop();runTop();return}
-  try{history.back()}catch(e){}}
+ function backOne(){try{history.back()}catch(e){}}
  window.backOne=backOne;
  window.addEventListener('popstate',function(ev){if(suppress)return;
   var h=(ev.state&&ev.state.t)||curTag();
