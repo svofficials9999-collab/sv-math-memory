@@ -952,5 +952,44 @@ function chapterView(c,ci){page='chapter';const ch=CHAPTERS[ci];const list=ch.to
 function speakLesson(){try{if(!('speechSynthesis' in window))return;const l=LESSONS.find(x=>x.topic===window.activeLesson);if(!l)return;speechSynthesis.cancel();const txt=[T(l.en,l.te),T(l.idea,l.ideaTe),T(l.example,l.exampleTe),T(l.watch,l.watchTe)].join('. ');const u=new SpeechSynthesisUtterance(txt);u.lang=state.lang==='te'?'te-IN':'en-IN';u.rate=0.85;u.pitch=1;const v=speechSynthesis.getVoices().find(v=>v.lang&&v.lang.startsWith(u.lang.slice(0,2)));if(v)u.voice=v;speechSynthesis.speak(u)}catch(e){}}
 const __origLessonDetail=lessonDetail;lessonDetail=function(id){__origLessonDetail(id);const hero=document.querySelector('.lesson-hero');if(hero&&!document.getElementById('lesson-listen')){const btn=document.createElement('button');btn.id='lesson-listen';btn.style.cssText='margin-top:8px;background:linear-gradient(135deg,#0ea5e9,#6366f1);color:#fff;border:none;border-radius:12px;padding:10px 16px;font-weight:700';btn.textContent=T('🔊 Listen to this lesson','🔊 ఈ పాఠం వినండి');btn.onclick=speakLesson;hero.appendChild(btn)}};
 
+
+// v56: Back = exactly one screen back, everywhere (incl. phone back), NAVS pattern.
+;(function(){
+ var NAVS=[{f:'home',a:[]}],suppress=false;
+ function tag(e){return e.f+(e.a.length?'/'+e.a.map(function(x){return encodeURIComponent(String(x))}).join('/'):'')}
+ function curTag(){try{return (location.hash||'#home').slice(1)}catch(e){return 'home'}}
+ function navPush(f,a){var e={f:f,a:a};var same=tag(e)===tag(NAVS[NAVS.length-1]);
+  if(!same){NAVS.push(e);if(NAVS.length>40)NAVS.shift()}
+  suppress=true;
+  try{if(same)history.replaceState({t:tag(e)},'','#'+tag(e));else history.pushState({t:tag(e)},'','#'+tag(e))}catch(_){}
+  suppress=false;updateBack()}
+ function wrap(n){var orig=window[n];if(typeof orig!=='function')return;
+  window[n]=function(){var a=[].slice.call(arguments);if(!suppress)navPush(n,a);return orig.apply(null,arguments)}}
+ ['home','setup','begin','dashboard','worlds','settings','lessonLibrary','lessonDetail','classView','chapterView','mockSetup'].forEach(wrap);
+ function parseTag(h){var p=h.split('/');return {f:p[0],a:p.slice(1).map(function(x){x=decodeURIComponent(x);return /^\d+$/.test(x)?+x:x})}}
+ function runTop(){var e=NAVS[NAVS.length-1];suppress=true;
+  try{history.replaceState({t:tag(e)},'','#'+tag(e))}catch(_){}
+  try{if(typeof window[e.f]==='function')window[e.f].apply(null,e.a)}finally{suppress=false}
+  updateBack()}
+ function backOne(){if(NAVS.length>1){NAVS.pop();runTop();return}
+  try{history.back()}catch(e){}}
+ window.backOne=backOne;
+ window.addEventListener('popstate',function(ev){if(suppress)return;
+  var h=(ev.state&&ev.state.t)||curTag();
+  while(NAVS.length>1&&tag(NAVS[NAVS.length-1])!==h)NAVS.pop();
+  if(tag(NAVS[NAVS.length-1])!==h){var e=parseTag(h);if(typeof window[e.f]==='function')NAVS.push(e)}
+  runTop()});
+ var _html56=window.html;
+ window.html=function(s){_html56(s);updateBack()};
+ function updateBack(){var nav=document.querySelector('nav[aria-label="Main navigation"]');if(!nav)return;
+  var b=document.getElementById('back56');
+  if(!b){b=document.createElement('button');b.id='back56';b.type='button';b.setAttribute('aria-label','Back');
+   b.addEventListener('click',function(){backOne()});nav.insertBefore(b,nav.firstChild)}
+  b.textContent=(document.documentElement.lang==='te')?'\u2B05 \u0C35\u0C46\u0C28\u0C41\u0C15\u0C4D\u0C15\u0C41':'\u2B05 Back';
+  b.style.display=NAVS.length>1?'':'none'}
+ try{if(!location.hash)history.replaceState({t:'home'},'','#home')}catch(e){}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',updateBack);else updateBack();
+})();
+
 </script><script src="/sv-login.js" data-app="SV MathVerse" defer></script><script src="https://svofficials9999-collab.github.io/sv-visit.js" data-app="MathVerse" defer></script>
 </body></html>
