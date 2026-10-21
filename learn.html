@@ -955,7 +955,7 @@ const __origLessonDetail=lessonDetail;lessonDetail=function(id){__origLessonDeta
 
 // v56: Back = exactly one screen back, everywhere (incl. phone back), NAVS pattern.
 ;(function(){
- var NAVS=[{f:'home',a:[]}],suppress=false;
+ var NAVS=[{f:'home',a:[]}],suppress=true;
  function tag(e){return e.f+(e.a.length?'/'+e.a.map(function(x){return encodeURIComponent(String(x))}).join('/'):'')}
  function curTag(){try{return (location.hash||'#home').slice(1)}catch(e){return 'home'}}
  function navPush(f,a){var e={f:f,a:a};var same=tag(e)===tag(NAVS[NAVS.length-1]);
@@ -986,8 +986,14 @@ const __origLessonDetail=lessonDetail;lessonDetail=function(id){__origLessonDeta
    b.addEventListener('click',function(){backOne()});nav.insertBefore(b,nav.firstChild)}
   b.textContent=(document.documentElement.lang==='te')?'\u2B05 \u0C35\u0C46\u0C28\u0C41\u0C15\u0C4D\u0C15\u0C41':'\u2B05 Back';
   b.style.display=NAVS.length>1?'':'none'}
- try{if(!location.hash)history.replaceState({t:'home'},'','#home')}catch(e){}
- if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',updateBack);else updateBack();
+ suppress=true;
+ function bootNav(){suppress=false;var h=curTag();
+  if(h&&h!=='home'){var e=parseTag(h);if(typeof window[e.f]==='function'){NAVS.push(e);
+   suppress=true;try{history.replaceState({t:tag(e)},'','#'+tag(e))}catch(_){}
+   try{window[e.f].apply(null,e.a)}catch(_){try{window.home()}catch(_2){}}
+   suppress=false;updateBack();return}}
+  suppress=true;try{history.replaceState({t:'home'},'','#home')}catch(_){ }suppress=false;updateBack()}
+ if(document.readyState==='complete')setTimeout(bootNav,300);else window.addEventListener('load',function(){setTimeout(bootNav,300)});
 })();
 
 </script><script src="/sv-login.js" data-app="SV MathVerse" defer></script><script src="https://svofficials9999-collab.github.io/sv-visit.js" data-app="MathVerse" defer></script>
