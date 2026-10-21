@@ -137,7 +137,7 @@ go=function(s){
 function backOne(){
  if(NAVS.length>1){
   NAVS.pop();var s=NAVS[NAVS.length-1];
-  stop();if(s==='play')g=null;screen=s;
+  stop();if(s==='play'&&!g)s='setup';screen=s;
   suppress=true;try{history.replaceState({s:s},'','#'+s)}catch(e){}
   suppress=false;bgm(s==='play');render();return;
  }
@@ -149,7 +149,7 @@ window.addEventListener('popstate',function(e){
  stop();if(h==='setup'&&!modes[mode])h='home';
  while(NAVS.length>1&&NAVS[NAVS.length-1]!==h)NAVS.pop();
  if(NAVS[NAVS.length-1]!==h)NAVS.push(h);
- screen=h;if(screen==='play')g=null;render();
+ if(h==='play'&&!g)h='setup';screen=h;render();
 });
 html=function(s){
  _html(s);
