@@ -390,4 +390,28 @@ ss.__fv=2;
 if(ss.addEventListener)ss.addEventListener('voiceschanged',function(){cache={}});
 }catch(e){}})();
 </script>
+<script>
+/* sv-pre-gen-audio v1: pre-generated Sulafat narration for known static spoken strings.
+   Hash-gated manifest: only exact known strings fetch audio; everything else keeps device TTS.
+   Any text change shifts the hash -> no manifest entry -> TTS fallback, never stale audio. */
+(function(){try{
+var MANIFEST={"d1ebfea655":"audio/ht-seq-d1ebfea655-te.mp3","bdd20a0a7d":"audio/ht-pairs-bdd20a0a7d-te.mp3","ee3e338426":"audio/ht-mental-ee3e338426-te.mp3","69974d625e":"audio/ht-pattern-69974d625e-te.mp3","45779e17a6":"audio/ht-speed-45779e17a6-te.mp3"};
+function sha10(t){return crypto.subtle.digest("SHA-256",new TextEncoder().encode(t)).then(function(b){return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,"0")}).join("").slice(0,10)}).catch(function(){return null})}
+var _speak=speak,curA=null,req=0;
+speak=function(t){
+ var my=++req;
+ if(curA){try{curA.pause()}catch(e){}curA=null}
+ if(sndMuted||!t){return}
+ sha10(String(t)).then(function(h){
+  if(my!==req)return;
+  var f=h&&MANIFEST[h];
+  if(!f){_speak(t);return}
+  try{speechSynthesis.cancel()}catch(e){}
+  var a=new Audio(f);curA=a;
+  a.onerror=function(){if(my===req)_speak(t)};
+  a.play().catch(function(){if(my===req)_speak(t)});
+ });
+};
+})()}catch(e){}})();
+</script>
 </html>
